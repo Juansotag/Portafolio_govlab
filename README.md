@@ -4,37 +4,37 @@ Sitio web estático del **Laboratorio de Gobierno de la Universidad de La Sabana
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 Portafolio simple/
-├── index.html                        # Estructura principal del sitio
-├── app.js                            # Toda la lógica JS (filtros, renderizado, navegación)
-├── styles.css                        # Estilos (sistema de diseño, componentes)
+├── index.html # Estructura principal del sitio
+├── app.js # Toda la lógica JS (filtros, renderizado, navegación)
+├── styles.css # Estilos (sistema de diseño, componentes)
 │
-├── Portafolio_Productos_GovLab.xlsx  # Fuente de datos de proyectos y aliados
+├── Portafolio_Productos_GovLab.xlsx # Fuente de datos de proyectos y aliados
 ├── medios/
-│   └── medios.csv                    # Fuente de datos de apariciones en medios
+│ └── medios.csv # Fuente de datos de apariciones en medios
 │
-├── gen_products.py                   # Genera el array PRODUCTS en app.js desde el Excel
-├── update_data.py                    # Actualización general de datos
-├── update_medios.py                  # Actualización de la sección de medios
+├── gen_products.py # Genera el array PRODUCTS en app.js desde el Excel
+├── update_data.py # Actualización general de datos
+├── update_medios.py # Actualización de la sección de medios
 │
 └── assets/
-    ├── favicon.png                   # Favicon del sitio
-    ├── Govlab.png                    # Logo GovLab (navbar, fallback de productos)
-    ├── Universidad de la Sabana.png  # Logo Unisabana
-    ├── decks/                        # PDFs de presentaciones privadas
-    ├── fonts/                        # Fuentes locales (Publico Banner)
-    ├── logos/                        # Logos auxiliares
-    ├── photos/                       # Fotos de equipo y logos de aliados
-    │   └── Aliados/                  # Logos de entidades aliadas
-    └── projects/                     # Logos/imágenes de cada proyecto
+ ├── favicon.png # Favicon del sitio
+ ├── Govlab.png # Logo GovLab (navbar, fallback de productos)
+ ├── Universidad de la Sabana.png # Logo Unisabana
+ ├── decks/ # PDFs de presentaciones privadas
+ ├── fonts/ # Fuentes locales (Publico Banner)
+ ├── logos/ # Logos auxiliares
+ ├── photos/ # Fotos de equipo y logos de aliados
+ │ └── Aliados/ # Logos de entidades aliadas
+ └── projects/ # Logos/imágenes de cada proyecto
 ```
 
 ---
 
-## 🚀 Correr localmente
+## Correr localmente
 
 El sitio es 100% estático (HTML + CSS + JS). No requiere Node.js ni build step.
 
@@ -47,7 +47,7 @@ Luego abre **http://localhost:8080** en el navegador.
 
 ---
 
-## 🔄 Actualizar contenido
+## Actualizar contenido
 
 ### Proyectos (`Portafolio GovLab` hoja del Excel)
 
@@ -60,7 +60,7 @@ python gen_products.py
 
 Esto reescribe el array `PRODUCTS` dentro de `app.js` con los datos actualizados.
 
-> ⚠️ **Importante:** Si editas segmentos o tipos directamente en `app.js`, esos cambios se perderán la próxima vez que corras `gen_products.py`. Haz los cambios en el Excel.
+> **Importante:** Si editas segmentos o tipos directamente en `app.js`, esos cambios se perderán la próxima vez que corras `gen_products.py`. Haz los cambios en el Excel.
 
 ### Medios (`medios/medios.csv`)
 
@@ -80,7 +80,7 @@ Los logos de aliados están en `assets/photos/Aliados/`. Edita directamente el `
 
 ---
 
-## ⌨️ Atajos de teclado
+## ⌨ Atajos de teclado
 
 | Atajo | Acción |
 |---|---|
@@ -88,7 +88,7 @@ Los logos de aliados están en `assets/photos/Aliados/`. Edita directamente el `
 
 ---
 
-## 📐 Sistema de diseño
+## Sistema de diseño
 
 Los colores institucionales están centralizados en variables CSS en `:root` dentro de `styles.css`:
 
@@ -106,8 +106,8 @@ Los colores institucionales están centralizados en variables CSS en `:root` den
 
 ---
 
-## 📞 Contacto
+## Contacto
 
-**Email:** dirgovlab@unisabana.edu.co  
-**WhatsApp:** +57 315 890 5940  
+**Email:** dirgovlab@unisabana.edu.co
+**WhatsApp:** +57 315 890 5940
 **Dirección:** Campus del Puente del Común, Km. 7 Autopista Norte de Bogotá, Chía, Cundinamarca.
