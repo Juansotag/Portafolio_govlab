@@ -4,8 +4,14 @@ import json
 with open("products_data.json", "r", encoding="utf-8") as f:
     products = json.load(f)
 
+with open("medios_data.json", "r", encoding="utf-8") as f:
+    medios = json.load(f)
+
 js_content = """// app.js - GovLab Portafolio
 const PRODUCTS = """ + json.dumps(products, ensure_ascii=False, indent=2) + """;
+
+// Datos de Medios (Fallback offline / carga dinámica desde medios/medios.csv)
+const MEDIOS_FALLBACK = """ + json.dumps(medios, ensure_ascii=False, indent=2) + """;
 
 // Estado de los filtros del portafolio
 let activeFilters = {
@@ -70,6 +76,7 @@ function parseCSV(text) {
 
 // --- Parsear fecha DD/MM/YYYY a objeto Date ---
 function parseDate(str) {
+  if (!str) return new Date(0);
   const parts = str.trim().split('/');
   if (parts.length !== 3) return new Date(0);
   const [d, m, y] = parts;
@@ -127,21 +134,32 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSearchInput();
   lucide.createIcons();
 
-  // Cargar medios dinamicamente desde CSV
+  await loadMedios();
+});
+
+// --- Carga dinámica de Medios con fallback garantizado ---
+async function loadMedios() {
+  let loadedMedios = [];
+
   try {
     const response = await fetch('medios/medios.csv');
-    const buffer = await response.arrayBuffer();
-    const text = new TextDecoder('windows-1252').decode(buffer);
-    const medios = parseCSV(text);
-
-    medios.sort((a, b) => parseDate(b.Fecha) - parseDate(a.Fecha));
-    allMedios = medios;
-    initMediosFilters(medios);
-    applyMediosFilters();
+    if (response.ok) {
+      const text = await response.text();
+      loadedMedios = parseCSV(text);
+    }
   } catch (e) {
-    console.warn('No se pudo cargar medios.csv:', e);
+    console.info('Carga de medios.csv vía fetch no disponible (modo offline o file://), usando base integrada.');
   }
-});
+
+  if (!loadedMedios || loadedMedios.length === 0) {
+    loadedMedios = [...MEDIOS_FALLBACK];
+  }
+
+  loadedMedios.sort((a, b) => parseDate(b.Fecha) - parseDate(a.Fecha));
+  allMedios = loadedMedios;
+  initMediosFilters(allMedios);
+  applyMediosFilters();
+}
 
 // --- Buscador de productos en vivo ---
 function initSearchInput() {
@@ -158,6 +176,8 @@ function initSearchInput() {
 function initMediosFilters(medios) {
   const medioSelect = document.getElementById('medios-select-medio');
   if (!medioSelect) return;
+  medioSelect.innerHTML = '<option value="">Todos los medios</option>';
+
   const mediosUnicos = [...new Set(medios.map(m => (m.Medio || '').trim()))]
     .filter(Boolean).sort((a, b) => a.localeCompare(b, 'es'));
   mediosUnicos.forEach(m => {
@@ -174,6 +194,7 @@ function initMediosFilters(medios) {
   const tipos = ['Todos', ...new Set(medios.map(m => (m.Tipo || '').trim()).filter(Boolean))];
   const tipoContainer = document.getElementById('medios-filter-tipo');
   if (tipoContainer) {
+    tipoContainer.innerHTML = '<span class="medios-filter-label">Tipo:</span>';
     tipos.forEach(tipo => {
       const pill = document.createElement('span');
       pill.className = 'filter-pill' + (tipo === 'Todos' ? ' active' : '');
@@ -193,6 +214,7 @@ function initMediosFilters(medios) {
   )].sort((a, b) => b - a)];
   const anioContainer = document.getElementById('medios-filter-anio');
   if (anioContainer) {
+    anioContainer.innerHTML = '<span class="medios-filter-label">Año:</span>';
     anios.forEach(anio => {
       const pill = document.createElement('span');
       pill.className = 'filter-pill' + (anio === 'Todos' ? ' active' : '');
@@ -223,9 +245,9 @@ function applyMediosFilters() {
     const titular = (m.Titular || '').toLowerCase();
     const anio = (m.Fecha || '').trim().split('/')[2] || '';
 
-    const matchTipo = mediosFilters.tipo === 'Todos' || tipo === mediosFilters.tipo;
+    const matchTipo = mediosFilters.tipo === 'Todos' || tipo.toLowerCase() === mediosFilters.tipo.toLowerCase();
     const matchAnio = mediosFilters.anio === 'Todos' || anio === mediosFilters.anio;
-    const matchMedio = !mediosFilters.medio || medio === mediosFilters.medio;
+    const matchMedio = !mediosFilters.medio || medio.toLowerCase() === mediosFilters.medio.toLowerCase();
     const matchTexto = !mediosFilters.texto || titular.includes(mediosFilters.texto);
 
     return matchTipo && matchAnio && matchMedio && matchTexto;
@@ -469,6 +491,56 @@ function resetAllFilters() {
   });
 
   applyFilters();
+}
+
+// --- 2.5 Renderizado de Medios ---
+function renderMedios(mediosToRender) {
+  const grid = document.getElementById('medios-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  mediosToRender.forEach(media => {
+    const fecha = (media.Fecha || media.fecha || '').trim();
+    const medio = (media.Medio || media.medio || '').trim();
+    const titular = (media.Titular || media.titular || '').trim();
+    const url = (media.URL || media.url || '').trim();
+    const tipo = (media.Tipo || media.tipo || '').trim();
+
+    const card = document.createElement('div');
+    card.className = 'media-card';
+    const visualContent = getMediaVisual(tipo, url);
+
+    const btnHtml = url
+      ? `<button class="btn btn-outline" onclick="window.open('${url}', '_blank')"><i data-lucide="external-link"></i> Leer artículo</button>`
+      : `<button class="btn btn-outline" disabled>Sin enlace</button>`;
+
+    const tipoBadgeClass = {
+      'internet': 'tipo-internet',
+      'prensa': 'tipo-prensa',
+      'tv': 'tipo-tv',
+      'radio': 'tipo-radio'
+    }[tipo.toLowerCase()] || 'tipo-prensa';
+
+    card.innerHTML = `
+      <div class="media-visual">
+        ${visualContent}
+      </div>
+      <div class="media-content">
+        <div class="media-meta">
+          <span class="media-tipo-badge ${tipoBadgeClass}">${tipo}</span>
+          <span class="media-date"><i data-lucide="calendar" style="width:12px;height:12px;display:inline-block;margin-right:4px;"></i>${fecha}</span>
+        </div>
+        <div class="media-source">${medio}</div>
+        <h3 class="media-title">${titular}</h3>
+        <div class="card-actions">
+          ${btnHtml}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  lucide.createIcons();
 }
 
 // --- 3. Filtros del Portafolio ---
@@ -937,4 +1009,4 @@ document.addEventListener('DOMContentLoaded', () => {
 with open("app.js", "w", encoding="utf-8") as f:
     f.write(js_content)
 
-print("Generated app.js with 'Listo para la venta' chiclet tag.")
+print("Generated app.js with robust Medios loading and fallback!")

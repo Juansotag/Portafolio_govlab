@@ -1365,6 +1365,1256 @@ const PRODUCTS = [
   }
 ];
 
+// Datos de Medios (Fallback offline / carga dinámica desde medios/medios.csv)
+const MEDIOS_FALLBACK = [
+  {
+    "Fecha": "24/08/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Patinetas eléctricas: entre el riesgo por la inseguridad y el aumento de usuarios",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1528372473",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "16/11/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Ganadores y perdedores con el pico y placa para los carros de fuera de la ciudad",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1588553128",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "20/04/2025",
+    "Medio": "El Tiempo",
+    "Titular": "El riesgoso aumento de ciclomotores, vehículos pequeños y hechizos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1436579631",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "25/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Al día hay cerca de 1.000 reportes por ruido al 123",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1462981964",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "16/02/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Alzas de los costos del gas natural, el nuevo golpe al bolsillo de los bogotanos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1391088577",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "6/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Aunque se registra baja de delitos, homicidios siguen siendo muy preocupantes",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1448241931",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "24/04/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Hay 148.000 personas más en la capital en pobreza multidimensional",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1440180675",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "7/08/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Tres años del gobierno Petro: mucha tensión y poco acuerdo",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1517805927",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "21/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Asíí funciona el gremio de moteros que protestóó y bloqueóó varias vías",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1548556938",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "4/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Bogotáá 24 horas: una apuesta que no cuaja",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1447040645",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "30/01/2025",
+    "Medio": "El Tiempo",
+    "Titular": "La capital sigue sin acoger los pagos por descongestión",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1378511938",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "18/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Los duros cuestionamientos a las alcaldías locales y sus problemas de ejecución",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1546429316",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "26/05/2025",
+    "Medio": "La FM Radio",
+    "Titular": "Polémica  Hoy comenzarán a multar a conductores que invadan el carril de buses en la carrera Séptima en Bogotáá / Diario el Tiempo -Alcaldía Mayor De Bogotáá- Carlos Fernando Galán - Policía Nacional -",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1463535216",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "19/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "El metro como galería: una oportunidad para el grafiti bogotano",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1457843809",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "24/02/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión Omar Oróstegui | Galán versus Petro: una pelea con muchas batallas por delante",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-ppinion-omar-orostegui-galan-versus-petro-una-pelea-con-muchas-batallas-por-delante-3429649",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "16/02/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Aumento de la tarifa de gas: un golpe duro a la economía bogotana",
+    "URL": "https://www.eltiempo.com/bogota/aumento-de-la-tarifa-de-gas-un-golpe-duro-a-la-economia-bogotana-3427489",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/02/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Gas natural: el nuevo golpe al bolsillo de los bogotanos",
+    "URL": "https://www.eltiempo.com/bogota/alzas-de-los-costos-del-gas-natural-el-nuevo-golpe-al-bolsillo-de-los-bogotanos-3427275",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/03/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "La estrategia de Galán por recuperar el espacio público y regular las ventas ambulantes / Opinión",
+    "URL": "https://www.eltiempo.com/bogota/la-estrategia-de-galan-por-recuperar-el-espacio-publico-y-regular-las-ventas-ambulantes-3433788",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "10/03/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Presidente Petro decidió que Ecopetrol intervendrá la importación de gas y comprará a Catar: ¿por qué?",
+    "URL": "https://www.eltiempo.com/politica/gobierno/presidente-petro-ordena-a-ecopetrol-comprar-gas-a-catar-el-monopolio-de-la-importacion-se-acaba-3434027",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "16/03/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión Omar Oróstegui | San Bernardo, una de las varias zonas donde el poder criminal desafía al Estado",
+    "URL": "https://www.eltiempo.com/bogota/opinion-omar-orostegui-san-bernardo-una-de-las-varias-zonas-donde-el-poder-criminal-desafia-al-estado-3435912",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "30/03/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión Omar Oróstegui:Bogotáá, inundada por la acumulación de basuras.",
+    "URL": "https://www.eltiempo.com/bogota/bogota-inundada-por-la-acumulacion-de-basuras-en-las-calles-3439867",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/04/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Parques públicos: entre juegos y excrementos / Opinión",
+    "URL": "https://www.eltiempo.com/bogota/parques-publicos-entre-juegos-y-excrementos-3442206",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/04/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "El reproche del presidente Petro a Ricardo Roa por importación de gas de Ecopetrol: 'Hermano, no entiendo'",
+    "URL": "https://www.eltiempo.com/politica/gobierno/el-reproche-del-presidente-petro-a-ricardo-roa-por-importacion-de-gas-de-ecopetrol-hermano-no-entiendo-3442637",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "19/04/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "El riesgoso aumento de ciclomotores, vehículos pequeños y hechizos para la seguridad vial en la ciudad",
+    "URL": "https://www.eltiempo.com/bogota/el-riesgoso-aumento-de-ciclomotores-vehiculos-pequenos-y-hechizos-para-la-seguridad-vial-en-la-ciudad-3446043",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "23/04/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Pobreza multidimensional en Bogotáá: hay 148.000 personas más en esa condición, ¿cuáles son las causas del aumento?",
+    "URL": "https://www.eltiempo.com/bogota/pobreza-multidimensional-en-bogota-hay-184-000-personas-mas-en-esa-condicion-cuales-son-las-causas-3447431",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "27/04/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión: ¿rumba hasta las 5 a. m.? Una decisión que merece algo más que entusiasmo",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-opinion-rumba-hasta-las-5-a-m-una-decision-que-merece-algo-mas-que-entusiasmo-3448509",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Bogotáá 24 horas: una apuesta que no cuaja",
+    "URL": "https://www.eltiempo.com/bogota/bogota-24-horas-una-apuesta-que-no-cuaja-3450299",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "¿Qué está pasando en Bogotáá? Galán, metro, cortes de energía y rumba",
+    "URL": "https://www.eltiempo.com/videos-eltiempo/que-esta-pasando-en-bogota-galan-metro-cortes-de-energia-y-rumba-3450285",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "4/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión: conciertos impulsan a Bogotáá, pero falta estrategia para aprovechar su potencial",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-opinion-conciertos-impulsan-a-bogota-pero-falta-estrategia-para-aprovechar-su-potencial-3450441",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Una masacre y un asalto a ciclistas se suman a crisis de seguridad de Bogotáá, ¿qué está pasando?",
+    "URL": "https://www.eltiempo.com/bogota/una-masacre-y-un-asalto-a-ciclistas-se-suman-a-crisis-de-seguridad-de-bogota-que-esta-pasando-3450830",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Ellas solas: la otra cara de los hogares bogotanos",
+    "URL": "https://www.eltiempo.com/bogota/ellas-solas-la-otra-cara-de-los-hogares-bogotanos-3452713",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "18/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión| El metro como galería: una oportunidad para el grafiti bogotano",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-metro-como-galeria-una-oportunidad-para-el-grafiti-bogotano-3454985",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "24/05/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Bogotáá es una ciudad ruidosa: cerca de 1.000 reportes al día al 123 lo confirman",
+    "URL": "",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "8/06/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión Omar Oróstegui |La violencia irrumpe en la campaña política",
+    "URL": "https://www.eltiempo.com/bogota/la-violencia-irrumpe-en-la-campana-politica-3461460",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/07/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Micromovilidad sin reglas claras: una ley que llega tarde y complica más de lo que resu",
+    "URL": "https://www.eltiempo.com/bogota/micromovilidad-sin-reglas-claras-una-ley-que-llega-tarde-y-complica-mas-de-lo-que-resuelve-3469438",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/07/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión | El lío con los Emberás y el silencio del Gobierno nacional",
+    "URL": "https://www.eltiempo.com/bogota/el-lio-con-los-emberas-y-el-silencio-del-gobierno-nacional-3471596",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/08/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión: Los regalos que Bogotáá se merece",
+    "URL": "https://www.eltiempo.com/bogota/opinion-los-regalos-que-bogota-se-merece-3477977",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/08/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Tres años del gobierno Petro: una relación de tensiones frecuentes y poco apoyo a Bogotáá",
+    "URL": "",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "10/08/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión | Alumbrado público: el debate que nunca se apaga",
+    "URL": "https://www.eltiempo.com/bogota/alumbrado-publico-el-debate-que-nunca-se-apaga-3480004",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "18/08/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión: El costo de no tener baños públicos",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-costo-de-no-tener-banos-publicos-3482423",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "22/08/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Patinetas eléctricas en Bogotáá: entre el riesgo por la inseguridad y el aumento de usuarios",
+    "URL": "https://www.eltiempo.com/bogota/patinetas-electricas-en-bogota-entre-el-riesgo-por-la-inseguridad-y-el-aumento-de-usuarios-3483984",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/09/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión Ómar Oróstegui | Bogotáá, atrapada en el tráfico",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-opinion-omar-orostegui-bogota-atrapada-en-el-trafico-3488528",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "21/09/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Manifestaciones de moteros, presión política disfrazada de protestóa ciudadana",
+    "URL": "https://www.eltiempo.com/bogota/opinion-manifestaciones-de-moteros-presion-politica-disfrazada-de-protestóa-ciudadana-3492698",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "20/09/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Asíí se mueve el gremio de moteros que protestóó y bloqueóó varias vías en Bogotáá: coordinan hostigamientos y agresiones",
+    "URL": "https://www.eltiempo.com/bogota/asi-se-mueve-el-gremio-de-moteros-que-protestóo-y-bloqueóo-varias-vias-en-bogota-coordinan-hostigamientos-y-agresiones-3492467",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "17/09/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Duros cuestionamientos a las alcaldías locales: ¿Qué hay detrás del debate?, ¿llegó el momento de repensar esas figuras?",
+    "URL": "https://www.eltiempo.com/bogota/duros-cuestionamientos-a-las-alcaldias-locales-que-hay-detras-del-debate-llego-el-momento-de-repensar-esas-figuras-3491698",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "14/09/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | El retorno de los Emberás: un regreso con fecha de vencimiento",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-retorno-de-los-emberas-un-regreso-con-fecha-de-vencimiento-3490627",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/10/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "¿Guardianes o gestores? El dilema detrás de la nueva apuesta por la convivencia",
+    "URL": "https://www.eltiempo.com/bogota/opinion-guardianes-o-gestores-el-dilema-detras-de-la-nueva-apuesta-por-la-convivencia-3497002",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/10/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Homicidios en Bosa, San Cristóbal y Santa Fe, la radiografía de la violencia por intolerancia en Bogotáá: alcaldía lanzó campaña para prevenir crímenes",
+    "URL": "https://www.eltiempo.com/bogota/homicidios-en-bosa-san-cristobal-y-santa-fe-la-radiografia-de-la-violencia-por-intolerancia-en-bogota-alcaldia-lanzo-campana-para-prevenir-crimenes-3497329",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "19/10/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | La deuda histórica con los jóvenes bogotanos",
+    "URL": "https://www.eltiempo.com/bogota/opinion-la-deuda-historica-con-los-jovenes-bogotanos-3501144",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/11/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión| Las lecciones de las prohibiciones a los motociclistas el fin de semana",
+    "URL": "https://www.eltiempo.com/bogota/opinion-las-lecciones-de-las-prohibiciones-a-los-motociclistas-el-fin-de-semana-3505655",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "1/12/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Presupuesto 2026: más recaudo y más deuda",
+    "URL": "https://www.eltiempo.com/bogota/presupuesto-2026-mas-recaudo-y-mas-deuda-3513170",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "23/11/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Metrópolis: el laboratorio de la nueva renovación urbana",
+    "URL": "https://www.eltiempo.com/bogota/metropolis-el-laboratorio-de-la-nueva-renovacion-urbana-3511151",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "17/11/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | ¿Movilidad o recaudo? Lo que esconde el nuevo pico y placa",
+    "URL": "https://www.eltiempo.com/bogota/opinion-movilidad-o-recaudo-lo-que-esconde-el-nuevo-pico-y-placa-3509573",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/11/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Entre el bienestar y la realidad: el debate sobre horarios escolares",
+    "URL": "https://www.eltiempo.com/bogota/opinion-entre-el-bienestar-y-la-realidad-el-debate-sobre-horarios-escolares-3507418",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/11/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Nueva medida del pico y placa en Bogotáá: ¿quiénes ganan y quiénes pierden con la reciente decisión de la Alcaldía?",
+    "URL": "https://www.eltiempo.com/bogota/nueva-medida-del-pico-y-placa-en-bogota-quienes-ganan-y-quienes-pierden-con-la-reciente-decision-de-la-alcaldia-3509175",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "30/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Rechazo a actos vandálicos y mensajes de odio",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1555158820",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "25/03/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Guardianes del orden, una buena idea con mucha improvisación",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1418305144",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Operación retorno y congestión vehicular",
+    "URL": "https://www.eltiempo.com/bogota/opinion-operacion-retorno-y-congestion-vehicular-3415127",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "30/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "¿Por qué Bogotáá le sigue diciendo no a los cobros por descongestión mientras grandes ciudades implementan el modelo?",
+    "URL": "https://www.eltiempo.com/bogota/por-que-bogota-le-sigue-diciendo-no-a-los-cobros-por-descongestion-mientras-grandes-ciudades-implementan-el-modelo-3422331",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "12/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión Omar Oróstegui | Migración venezolana en Bogotáá",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-opinion-omar-orostegui-migracion-venezolana-en-bogota-3416791",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Columna de opinión de Ómar Oróstegui | El caños de las ciclorrutas",
+    "URL": "https://www.eltiempo.com/bogota/columna-de-opinion-omar-orostegui-el-caños-de-las-ciclorrutas-3421031",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "19/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión| Reducir homicidio, extorsión y violencia intrafamiliar, los retos de Galán en el 2025",
+    "URL": "https://www.eltiempo.com/bogota/opinion-reducir-homicidio-extorsion-y-violencia-intrafamiliar-los-retos-de-galan-en-el-2025-3418864",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "20/01/2025",
+    "Medio": "eltiempo.com",
+    "Titular": "Reducir homicidio, extorsión y violencia intrafamiliar, los retos de Galán en el 2025 | Columna de opinión de Omar…",
+    "URL": "https://www.eltiempo.com/bogota/reducir-homicidio-extorsion-y-violencia-intrafamiliar-los-retos-de-galan-en-el-2025-columna-de-opinion-de-omar-orostegui-3418864",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "El retorno de los emberás: un regreso con fecha de vencimiento",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1543990612",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "4/11/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Las lecciones de las prohibiciones a los motociclistas el fin de semana",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1580167263",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "1/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "COLUMNA DE OPINION-Alcaldías locales: poder sin control en Bogotáá",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1533552459",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "1/12/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Presupuesto 2026: más recaudo y más deuda",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1597903887",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/04/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Parques públicos: entre juegos y excrementos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1428266318",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "18/11/2025",
+    "Medio": "El Tiempo",
+    "Titular": "¿Movilidad o recaudo? Lo que esconde el nuevo pico y placa",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1589374448",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Conciertos impulsan a Bogotáá, pero falta estrategia para aprovechar su potencial",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1447525569",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "24/11/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Metrópolis: el laboratorio de la nueva renovación urbana",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1593322756",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/07/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN Micromovilidad sin reglas claras: una ley que llega tarde y complica más de lo que resuelve",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1494482710",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "22/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Manifestaciones de moteros, presión política disfrazada de protestóa ciudadana",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1548969276",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "8/04/2025",
+    "Medio": "Infobae.com",
+    "Titular": "Petro cuestiona a Roa porque Ecopetrol no está importando gas: \"Hermano, no entiendo por qué no lo están haciendo\"",
+    "URL": "https://www.infobae.com/colombia/2025/04/08/petro-cuestiona-a-roa-porque-ecopetrol-no-esta-importando-gas-hermano-no-entiendo-por-que-no-lo-estan-haciendo",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "4/05/2025",
+    "Medio": "Infobae.com",
+    "Titular": "Lejos de multarlo, Policía grabó a motociclista que practicaba Stunt en vía principal de Bogotáá",
+    "URL": "https://www.infobae.com/colombia/2025/05/04/lejos-de-multarlo-policia-grabo-a-motociclista-que-practicaba-stunt-en-via-principal-de-bogota/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/05/2025",
+    "Medio": "Infobae.com",
+    "Titular": "?En video quedó el ataque de peatón a motociclista en Bogotáá: lo hizo caer tras golpearlo en la cara",
+    "URL": "https://www.infobae.com/colombia/2025/05/26/en-video-quedo-el-ataque-de-peaton-a-motociclista-en-bogota-lo-hizo-caer-tras-golpearlo-en-la-cara/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "28/04/2025",
+    "Medio": "El Tiempo",
+    "Titular": "¿Rumba hasta las 5 a. m.? Una decisión que merece algo más que entusiasmo",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1442695637",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "16/06/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN La violencia como mecanismo de resolución de conflictos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1479447675",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/10/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN: ¿Guardianes o gestores?, el dilema detrás de la nueva apuesta por la convivencia",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1559929763",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/01/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Migración venezolana en Bogotáá",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1365564713",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "10/03/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN  -  La estrategia de Galán por recuperar el espacio público y regular las ventas ambulantes",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1407010258",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "20/09/2025",
+    "Medio": "Infobae.com",
+    "Titular": "Bloqueos, sabotajes y la batalla por el control vial: revelan cómo el gremio motero intenta imponerse en Bogotáá",
+    "URL": "https://www.infobae.com/colombia/2025/09/20/bloqueóos-sabotajes-y-la-batalla-por-el-control-vial-revelan-como-el-gremio-motero-intenta-imponerse-en-bogota",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "19/08/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN El costo de no tener baños públicos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1524870287",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/08/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN Alumbrado público: el debate que nunca se apaga",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1519920396",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "25/02/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Galán versus Petro: una pelea con muchas batallas por delante",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1397492906",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "29/09/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Bogotáá late distinto cuando el arte la habita",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1554298926",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/06/2025",
+    "Medio": "El Tiempo",
+    "Titular": "Zonas libres de drogas: Bogotáá avanza en la señalización del espacio público",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1469389345",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/04/2025",
+    "Medio": "redmas.com.co",
+    "Titular": "Racionamiento de agua en Bogotáá está de cumpleaños: cumple un añito y expertos explican las lecciones que deja la medida",
+    "URL": "https://redmas.com.co/colombia/Racionamiento-de-agua-en-Bogotáa-esta-de-cumpleanos-cumple-un-anito-y-expertos-explican-las-lecciones-que-deja-la-medida-20250410-0026.html",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/05/2025",
+    "Medio": "El Tiempo",
+    "Titular": "El reversazo de Galán con la carrera 7.a",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1463460664",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "10/02/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN - Ruido, un problema invisible en Bogotáá",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1386242374",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/08/2025",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN Los regalos que Bogotáá se merece",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1516032776",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "30/01/2025",
+    "Medio": "pulzo.com",
+    "Titular": "Proponen cobro a conductores de Bogotáá, aunque idea no termina de cuajar con Galán\"",
+    "URL": "https://www.pulzo.com/nacion/bogota/proponen-cobros-por-descongestion-bogota-para-aliviar-pico-placa-trancon-PP4276821",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "21/06/2025",
+    "Medio": "La República",
+    "Titular": "SERVICIOS DE VIGILANCIA SON DE CARACTERÍSTICAS TÉCNICAS UNIFORMES - Asíuntos Legales",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1484037593",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/03/2025",
+    "Medio": "Vanguardia",
+    "Titular": "Asíí cambiará la población de Santander en el 2 0 3 5",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1405393275",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "30/01/2025",
+    "Medio": "portafolio.co",
+    "Titular": "Cobros por descongestión: ¿por qué este modelo aún no se ha implementado en Bogotáá?",
+    "URL": "https://www.portafolio.co/economia/regiones/por-que-el-cobro-por-descongestion-aun-no-se-ha-implementado-en-bogota-622847",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "28/03/2025",
+    "Medio": "Canal Red Mas",
+    "Titular": "Comerciantes de Bogotáá se quejan por millonarias pérdidas ante obras viales   ( Mención Metro de Bogotáá  - Transmilenio  - Fenalco ) ( Concejo de Bogotáá  Julian Uscategui )  ( Dario Hidalgo Universidad Javeriana )   ( Omar Orostegui Universidad de La Sabana )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1421492199",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "4/06/2025",
+    "Medio": "Portafolio",
+    "Titular": "Líder que grita, organización que se marchita",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1470315068",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/03/2025",
+    "Medio": "caracol.com.co",
+    "Titular": "¿Piensa tener hijos? Un estudio de la Uni.Sabana afirma que en 2035 la natalidad estará en 12 %",
+    "URL": "https://caracol.com.co/2025/03/06/piensa-tener-hijos-un-estudio-de-la-unisabana-afirma-que-en-2035-la-natalidad-estara-en-12/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/03/2025",
+    "Medio": "Qhubo Bucaramanga",
+    "Titular": "¿Cómo se vivirá en 10 años?",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1405632618",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "20/01/2025",
+    "Medio": "Extra Bogotáá",
+    "Titular": "CONCEJAL ENCONTRADO MUERTO",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1370643741",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "8/11/2025",
+    "Medio": "La República",
+    "Titular": "La Sabana y Blend serán aliados en tecnología",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1583272009",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/03/2025",
+    "Medio": "Canal Capital",
+    "Titular": "Alcaldia de Bogotáá  anunció que tomará acciones legales contra Gobierno Nacional  si no replantea  resolución en la que cambia la delimitación de las zonas de la Sabana de Bogotáá ( Alcaldia de Bogotáá  Carlos Fernando Galán ) ( Secretaria Distrital de Planeación de Bogotáá Úrsula Ablanque ) ( Secretaria de Habitat de Bogotáá  Vanessa Velasco )  ( Secretaria Distrital de Desarrollo Económico de Bogotáá Maria del Pilar Uribe ) ( Secretaria de Ambiente de Bogotáá Adriana Soto ) (  Universidad EAN  Brigitte Baptiste ) ( Camacol Guillermo Herrera ) ( Ex Ministerio de Ambiente Manuel Rodriguez ) ( Universidad de La Sabana Omar Orostegui ) ( Gobernación de Cundinamarca Jorge Rey )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1404157236",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/03/2025",
+    "Medio": "vanguardia.com",
+    "Titular": "En estos municipios de Santander vivirá la gente más joven y más vieja en 2035",
+    "URL": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2025/03/06/en-estos-municipios-de-santander-vivira-la-gente-mas-joven-y-mas-vieja-en-2035/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/06/2025",
+    "Medio": "portafolio.co",
+    "Titular": "Líder que grita, organización que se marchita",
+    "URL": "https://www.portafolio.co/opinion/analisis/lider-que-grita-organizacion-que-se-marchita-631903",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "12/06/2025",
+    "Medio": "forbes.co",
+    "Titular": "Mecanismo bursátil para corregir las distorsiones del mercado de combustibles en Colombia",
+    "URL": "https://forbes.co/2025/06/12/red-forbes/mecanismo-bursatil-para-corregir-las-distorsiones-del-mercado-de-combustibles-en-colombia",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "24/06/2025",
+    "Medio": "forbes.co",
+    "Titular": "La reconstrucción fiscal que le espera al próximo Presidente",
+    "URL": "https://forbes.co/2025/06/24/red-forbes/la-reconstruccion-fiscal-que-le-espera-al-proximo-presidente",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/11/2025",
+    "Medio": "portafolio.co",
+    "Titular": "Blend y la Universidad de La Sabana impulsan alianza para fortalecer la formación e innovación y en IA",
+    "URL": "https://www.portafolio.co/tecnologia/blend-y-la-universidad-de-la-sabana-impulsan-alianza-para-fortalecer-la-formacion-e-innovacion-y-en-ia-482962",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "25/03/2025",
+    "Medio": "eluniversal.com.co",
+    "Titular": "¿Habrá más hombres que mujeres en Cartagena en 2035? Estudio lo dice",
+    "URL": "https://www.eluniversal.com.co/cartagena/2025/03/25/cartagena-tendra-mas-mujeres-que-hombres-para-2035-segun-proyeccion/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "18/11/2025",
+    "Medio": "Teleantioquia",
+    "Titular": "La cifra informativa de hoy 91.6% son los casos de siniestros viales que quedan sin respuesta judicial.",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1589471497",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/01/2025",
+    "Medio": "Extra Bogotáá",
+    "Titular": "FUE ENCONTRADO SIN VIDA",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1361480828",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "6/03/2025",
+    "Medio": "Caracol Radio Bogotáá",
+    "Titular": "La natalidad en Colombia se redujo un 12%, según un estudio de la Universidad de La Sabana",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1405388375",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/01/2025",
+    "Medio": "Canal Capital",
+    "Titular": "La mayor frustración del gobierno distrital fue el aumento de homicidios, el número de asesinatos creció casi 12% y por eso el año 2024 fue el más violento de los últimos 8 años ( Omar orostegui Universidad de la Sabana - Felipe Mariño Bogotáá Cómo Vamos - Cesar Restrepo Secretaria de Seguridad de Bogotáá )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1366139467",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/11/2025",
+    "Medio": "lanotaeconomica.com.co",
+    "Titular": "La Inteligencia Artificial al servicio del país: Blend y Universidad de La Sabana unen fuerzas para resolver retos públicos",
+    "URL": "https://lanotaeconomica.com.co/movidas-empresarial/la-inteligencia-artificial-al-servicio-del-pais-blend-y-universidad-de-la-sabana-unen-fuerzas-para-resolver-retos-publicos",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "10/03/2025",
+    "Medio": "Canal Capital",
+    "Titular": "En Bogotáá se ha visto un positivo avance en materia de inclusión de mujeres al mercado laboral  ( Secretaría  Distrital de Desarrollo Económico de Bogotáá  Maria del Pilar Lopez  )  ( Universidad La Sabana  Juan Sotelo )  ( Fondo Mujer Maria Fernanda Reyes )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1407588655",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/06/2025",
+    "Medio": "asuntoslegales.com.co",
+    "Titular": "Un estado, en estado de naturaleza |",
+    "URL": "https://asuntoslegales.com.co/analisis/sergio-andres-morales-barreto-3905762/un-estado-en-estado-de-naturaleza-4155310",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "25/06/2025",
+    "Medio": "asuntoslegales.com.co",
+    "Titular": "Iván Felipe Unigarro Dorado, Análisis legal, judicial y el impacto de las leyes de Colombia | Asíuntoslegales.com.co",
+    "URL": "https://www.asuntoslegales.com.co/analisis/ivan-felipe-unigarro-dorado-4164753",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "21/06/2025",
+    "Medio": "asuntoslegales.com.co",
+    "Titular": "Los servicios de vigilancia y seguridad privada son de características técnicas uniformes |",
+    "URL": "https://www.asuntoslegales.com.co/consultorio/los-servicios-de-vigilancia-y-seguridad-privada-son-de-caracteristicas-tecnicas-uniformes-4162992",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "8/04/2025",
+    "Medio": "chicanoticias.com",
+    "Titular": "Petro propone importar gas de Panamá por los cables de energía y le llueven críticas y memes",
+    "URL": "https://www.chicanoticias.com/2025/04/08/cables-gas-panama/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/06/2025",
+    "Medio": "El Observatorio de la Universidad Colombiana",
+    "Titular": "¿Por qué es importante la doctrina social de la iglesia para los universitarios?: Felipe Cárdenas",
+    "URL": "https://www.universidad.edu.co/por-que-es-importante-la-doctrina-social-de-la-iglesia-para-los-universitarios-felipe-cardenas",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/11/2025",
+    "Medio": "portalgeek.co",
+    "Titular": "Blend y Universidad de La Sabana impulsan la Inteligencia Artificial para resolver retos públicos en Colombia",
+    "URL": "https://portalgeek.co/educacion/blend-universidad-de-la-sabana",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/11/2025",
+    "Medio": "unisabana.edu.co",
+    "Titular": "Universidad de La Sabana y Blend sellan alianza para potenciar el desarrollo de proyectos en inteligencia artificial y analítica de datos con soporte de AWS",
+    "URL": "https://www.unisabana.edu.co/noticias/paso-en-la-sabana/universidad-de-la-sabana-y-blend-sellan-alianza-para-potenciar-el-desarrollo-de-proyectos-en",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/11/2025",
+    "Medio": "setechnota.com",
+    "Titular": "La Inteligencia Artificial al servicio del país: Blend y Universidad de La Sabana unen fuerzas para resolver retos públicos",
+    "URL": "https://setechnota.com/2025/11/13/la-inteligencia-artificial-al-servicio-del-pais-blend-y-universidad-de-la-sabana-unen-fuerzas-para-resolver-retos-publicos",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "14/10/2025",
+    "Medio": "Radio 1040",
+    "Titular": "Para el mes Internacional de Prevención del Suicidio es laboratorio de Gobierno de la Universidad de La Sabana. Reportó las tasas de suicidio en el país",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1565518090",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "2/02/2026",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN El ocaso de un símbolo: ¿para qué sirve hoy el día sin carro?",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1634484143",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "1/02/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | El ocaso de un símbolo ¿Para qué sirve hoy el Día sin Carro?",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-ocaso-de-un-simbolo-para-que-sirve-hoy-el-dia-sin-carro-3528899",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "27/01/2026",
+    "Medio": "lafm.com.co",
+    "Titular": "La carta de Lafaurie y la línea que se rompió en el uribismo",
+    "URL": "https://www.lafm.com.co/politica/la-carta-de-lafaurie-y-la-linea-que-se-rompio-en-el-uribismo-388823",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/01/2026",
+    "Medio": "desopinion.com",
+    "Titular": "la crisis habitacional que desnudó un concierto en Medellín",
+    "URL": "https://desopinion.com/la-crisis-habitacional-que-desnudo-un-concierto-en-medellin",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/01/2026",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN: El ‘Efecto Bad Bunny’: La crisis habitacional que desnudó un concierto.",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1628862854",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "25/01/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "El ‘Efecto Bad Bunny’: la crisis habitacional que desnudó un concierto en Medellín",
+    "URL": "https://www.eltiempo.com/bogota/el-efecto-bad-bunny-la-crisis-habitacional-que-desnudo-un-concierto-en-medellin-3527043",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/01/2026",
+    "Medio": "El Espectador",
+    "Titular": "Carlos Femando Galán: dos años para dejar su legado",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1616287131",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "19/01/2026",
+    "Medio": "El Tiempo",
+    "Titular": "El salario mínimo no es gratis (y alguien siempre paga la cuenta)",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1624403172",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "18/01/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | El salario mínimo no es gratis (y alguien siempre paga la cuenta)",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-salario-minimo-no-es-gratis-y-alguien-siempre-paga-la-cuenta-3525168",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/01/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "En Bogotáá, ciudadanos se sienten más inseguros, pero delitos y victimización bajaron: ¿Casos virales en redes sociales impactan en la percepción?",
+    "URL": "https://www.eltiempo.com/bogota/en-bogota-ciudadanos-se-sienten-mas-inseguros-pero-delitos-y-victimizacion-bajaron-casos-virales-en-redes-sociales-impactan-en-la-percepcion-3524572",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/01/2026",
+    "Medio": "Infobae",
+    "Titular": "Rumba hasta las 5:00 a. m. en Bogotáá: experto advierte desafíos en seguridad y movilidad por la medida - Infobae",
+    "URL": "https://www.infobae.com/colombia/2026/01/16/rumba-hasta-las-500-a-m-en-bogota-experto-advierte-desafios-en-seguridad-y-movilidad-por-la-medida/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "16/01/2026",
+    "Medio": "El Tiempo",
+    "Titular": "El Distrito redujo nueve delitos, pero percepción de inseguridad se disparó",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1622977169",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "17/01/2026",
+    "Medio": "Canal RCN",
+    "Titular": "Algunos dueños Locales comerciales nocturnos de Bogotáá denuncian que quedaron por fuera de la ampliación de zonas de rumba en la ciudad (Omar Oróstegui Dir. GOVLAB Universidad de la Sabana Andrés Nieto director del Observatorio de Seguridad de la Universidad Central)",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1623918097",
+    "Tipo": "TV"
+  },
+  {
+    "Fecha": "27/01/2026",
+    "Medio": "La FM Radio",
+    "Titular": "Punto de Quiebre // Lafaurie dice que se filtró carta en la que piden con Cabal no continuar en el Centro Democrático // política - partidos politicos - elecciones - candidatos presidenciales - funcionarios públicos -",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1629717995",
+    "Tipo": "Radio"
+  },
+  {
+    "Fecha": "18/01/2026",
+    "Medio": "desopinion.com",
+    "Titular": "El salario mínimo no es gratis (y alguien siempre paga la cuenta)",
+    "URL": "https://desopinion.com/el-salario-minimo-no-es-gratis-y-alguien-siempre-paga-la-cuenta",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "2/02/2026",
+    "Medio": "desopinion.com",
+    "Titular": "El ocaso de un símbolo ¿Para qué sirve hoy el Día sin Carro?",
+    "URL": "https://desopinion.com/el-ocaso-de-un-simbolo-para-que-sirve-hoy-el-dia-sin-carro",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "1/02/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | El ocaso de un símbolo ¿Para qué sirve hoy el Día sin Carro?",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-ocaso-de-un-simbolo-para-que-sirve-hoy-el-dia-sin-carro-3528899",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "2/02/2026",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN El ocaso de un símbolo: ¿para qué sirve hoy el día sin carro?",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1634484143",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "2/02/2026",
+    "Medio": "desopinion.com",
+    "Titular": "El ocaso de un símbolo ¿Para qué sirve hoy el Día sin Carro?",
+    "URL": "https://desopinion.com/el-ocaso-de-un-simbolo-para-que-sirve-hoy-el-dia-sin-carro",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "5/02/2026",
+    "Medio": "minuto60.com",
+    "Titular": "¿Tiene sentido actualmente el Día sin Carro en Bogotáá? Análisis de un experto y cifras oficiales",
+    "URL": "https://minuto60.com/bogota/tiene-sentido-actualmente-dia-carro-bogota/5749",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/02/2026",
+    "Medio": "El Tiempo",
+    "Titular": "OPINIÓN - El Campín, entre charcos y conciertos",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1639133925",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "8/02/2026",
+    "Medio": "desopinion.com",
+    "Titular": "El Campín, entre charcos y conciertos",
+    "URL": "https://desopinion.com/el-campin-entre-charcos-y-conciertos",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/02/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | El sicariato como posible brazo armado de la extorsión",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-sicariato-como-posible-brazo-armado-de-la-extorsion-3532645",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "16/02/2026",
+    "Medio": "El Tiempo",
+    "Titular": "El sicariato como posible brazo armado de la extorsión",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1643698222",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "22/02/2026",
+    "Medio": "El Tiempo",
+    "Titular": "Hogar de cuatro personas en Bogotáá necesitaría unos $ 7,6 millones mensuales",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1647980470",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "21/02/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "¿Cuánto se necesita para vivir en Bogotáá en 2026? Estos serían los cálculos para un hogar de cuatro personas y para una sola persona",
+    "URL": "https://www.eltiempo.com/bogota/cuanto-se-necesita-para-vivir-en-bogota-en-2026-estos-serian-los-calculos-para-un-hogar-de-cuatro-personas-y-para-una-sola-persona-3534263",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "22/02/2026",
+    "Medio": "desopinion.com",
+    "Titular": "¿Cuánto se necesita para vivir en Bogotáá en 2026? Estos serán los cálculos para un hogar de cuatro personas y para una sola persona",
+    "URL": "https://desopinion.com/cuanto-se-necesita-para-vivir-en-bogota-en-2026-estos-seran-los-calculos-para-un-hogar-de-cuatro-personas-y-para-una-sola-persona",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "23/02/2026",
+    "Medio": "pulzo.com",
+    "Titular": "Cuánto dinero necesita una persona para vivir en Bogotáá en 2026: un salario mínimo no le alcanza",
+    "URL": "https://www.pulzo.com/economia/cuanto-necesita-para-vivir-bogota-2026-salario-minimo-ahora-no-alcanza-PP5061894",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "15/02/2026",
+    "Medio": "desopinion.com",
+    "Titular": "El sicariato como posible brazo armado de la extorsión",
+    "URL": "https://desopinion.com/el-sicariato-como-posible-brazo-armado-de-la-extorsion",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "1/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | La democracia frente a la amenaza de la desinformación",
+    "URL": "https://www.eltiempo.com/bogota/opinion-la-democracia-frente-a-la-amenaza-de-la-desinformacion-3536431",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "2/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Paseos millonarios: ¿qué tanto ayudan las medidas de la Alcaldía de Bogotáá?",
+    "URL": "https://www.eltiempo.com/bogota/paseos-millonarios-que-tanto-ayudan-las-medidas-de-la-alcaldia-de-bogota-3536746",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/03/2026",
+    "Medio": "semana.com",
+    "Titular": "Pico y placa solidario en Bogotáá: el mecanismo de recaudo que no descongestiona a la ciudad",
+    "URL": "https://www.semana.com/nacion/bogota/articulo/pico-y-placa-solidario-en-bogota-el-mecanismo-de-recaudo-que-no-descongestiona-a-la-ciudad/202606/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "7/03/2026",
+    "Medio": "Revista Semana",
+    "Titular": "Pico y placa no tan solidario",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1657202065",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "3/03/2026",
+    "Medio": "El Tiempo",
+    "Titular": "Paseos millonarios: ¿qué tanto ayudan las medidas de la Alcaldía?",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1653932992",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "9/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "La disyuntiva de Juan Daniel Oviedo tras erigirse como fenómeno de las consultas: ¿fórmula de Paloma Valencia o candidato a la Alcaldía de Bogotáá?",
+    "URL": "https://www.eltiempo.com/politica/elecciones-colombia-2026/la-disyuntiva-de-juan-daniel-oviedo-tras-erigirse-como-fenomeno-de-las-consultas-formula-de-paloma-valencia-o-candidato-a-la-alcaldia-de-bogota-3538654",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "3/03/2026",
+    "Medio": "Infobae",
+    "Titular": "Aliste el bolsillo porque este año le saldrá más caro vivir en Bogotáá: este es el cálculo",
+    "URL": "https://www.infobae.com/colombia/2026/03/03/aliste-el-bolsillo-porque-este-ano-le-saldra-mas-caro-vivir-en-bogota-este-es-el-calculo/",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "29/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | ¿Por qué los delincuentes perdieron el miedo a la autoridad?",
+    "URL": "https://www.eltiempo.com/bogota/opinion-por-que-los-delincuentes-perdieron-el-miedo-a-la-autoridad-3543907",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/03/2026",
+    "Medio": "Otros TV",
+    "Titular": "(Canal El Tiempo) Análisis tras resultados de las elecciones legislativías",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1658325437",
+    "Tipo": "TV"
+  },
+  {
+    "Fecha": "9/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Los grandes ganadores y perdedores que dejan las elecciones a Cámara de Representantes por Bogotáá",
+    "URL": "https://www.eltiempo.com/bogota/los-grandes-ganadores-y-perdedores-que-dejan-las-elecciones-a-camara-de-representantes-por-bogota-3538822",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Diez lecciones de los resultados electorales en Bogotáá",
+    "URL": "https://www.eltiempo.com/bogota/diez-lecciones-de-los-resultados-electorales-en-bogota-3538865",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "9/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "La disyuntiva de Juan Daniel Oviedo tras erigirse como fenómeno de las consultas: ¿fórmula de Paloma Valencia o candidato a la Alcaldía de Bogotáá?",
+    "URL": "https://www.eltiempo.com/politica/elecciones-colombia-2026/la-disyuntiva-de-juan-daniel-oviedo-tras-erigirse-como-fenomeno-de-las-consultas-formula-de-paloma-valencia-o-candidato-a-la-alcaldia-de-bogota-3538654",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "12/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Asíí votó localidad por localidad en Bogotáá por los partidos y candidatos a la Cámara en las elecciones del domingo",
+    "URL": "https://www.eltiempo.com/bogota/asi-voto-localidad-por-localidad-en-bogota-por-los-partidos-y-candidatos-a-la-camara-en-las-elecciones-del-domingo-3539698",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "13/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Alcalde Carlos Fernando Galán se queja de que la Policía realiza capturas, pero delincuentes quedan en libertad por…",
+    "URL": "https://www.eltiempo.com/bogota/alcalde-carlos-fernando-galan-se-queja-de-que-la-policia-realiza-capturas-pero-delincuentes-quedan-en-libertad-por-decisiones-de-jueces-y-fiscales-3540077",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "14/03/2026",
+    "Medio": "El Tiempo",
+    "Titular": "Galán invitó a congresistas a tener una agenda común en la lucha contra el delito",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1662106913",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "15/03/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Seguridad en Bogotáá: ¿faltan leyes o falta gestión?",
+    "URL": "https://www.eltiempo.com/bogota/seguridad-en-bogota-faltan-leyes-o-falta-gestion-3540354",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "17/03/2026",
+    "Medio": "Canal Caracol",
+    "Titular": "Experto y académicos explican los retos y los posibles caminos para minimizar la inseguridad en Bogotáá ( Omar Oróstegui Laboratorio de Gobierno Universidad de la Sabana - Jorge Mantilla Investigador Crimen Organizado  - Eliecer Camacho Excomandante Policía de Bogotáá - Andrés Macías Investigador universidad Externado de Colombia )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1664206354",
+    "Tipo": "TV"
+  },
+  {
+    "Fecha": "6/04/2026",
+    "Medio": "El Tiempo",
+    "Titular": "OPINION Domicilios sin control: la otra cara del ‘éxito’ de las plataformas",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1675359917",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "5/04/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión | Domicilios sin control: la otra cara del `éxito' de las plataformas",
+    "URL": "https://www.eltiempo.com/bogota/opinion-domicilios-sin-control-la-otra-cara-del-exito-de-las-plataformas-3545441",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "12/04/2026",
+    "Medio": "elnuevosiglo.com.co",
+    "Titular": "Proceso de paz urbana es un peligro para la democracia : Medellín",
+    "URL": "https://www.elnuevosiglo.com.co/nacion/el-proceso-de-paz-urbana-es-un-peligro-para-la-democracia-y-para-el-proceso-electoral",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "26/04/2026",
+    "Medio": "eltiempo.com",
+    "Titular": "Opinión| El nuevo pulso por el espacio público en Bogotáá",
+    "URL": "https://www.eltiempo.com/bogota/opinion-el-nuevo-pulso-por-el-espacio-publico-en-bogota-3551027",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "11/04/2026",
+    "Medio": "El Nuevo Siglo",
+    "Titular": "El proceso de “paz urbana” es un “peligro para la democracia y para el proceso electoral”: Medellín",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1678881365",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "20/04/2026",
+    "Medio": "El Tiempo",
+    "Titular": "COLUMNA DE OPINION Balaceras, atracos y sicariato",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1684026805",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "17/04/2026",
+    "Medio": "larepublica.co",
+    "Titular": "Ciudades dentro del Valle de Aburrá tuvieron el aire más contaminado durante 2025",
+    "URL": "https://www.larepublica.co/responsabilidad-social/ciudades-dentro-del-valle-de-aburra-tuvieron-el-aire-mas-contaminado-durante-2025-4373240",
+    "Tipo": "Internet"
+  },
+  {
+    "Fecha": "17/04/2026",
+    "Medio": "La República",
+    "Titular": "Ciudades del Valle de Aburrá tuvieron el aire más contaminado durante 2025",
+    "URL": "https://p.eprensa.com/view_pdf.php?sid=23129&cid=1682506404",
+    "Tipo": "Prensa"
+  },
+  {
+    "Fecha": "15/04/2026",
+    "Medio": "Canal Caracol",
+    "Titular": "Ent. Carlos Fernando Galán Alcaldía de Bogotáá habla del informe del DANE en donde se dice que la pobreza multidimensional en Bogotáá cayó en un 60% en el 2025 y explica como se hizo ( Felipe Mariño Bogotáá Cómo Vamos - Ómar Oróstegui Laboratorio de Gobierno Universidad de la Sabana  )  ( Mención Capital Salud - Secretaría de Educación de Bogotáá - Secretaría de Desarrollo Económico de Bogotáá )",
+    "URL": "https://a.eprensa.com/view_pdf.php?sid=23130&cid=1681386996",
+    "Tipo": "TV"
+  }
+];
+
 // Estado de los filtros del portafolio
 let activeFilters = {
   segment: 'Todos',
@@ -1428,6 +2678,7 @@ function parseCSV(text) {
 
 // --- Parsear fecha DD/MM/YYYY a objeto Date ---
 function parseDate(str) {
+  if (!str) return new Date(0);
   const parts = str.trim().split('/');
   if (parts.length !== 3) return new Date(0);
   const [d, m, y] = parts;
@@ -1485,21 +2736,32 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSearchInput();
   lucide.createIcons();
 
-  // Cargar medios dinamicamente desde CSV
+  await loadMedios();
+});
+
+// --- Carga dinámica de Medios con fallback garantizado ---
+async function loadMedios() {
+  let loadedMedios = [];
+
   try {
     const response = await fetch('medios/medios.csv');
-    const buffer = await response.arrayBuffer();
-    const text = new TextDecoder('windows-1252').decode(buffer);
-    const medios = parseCSV(text);
-
-    medios.sort((a, b) => parseDate(b.Fecha) - parseDate(a.Fecha));
-    allMedios = medios;
-    initMediosFilters(medios);
-    applyMediosFilters();
+    if (response.ok) {
+      const text = await response.text();
+      loadedMedios = parseCSV(text);
+    }
   } catch (e) {
-    console.warn('No se pudo cargar medios.csv:', e);
+    console.info('Carga de medios.csv vía fetch no disponible (modo offline o file://), usando base integrada.');
   }
-});
+
+  if (!loadedMedios || loadedMedios.length === 0) {
+    loadedMedios = [...MEDIOS_FALLBACK];
+  }
+
+  loadedMedios.sort((a, b) => parseDate(b.Fecha) - parseDate(a.Fecha));
+  allMedios = loadedMedios;
+  initMediosFilters(allMedios);
+  applyMediosFilters();
+}
 
 // --- Buscador de productos en vivo ---
 function initSearchInput() {
@@ -1516,6 +2778,8 @@ function initSearchInput() {
 function initMediosFilters(medios) {
   const medioSelect = document.getElementById('medios-select-medio');
   if (!medioSelect) return;
+  medioSelect.innerHTML = '<option value="">Todos los medios</option>';
+
   const mediosUnicos = [...new Set(medios.map(m => (m.Medio || '').trim()))]
     .filter(Boolean).sort((a, b) => a.localeCompare(b, 'es'));
   mediosUnicos.forEach(m => {
@@ -1532,6 +2796,7 @@ function initMediosFilters(medios) {
   const tipos = ['Todos', ...new Set(medios.map(m => (m.Tipo || '').trim()).filter(Boolean))];
   const tipoContainer = document.getElementById('medios-filter-tipo');
   if (tipoContainer) {
+    tipoContainer.innerHTML = '<span class="medios-filter-label">Tipo:</span>';
     tipos.forEach(tipo => {
       const pill = document.createElement('span');
       pill.className = 'filter-pill' + (tipo === 'Todos' ? ' active' : '');
@@ -1551,6 +2816,7 @@ function initMediosFilters(medios) {
   )].sort((a, b) => b - a)];
   const anioContainer = document.getElementById('medios-filter-anio');
   if (anioContainer) {
+    anioContainer.innerHTML = '<span class="medios-filter-label">Año:</span>';
     anios.forEach(anio => {
       const pill = document.createElement('span');
       pill.className = 'filter-pill' + (anio === 'Todos' ? ' active' : '');
@@ -1581,9 +2847,9 @@ function applyMediosFilters() {
     const titular = (m.Titular || '').toLowerCase();
     const anio = (m.Fecha || '').trim().split('/')[2] || '';
 
-    const matchTipo = mediosFilters.tipo === 'Todos' || tipo === mediosFilters.tipo;
+    const matchTipo = mediosFilters.tipo === 'Todos' || tipo.toLowerCase() === mediosFilters.tipo.toLowerCase();
     const matchAnio = mediosFilters.anio === 'Todos' || anio === mediosFilters.anio;
-    const matchMedio = !mediosFilters.medio || medio === mediosFilters.medio;
+    const matchMedio = !mediosFilters.medio || medio.toLowerCase() === mediosFilters.medio.toLowerCase();
     const matchTexto = !mediosFilters.texto || titular.includes(mediosFilters.texto);
 
     return matchTipo && matchAnio && matchMedio && matchTexto;
@@ -1827,6 +3093,56 @@ function resetAllFilters() {
   });
 
   applyFilters();
+}
+
+// --- 2.5 Renderizado de Medios ---
+function renderMedios(mediosToRender) {
+  const grid = document.getElementById('medios-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  mediosToRender.forEach(media => {
+    const fecha = (media.Fecha || media.fecha || '').trim();
+    const medio = (media.Medio || media.medio || '').trim();
+    const titular = (media.Titular || media.titular || '').trim();
+    const url = (media.URL || media.url || '').trim();
+    const tipo = (media.Tipo || media.tipo || '').trim();
+
+    const card = document.createElement('div');
+    card.className = 'media-card';
+    const visualContent = getMediaVisual(tipo, url);
+
+    const btnHtml = url
+      ? `<button class="btn btn-outline" onclick="window.open('${url}', '_blank')"><i data-lucide="external-link"></i> Leer artículo</button>`
+      : `<button class="btn btn-outline" disabled>Sin enlace</button>`;
+
+    const tipoBadgeClass = {
+      'internet': 'tipo-internet',
+      'prensa': 'tipo-prensa',
+      'tv': 'tipo-tv',
+      'radio': 'tipo-radio'
+    }[tipo.toLowerCase()] || 'tipo-prensa';
+
+    card.innerHTML = `
+      <div class="media-visual">
+        ${visualContent}
+      </div>
+      <div class="media-content">
+        <div class="media-meta">
+          <span class="media-tipo-badge ${tipoBadgeClass}">${tipo}</span>
+          <span class="media-date"><i data-lucide="calendar" style="width:12px;height:12px;display:inline-block;margin-right:4px;"></i>${fecha}</span>
+        </div>
+        <div class="media-source">${medio}</div>
+        <h3 class="media-title">${titular}</h3>
+        <div class="card-actions">
+          ${btnHtml}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  lucide.createIcons();
 }
 
 // --- 3. Filtros del Portafolio ---
