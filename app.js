@@ -1,12 +1,12 @@
 // app.js - GovLab Portafolio
 const PRODUCTS = [
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea PitchLab",
+    "linea": "Línea PitchLab",
     "tags": [
       "PitchLab",
-      "Discurso PolÃ­tico",
+      "Discurso Político",
       "IA Generativa",
       "Claude",
       "Listo para la venta"
@@ -14,8 +14,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "PitchLab360",
     "slogan": "Analiza el discurso, mejora el mensaje",
-    "description": "AnÃ¡lisis de discurso polÃ­tico con Claude (Anthropic). Perfil comunicativo, anÃ¡lisis emocional, stakeholders, encuadres narrativos y potencial digital. Probado con candidatos presidenciales.",
-    "status": "En lÃ­nea",
+    "description": "Análisis de discurso político con Claude (Anthropic). Perfil comunicativo, análisis emocional, stakeholders, encuadres narrativos y potencial digital. Probado con candidatos presidenciales.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://pitchlab360-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PitchLab360",
@@ -24,9 +24,9 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea PitchLab",
+    "linea": "Línea PitchLab",
     "tags": [
       "PitchLab",
       "Fact-checking",
@@ -36,9 +36,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Polycheck",
-    "slogan": "Verifica en tiempo real, no despuÃ©s",
-    "description": "ExtensiÃ³n de Chrome para fact-checking en tiempo real sobre videos de YouTube y directos. IntegraciÃ³n GPT-4o + Gemini + Google Search para anÃ¡lisis forense del discurso.",
-    "status": "En lÃ­nea",
+    "slogan": "Verifica en tiempo real, no después",
+    "description": "Extensión de Chrome para fact-checking en tiempo real sobre videos de YouTube y directos. Integración GPT-4o + Gemini + Google Search para análisis forense del discurso.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Polycheck",
@@ -49,19 +49,19 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "LÃ­nea PitchLab",
+    "linea": "Línea PitchLab",
     "tags": [
       "PitchLab",
-      "Pitch MÃ©dico",
+      "Pitch Médico",
       "INVIMA",
       "Entrenamiento",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "PitchLab Med",
-    "slogan": "Practica tu pitch mÃ©dico con estÃ¡ndares INVIMA",
-    "description": "Plataforma para la prÃ¡ctica y evaluaciÃ³n de pitch mÃ©dicos con medidas de rigurosidad INVIMA. Entrenamiento conversacional para profesionales e industria farmacÃ©utica.",
-    "status": "En lÃ­nea",
+    "slogan": "Practica tu pitch médico con estándares INVIMA",
+    "description": "Plataforma para la práctica y evaluación de pitch médicos con medidas de rigurosidad INVIMA. Entrenamiento conversacional para profesionales e industria farmacéutica.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://pitchlab-med.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PitchLab360-comercial",
@@ -70,21 +70,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea PitchLab",
+    "linea": "Línea PitchLab",
     "tags": [
       "PitchLab",
       "Avatar en Vivo",
       "Voz en Tiempo Real",
-      "NegociaciÃ³n",
+      "Negociación",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "PitchLab Entrenamiento",
     "slogan": "Avatar conversacional para entrenamiento",
-    "description": "Herramienta de la LÃ­nea PitchLab para el entrenamiento de conversaciones en voz en vivo, adaptado para negociaciones polÃ­ticas, comerciales o acadÃ©micas.",
-    "status": "En lÃ­nea",
+    "description": "Herramienta de la Línea PitchLab para el entrenamiento de conversaciones en voz en vivo, adaptado para negociaciones políticas, comerciales o académicas.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://avatarentrenamiento.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Avatar_entrenamiento",
@@ -93,12 +93,12 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea GovTest & OpiniÃ³n",
+    "linea": "Línea GovTest & Opinión",
     "tags": [
       "GovTest",
-      "Afinidad PolÃ­tica",
+      "Afinidad Política",
       "Elecciones 2026",
       "Viral",
       "Listo para la venta"
@@ -106,8 +106,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "GovTest",
     "slogan": "Descubre tu candidato con datos",
-    "description": "Test de afinidad polÃ­tica por dilemas de polÃ­tica pÃºblica. 16 preguntas, 14 candidatos presidenciales 2026, 7 arquetipos de votante y tarjeta viral descargable.",
-    "status": "En lÃ­nea",
+    "description": "Test de afinidad política por dilemas de política pública. 16 preguntas, 14 candidatos presidenciales 2026, 7 arquetipos de votante y tarjeta viral descargable.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://convergencia-electoral.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/test-dilema",
@@ -116,21 +116,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea GovTest & OpiniÃ³n",
+    "linea": "Línea GovTest & Opinión",
     "tags": [
       "GovTest",
-      "9 Ejes IdeolÃ³gicos",
+      "9 Ejes Ideológicos",
       "Supabase",
       "Ranking",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Test 9 Ejes",
-    "slogan": "Tu posiciÃ³n en 9 ejes, tu candidato en un clic",
-    "description": "Test de afinidad polÃ­tica por 9 ejes ideolÃ³gicos. Algoritmo euclidiano, ranking de candidatos, perfil personalizado y persistencia de datos en Supabase.",
-    "status": "En lÃ­nea",
+    "slogan": "Tu posición en 9 ejes, tu candidato en un clic",
+    "description": "Test de afinidad política por 9 ejes ideológicos. Algoritmo euclidiano, ranking de candidatos, perfil personalizado y persistencia de datos en Supabase.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://test9ejes.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Test_9ejes",
@@ -139,9 +139,9 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "LÃ­nea GovTest & OpiniÃ³n",
+    "linea": "Línea GovTest & Opinión",
     "tags": [
       "GovTest",
       "50 Preguntas",
@@ -151,9 +151,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Test 9 Ejes Colombia",
-    "slogan": "50 preguntas, un perfil ideolÃ³gico",
-    "description": "VersiÃ³n extendida del test con 50 preguntas coyunturales sobre Colombia. Modo oscuro glassmorphism, compartir en alta resoluciÃ³n y datos anÃ³nimos en Supabase.",
-    "status": "En lÃ­nea",
+    "slogan": "50 preguntas, un perfil ideológico",
+    "description": "Versión extendida del test con 50 preguntas coyunturales sobre Colombia. Modo oscuro glassmorphism, compartir en alta resolución y datos anónimos en Supabase.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://test9col.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Test_9ejesColombia",
@@ -162,20 +162,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
     "tags": [
       "Asistentes de Voz",
       "LiveKit",
       "OpenAI Realtime",
-      "CajicÃ¡",
+      "Cajicá",
       "WebRTC"
     ],
     "readyForSale": false,
     "name": "AlcaldesaIA",
-    "slogan": "PregÃºntale al municipio, Ã©l te responde",
-    "description": "Asistente de voz en tiempo real sobre el Plan de Desarrollo de CajicÃ¡ 2024-2027. OpenAI Realtime API + LiveKit + WebRTC.",
+    "slogan": "Pregúntale al municipio, él te responde",
+    "description": "Asistente de voz en tiempo real sobre el Plan de Desarrollo de Cajicá 2024-2027. OpenAI Realtime API + LiveKit + WebRTC.",
     "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://asistente-virtual-cajica.up.railway.app/",
@@ -198,9 +198,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Gober Santander",
-    "slogan": "Un asistente pÃºblico para cada ciudadano",
-    "description": "Asistente de voz conversacional para el sector pÃºblico. Procesamiento de PQRS, visualizaciÃ³n de datos e interfaz para funcionarios con OpenAI Realtime + LiveKit.",
-    "status": "En lÃ­nea",
+    "slogan": "Un asistente público para cada ciudadano",
+    "description": "Asistente de voz conversacional para el sector público. Procesamiento de PQRS, visualización de datos e interfaz para funcionarios con OpenAI Realtime + LiveKit.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://santander-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Santander",
@@ -209,17 +209,17 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
     "tags": [
       "Asistentes de Voz",
       "GovLab",
-      "AtenciÃ³n al Ciudadano"
+      "Atención al Ciudadano"
     ],
     "readyForSale": false,
     "name": "Govi",
-    "slogan": "El GovLab te habla, tÃº lo escuchas",
+    "slogan": "El GovLab te habla, tú lo escuchas",
     "description": "Asistente basado en voz para la consulta y acercamiento al cliente del Laboratorio de Gobierno de la Universidad de La Sabana.",
     "status": "En mantenimiento",
     "demoMode": "mostrar",
@@ -245,7 +245,7 @@ const PRODUCTS = [
     "name": "ConvergenceLab",
     "slogan": "Habla con la universidad, ella te escucha",
     "description": "Asistente de voz en tiempo real para el Convergence Lab de la Unisabana (Sabius). Permite consultar aliados e investigaciones relevantes. LiveKit Agents + OpenAI Realtime API + Silero VAD.",
-    "status": "En lÃ­nea",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://convergencelab.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/ConvergenceLAb",
@@ -266,9 +266,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Alocandidato",
-    "slogan": "La campaÃ±a que llama, nunca la que cansa",
-    "description": "Sistema de llamadas de voz automatizadas a ciudadanos con preguntas interactivas sobre candidatos y propuestas con tecnologÃ­a Dapta.",
-    "status": "En lÃ­nea",
+    "slogan": "La campaña que llama, nunca la que cansa",
+    "description": "Sistema de llamadas de voz automatizadas a ciudadanos con preguntas interactivas sobre candidatos y propuestas con tecnología Dapta.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "",
     "githubUrl": "",
@@ -279,7 +279,7 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "Agroindustria & ExportaciÃ³n",
+    "linea": "Agroindustria & Exportación",
     "tags": [
       "Corpohass",
       "Aguacate Hass",
@@ -291,8 +291,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "HassApp",
     "slogan": "Del campo al mundo, con datos",
-    "description": "Plataforma integral para gestiÃ³n de producciÃ³n, cosecha, insumos, exportaciÃ³n y sondeo de opiniÃ³n del sector aguacate Hass. FastAPI + React + MySQL + AWS S3.",
-    "status": "En lÃ­nea",
+    "description": "Plataforma integral para gestión de producción, cosecha, insumos, exportación y sondeo de opinión del sector aguacate Hass. FastAPI + React + MySQL + AWS S3.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://heartfelt-success-production-8486.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/HassApp",
@@ -303,19 +303,19 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "Agroindustria & ExportaciÃ³n",
+    "linea": "Agroindustria & Exportación",
     "tags": [
       "Corpohass",
-      "DiagnÃ³stico Exportador",
-      "TermÃ³metro IA",
+      "Diagnóstico Exportador",
+      "Termómetro IA",
       "FastAPI",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "ExportaCheck",
-    "slogan": "Â¿Listo para exportar? DescÃºbrelo hoy",
-    "description": "Plataforma con termÃ³metro interactivo que evalÃºa el nivel de preparaciÃ³n exportadora de empresas agrÃ­colas y productoras. DiagnÃ³stico por dimensiones con IA. Next.js + FastAPI + Supabase.",
-    "status": "En lÃ­nea",
+    "slogan": "¿Listo para exportar? Descúbrelo hoy",
+    "description": "Plataforma con termómetro interactivo que evalúa el nivel de preparación exportadora de empresas agrícolas y productoras. Diagnóstico por dimensiones con IA. Next.js + FastAPI + Supabase.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://exporta-facil-bot-production-e49c.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/TermoExportador",
@@ -326,9 +326,9 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "NotarÃ­as & Documental",
+    "linea": "Notarías & Documental",
     "tags": [
-      "NotarÃ­as",
+      "Notarías",
       "Borradores de Escrituras",
       "Chat IA",
       "Cumplimiento",
@@ -337,8 +337,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "NotariaDoc",
     "slogan": "El borrador perfecto, sin esperas",
-    "description": "MVP para construir borradores de escrituras notariales, verificaciÃ³n de requisitos de cumplimiento y asistente conversacional con RAG legal.",
-    "status": "En lÃ­nea",
+    "description": "MVP para construir borradores de escrituras notariales, verificación de requisitos de cumplimiento y asistente conversacional con RAG legal.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://notariadoc-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/NotariaDoc",
@@ -349,19 +349,19 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "NotarÃ­as & Documental",
+    "linea": "Notarías & Documental",
     "tags": [
-      "NotarÃ­as",
+      "Notarías",
       "Panel de Control",
-      "PronÃ³stico",
+      "Pronóstico",
       "Tiempos de Espera",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "NotariaIQ",
-    "slogan": "Control total de la notarÃ­a en un panel",
-    "description": "Panel de control para notarÃ­as: seguimiento de usuarios, tiempos de espera, ingresos, egresos, anÃ¡lisis descriptivo y pronÃ³stico de afluencia con IA.",
-    "status": "En lÃ­nea",
+    "slogan": "Control total de la notaría en un panel",
+    "description": "Panel de control para notarías: seguimiento de usuarios, tiempos de espera, ingresos, egresos, análisis descriptivo y pronóstico de afluencia con IA.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://notariaiq-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/NotariaIQ",
@@ -372,19 +372,19 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "NotarÃ­as & Documental",
+    "linea": "Notarías & Documental",
     "tags": [
-      "NotarÃ­as",
+      "Notarías",
       "Constructoras",
-      "Flujo de AprobaciÃ³n",
+      "Flujo de Aprobación",
       "Cero Papel",
       "Listo para la venta"
     ],
     "readyForSale": true,
-    "name": "Radica NotarÃ­a",
+    "name": "Radica Notaría",
     "slogan": "Radica, revisa y aprueba sin papel",
-    "description": "Suite de automatizaciÃ³n documental para la NotarÃ­a Segunda de ZipaquirÃ¡. Formulario para constructoras + panel de digitadora con flujo de aprobaciÃ³n de escrituras.",
-    "status": "En lÃ­nea",
+    "description": "Suite de automatización documental para la Notaría Segunda de Zipaquirá. Formulario para constructoras + panel de digitadora con flujo de aprobación de escrituras.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://radicanotaria-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Radica_notaria",
@@ -393,21 +393,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "ProyecciÃ³n Social & Directiva",
+    "linea": "Proyección Social & Directiva",
     "tags": [
-      "GestiÃ³n Documental",
+      "Gestión Documental",
       "Alto Gobierno",
-      "SÃ­ntesis Ejecutiva",
+      "Síntesis Ejecutiva",
       "Decisiones",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Resume Expedientes",
     "slogan": "Decisiones de alto gobierno en segundos",
-    "description": "Herramienta con IA para resumir expedientes directivos complejos y apoyar la toma de decisiones estratÃ©gicas de alto gobierno.",
-    "status": "En lÃ­nea",
+    "description": "Herramienta con IA para resumir expedientes directivos complejos y apoyar la toma de decisiones estratégicas de alto gobierno.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://expedientes.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/resumidor-expedientes",
@@ -416,11 +416,11 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "ProyecciÃ³n Social & Directiva",
+    "linea": "Proyección Social & Directiva",
     "tags": [
-      "ProyecciÃ³n Social",
+      "Proyección Social",
       "CRON",
       "WhatsApp",
       "Email",
@@ -429,9 +429,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "NewsletterMaker",
-    "slogan": "Generador y envÃ­o de newsletter",
-    "description": "Plataforma para la construcciÃ³n de Newsletters y la asignaciÃ³n de procesos asÃ­ncronos CRON por correo y WhatsApp para la DirecciÃ³n de ProyecciÃ³n Social.",
-    "status": "En lÃ­nea",
+    "slogan": "Generador y envío de newsletter",
+    "description": "Plataforma para la construcción de Newsletters y la asignación de procesos asíncronos CRON por correo y WhatsApp para la Dirección de Proyección Social.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://newsletter-pse.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Newsletter---Proyecci-n-social",
@@ -440,21 +440,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "GestiÃ³n PÃºblica & Ambiental",
+    "linea": "Gestión Pública & Ambiental",
     "tags": [
       "CAR Cundinamarca",
-      "PQRS AutomÃ¡tico",
+      "PQRS Automático",
       "IA",
-      "ClasificaciÃ³n",
+      "Clasificación",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "CAResponde",
     "slogan": "De la PQRS al ciudadano en segundos",
-    "description": "Asistente en texto para la CAR Cundinamarca: recibe, categoriza, visualiza y genera respuestas automÃ¡ticas a PQRS con inteligencia artificial.",
-    "status": "En lÃ­nea",
+    "description": "Asistente en texto para la CAR Cundinamarca: recibe, categoriza, visualiza y genera respuestas automáticas a PQRS con inteligencia artificial.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://car-pqrs-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/CAR-pqrs",
@@ -463,11 +463,11 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "GestiÃ³n PÃºblica & Ambiental",
+    "linea": "Gestión Pública & Ambiental",
     "tags": [
-      "BogotÃ¡",
+      "Bogotá",
       "Plan de Desarrollo",
       "RAG FAISS",
       "GPT-4o",
@@ -476,8 +476,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "AlcaldIA",
     "slogan": "El Plan de Desarrollo en tus manos",
-    "description": "Asistente RAG sobre el Plan de Desarrollo Distrital de BogotÃ¡. BÃºsqueda semÃ¡ntica con FAISS + GPT-4o para consultas por meta, programa y presupuesto.",
-    "status": "En lÃ­nea",
+    "description": "Asistente RAG sobre el Plan de Desarrollo Distrital de Bogotá. Búsqueda semántica con FAISS + GPT-4o para consultas por meta, programa y presupuesto.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://alcadia.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/AlcaldIA",
@@ -486,19 +486,19 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "GestiÃ³n PÃºblica & Ambiental",
+    "linea": "Gestión Pública & Ambiental",
     "tags": [
-      "PolicÃ­a Ambiental",
-      "LegislaciÃ³n Ambiental",
+      "Policía Ambiental",
+      "Legislación Ambiental",
       "Jurisprudencia",
       "Carabineros"
     ],
     "readyForSale": false,
     "name": "PoliciApp-Eco",
     "slogan": "La ley ambiental en campo",
-    "description": "Asistente IA de legislaciÃ³n ambiental colombiana para la PolicÃ­a Ambiental y Carabineros. Cubre pesca, flora, fauna, minerÃ­a y recursos hÃ­dricos.",
+    "description": "Asistente IA de legislación ambiental colombiana para la Policía Ambiental y Carabineros. Cubre pesca, flora, fauna, minería y recursos hídricos.",
     "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "",
@@ -508,11 +508,11 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "GestiÃ³n PÃºblica & Ambiental",
+    "linea": "Gestión Pública & Ambiental",
     "tags": [
-      "PolicÃ­a Ambiental",
+      "Policía Ambiental",
       "Normativa Ambiental",
       "Jurisprudencia",
       "Chatbot"
@@ -520,7 +520,7 @@ const PRODUCTS = [
     "readyForSale": false,
     "name": "PoliciaAmbiental",
     "slogan": "Jurisprudencia ambiental en campo",
-    "description": "Chatbot para facilitar conocimientos de jurisprudencia y competencias operativas para la policÃ­a ambiental de Colombia.",
+    "description": "Chatbot para facilitar conocimientos de jurisprudencia y competencias operativas para la policía ambiental de Colombia.",
     "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "",
@@ -530,19 +530,19 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "GestiÃ³n PÃºblica & Ambiental",
+    "linea": "Gestión Pública & Ambiental",
     "tags": [
-      "ComparaciÃ³n Normativa",
-      "Diff SemÃ¡ntico",
+      "Comparación Normativa",
+      "Diff Semántico",
       "GPT-4",
       "Leyes"
     ],
     "readyForSale": false,
     "name": "LegisCheck",
     "slogan": "Dos versiones, un solo vistazo",
-    "description": "ComparaciÃ³n inteligente de documentos legislativos. Diff semÃ¡ntico con GPT-4, lÃ­nea de tiempo de cambios normativos y reportes PDF.",
+    "description": "Comparación inteligente de documentos legislativos. Diff semántico con GPT-4, línea de tiempo de cambios normativos y reportes PDF.",
     "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "",
@@ -552,12 +552,12 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "Seguridad & AnalÃ­tica",
+    "linea": "Seguridad & Analítica",
     "tags": [
       "Observatorio de Seguridad",
-      "PredicciÃ³n Delitos",
+      "Predicción Delitos",
       "Barranquilla",
       "Listo para la venta"
     ],
@@ -565,7 +565,7 @@ const PRODUCTS = [
     "name": "Barranquilla",
     "slogan": "Predice la criminalidad, protege la ciudad",
     "description": "App web para subir, analizar y predecir eventos de criminalidad y convivencia ciudadana para el Observatorio de Seguridad de Barranquilla.",
-    "status": "En lÃ­nea",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://barranquilla-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Barranquilla",
@@ -588,8 +588,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "Test de sostenibilidad universitaria",
     "slogan": "Mide tu sostenibilidad, mejora tu ranking",
-    "description": "Sistema de evaluaciÃ³n universitaria en dimensiones Gobernanza, Social y Ambiental (ESG). Dashboard comparativo entre instituciones. React + Node + Supabase.",
-    "status": "En lÃ­nea",
+    "description": "Sistema de evaluación universitaria en dimensiones Gobernanza, Social y Ambiental (ESG). Dashboard comparativo entre instituciones. React + Node + Supabase.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://bot-sostenibilidad-esg.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Universia",
@@ -605,15 +605,15 @@ const PRODUCTS = [
       "MetaRed",
       "Universia",
       "Agente IA",
-      "RegresiÃ³n",
+      "Regresión",
       "Data Science",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Asistente de agente para MetaRed",
-    "slogan": "Resultados de encuestas sobre sostenibilidad y agente de anÃ¡lisis",
-    "description": "Herramienta para visualizar resultados de la encuesta de sostenibilidad de MetaRed / Universia, con un agente IA capaz de correr modelos de regresiÃ³n y analÃ­tica descriptiva.",
-    "status": "En lÃ­nea",
+    "slogan": "Resultados de encuestas sobre sostenibilidad y agente de análisis",
+    "description": "Herramienta para visualizar resultados de la encuesta de sostenibilidad de MetaRed / Universia, con un agente IA capaz de correr modelos de regresión y analítica descriptiva.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://metaredesg.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Metared-by-Universia",
@@ -622,21 +622,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
     "tags": [
       "Escuela de Gobierno",
       "MPA",
       "CV Matching",
-      "RecomendaciÃ³n",
+      "Recomendación",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "MPAChat",
     "slogan": "Tu perfil profesional para el MPA, en minutos",
-    "description": "Asistente IA que analiza la hoja de vida de candidatos a la MaestrÃ­a en AdministraciÃ³n PÃºblica (MPA) de la Escuela de Gobierno, recomendando lÃ­neas y perfilando aspirantes.",
-    "status": "En lÃ­nea",
+    "description": "Asistente IA que analiza la hoja de vida de candidatos a la Maestría en Administración Pública (MPA) de la Escuela de Gobierno, recomendando líneas y perfilando aspirantes.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://mpachat-unisabana.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/MPAchat",
@@ -645,7 +645,7 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
     "tags": [
@@ -658,8 +658,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "AlumniCV",
     "slogan": "Suite Alumni - Hojas de vida",
-    "description": "Herramienta para egresados de la Universidad de La Sabana enfocada en optimizaciÃ³n, formato y gestiÃ³n de hojas de vida profesionales.",
-    "status": "En lÃ­nea",
+    "description": "Herramienta para egresados de la Universidad de La Sabana enfocada en optimización, formato y gestión de hojas de vida profesionales.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://alumnicv.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlumniCV",
@@ -668,21 +668,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
     "tags": [
       "Suite Alumni",
-      "AcompaÃ±amiento",
+      "Acompañamiento",
       "Posgrados",
       "Chatbot",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "AlumniChat",
-    "slogan": "Chatbot de acompaÃ±amiento para egresados",
-    "description": "Chatbot de acompaÃ±amiento y orientaciÃ³n acadÃ©mica/profesional para la comunidad de egresados de la Universidad de La Sabana.",
-    "status": "En lÃ­nea",
+    "slogan": "Chatbot de acompañamiento para egresados",
+    "description": "Chatbot de acompañamiento y orientación académica/profesional para la comunidad de egresados de la Universidad de La Sabana.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://alumnichat.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlumniChat",
@@ -691,20 +691,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "InnovaciÃ³n & Procesos",
+    "linea": "Innovación & Procesos",
     "tags": [
-      "InnovaciÃ³n Unisabana",
+      "Innovación Unisabana",
       "Business Model Canvas",
       "Propiedad Intelectual",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Germina",
-    "slogan": "Asistente de innovaciÃ³n con IA",
-    "description": "Plataforma para el seguimiento de procesos de innovaciÃ³n, emprendimiento y autorÃ­a intelectual de la Universidad de La Sabana. Genera documentos y apoya en Business Model Canvas.",
-    "status": "En lÃ­nea",
+    "slogan": "Asistente de innovación con IA",
+    "description": "Plataforma para el seguimiento de procesos de innovación, emprendimiento y autoría intelectual de la Universidad de La Sabana. Genera documentos y apoya en Business Model Canvas.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://germina.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/germina",
@@ -720,15 +720,15 @@ const PRODUCTS = [
       "Geoespacial",
       "Vivienda",
       "Leaflet",
-      "FincaRaÃ­z",
+      "FincaRaíz",
       "Estratos",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Geovivienda",
-    "slogan": "Ubica, analiza y decide dÃ³nde vivir",
-    "description": "Plataforma inmobiliaria con analÃ­tica geoespacial: scraping de mercado, distancias a Transmilenio/SITP/ciclorutas, estrato promedio a 200m y mapas interactivos con Leaflet.",
-    "status": "En lÃ­nea",
+    "slogan": "Ubica, analiza y decide dónde vivir",
+    "description": "Plataforma inmobiliaria con analítica geoespacial: scraping de mercado, distancias a Transmilenio/SITP/ciclorutas, estrato promedio a 200m y mapas interactivos con Leaflet.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://geovivienda.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Geovivienda-main",
@@ -739,20 +739,20 @@ const PRODUCTS = [
   {
     "segment": "Sector Privado",
     "tipo": "Software",
-    "linea": "AnalÃ­tica con IA",
+    "linea": "Analítica con IA",
     "tags": [
       "LangChain",
       "Plotly",
       "Whisper",
       "TTS",
-      "Auto-GrÃ¡ficos",
+      "Auto-Gráficos",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Data Copilot",
-    "slogan": "PregÃºntale a tus datos con tu propia voz",
-    "description": "Asistente de anÃ¡lisis de datos con LangChain + GPT-4 + Whisper. Carga CSV/Excel, genera grÃ¡ficos interactivos con Plotly y responde por voz y texto.",
-    "status": "En lÃ­nea",
+    "slogan": "Pregúntale a tus datos con tu propia voz",
+    "description": "Asistente de análisis de datos con LangChain + GPT-4 + Whisper. Carga CSV/Excel, genera gráficos interactivos con Plotly y responde por voz y texto.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://datacopilot.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/Data_copilot",
@@ -761,21 +761,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "INVAMER",
-      "PercepciÃ³n DemocrÃ¡tica",
+      "Percepción Democrática",
       "Tiempo Real",
-      "Filtros DemogrÃ¡ficos",
+      "Filtros Demográficos",
       "Listo para la venta"
     ],
     "readyForSale": true,
     "name": "Cuidar la Democracia",
     "slogan": "Visualiza lo que piensa el ciudadano",
-    "description": "Dashboard interactivo con datos de encuesta sobre percepciones democrÃ¡ticas en Colombia (INVAMER/GovLab). Filtros sociodemogrÃ¡ficos, mapas y grÃ¡ficos en tiempo real.",
-    "status": "En lÃ­nea",
+    "description": "Dashboard interactivo con datos de encuesta sobre percepciones democráticas en Colombia (INVAMER/GovLab). Filtros sociodemográficos, mapas y gráficos en tiempo real.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://cuidar-la-democracia-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Cuidar-la-Democracia",
@@ -784,9 +784,9 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "FONDECUN",
       "Cundinamarca",
@@ -797,9 +797,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Data Promce",
-    "slogan": "Sigue cada instituciÃ³n, mide cada etapa",
-    "description": "Plataforma de seguimiento del programa FONDECUN en IEDs de Cundinamarca. Mapa de calor, Sankey, anÃ¡lisis cualitativo con IA y exportaciÃ³n a PDF/Excel.",
-    "status": "En lÃ­nea",
+    "slogan": "Sigue cada institución, mide cada etapa",
+    "description": "Plataforma de seguimiento del programa FONDECUN en IEDs de Cundinamarca. Mapa de calor, Sankey, análisis cualitativo con IA y exportación a PDF/Excel.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://fondecun-production.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/FONDECUN",
@@ -808,11 +808,11 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Software",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
-      "Sabana Centro CÃ³mo Vamos",
+      "Sabana Centro Cómo Vamos",
       "Matching Planes",
       "Scoring IA",
       "Desarrollo Regional",
@@ -821,8 +821,8 @@ const PRODUCTS = [
     "readyForSale": true,
     "name": "Sabana Centro Sostenible",
     "slogan": "Conecta proyectos con planes de desarrollo",
-    "description": "Matching entre proyectos estratÃ©gicos de Sabana Centro y planes de desarrollo municipales. Scoring semÃ¡ntico con IA de visiÃ³n regional e impacto.",
-    "status": "En lÃ­nea",
+    "description": "Matching entre proyectos estratégicos de Sabana Centro y planes de desarrollo municipales. Scoring semántico con IA de visión regional e impacto.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://sabanacentrosostenible.up.railway.app/",
     "githubUrl": "https://github.com/GovLabSabana/SCS_V2",
@@ -831,20 +831,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Metas Institucionales",
-      "App MÃ³vil",
+      "App Móvil",
       "Dashboard"
     ],
     "readyForSale": true,
     "name": "SIAG",
-    "slogan": "Sigue en tiempo real a tu organizaciÃ³n",
-    "description": "Suite de seguimiento de metas institucionales en tiempo real con integraciÃ³n en aplicaciÃ³n web, Android e iOS.",
-    "status": "En lÃ­nea",
+    "slogan": "Sigue en tiempo real a tu organización",
+    "description": "Suite de seguimiento de metas institucionales en tiempo real con integración en aplicación web, Android e iOS.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Cardesk-Gestin/Dashboard1",
     "githubUrl": "",
@@ -853,20 +853,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Seguridad Ciudadana",
-      "PolicÃ­a Nacional",
+      "Policía Nacional",
       "Datos Abiertos"
     ],
     "readyForSale": true,
     "name": "Violencia Intrafamiliar en Colombia",
     "slogan": "Monitoreo y tendencias a nivel nacional",
-    "description": "Dashboard interactivo con anÃ¡lisis territorial y temporal de denuncias de violencia intrafamiliar en Colombia.",
-    "status": "En lÃ­nea",
+    "description": "Dashboard interactivo con análisis territorial y temporal de denuncias de violencia intrafamiliar en Colombia.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Datos-Polica/Violenciaintrafamiliar",
     "githubUrl": "",
@@ -875,20 +875,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
-      "Salud PÃºblica",
+      "Salud Pública",
       "Capacidad Hospitalaria",
       "Indicadores"
     ],
     "readyForSale": true,
     "name": "Recursos hospitalarios por cada 100.000 habitantes",
     "slogan": "Capacidad del sistema de salud en Colombia",
-    "description": "VisualizaciÃ³n comparativa de camas, mÃ©dicos y recursos de atenciÃ³n hospitalaria en los municipios y departamentos del paÃ­s.",
-    "status": "En lÃ­nea",
+    "description": "Visualización comparativa de camas, médicos y recursos de atención hospitalaria en los municipios y departamentos del país.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Recursoshospitalariosporcada100_00habitantes-2022/Dashboard1",
     "githubUrl": "",
@@ -897,20 +897,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "ADRES",
       "Afiliaciones Salud",
-      "DemografÃ­a"
+      "Demografía"
     ],
     "readyForSale": true,
-    "name": "Registros de la Base Ãšnica de afiliados - Adres - Mayo 2025",
-    "slogan": "RadiografÃ­a del aseguramiento en salud",
-    "description": "Tablero analÃ­tico de la Base de Datos Ãšnica de Afiliados (BDUA) con perfiles sociodemogrÃ¡ficos y rÃ©gimen de aseguramiento.",
-    "status": "En lÃ­nea",
+    "name": "Registros de la Base Única de afiliados - Adres - Mayo 2025",
+    "slogan": "Radiografía del aseguramiento en salud",
+    "description": "Tablero analítico de la Base de Datos Única de Afiliados (BDUA) con perfiles sociodemográficos y régimen de aseguramiento.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/RegistrosdelaBasedeDatosnicadeAfiliados-ADRES-Mayo2025/Perfilesdelosafiliados",
     "githubUrl": "",
@@ -919,20 +919,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
-      "DemografÃ­a",
+      "Demografía",
       "Envejecimiento",
-      "PolÃ­ticas Poblacionales"
+      "Políticas Poblacionales"
     ],
     "readyForSale": true,
-    "name": "Envejecimiento poblacional en Colombia por Sexo y Ãrea",
-    "slogan": "TransiciÃ³n demogrÃ¡fica y territorio",
-    "description": "Historia interactiva sobre las curvas de envejecimiento y pirÃ¡mides poblacionales urbanas y rurales en Colombia.",
-    "status": "En lÃ­nea",
+    "name": "Envejecimiento poblacional en Colombia por Sexo y Área",
+    "slogan": "Transición demográfica y territorio",
+    "description": "Historia interactiva sobre las curvas de envejecimiento y pirámides poblacionales urbanas y rurales en Colombia.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/EnvejecimientopoblacionalenColombiaporSexoyArea/Historia1",
     "githubUrl": "",
@@ -941,20 +941,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Seguridad",
-      "ExtorsiÃ³n",
+      "Extorsión",
       "Series Temporales"
     ],
     "readyForSale": true,
-    "name": "Panorama de la ExtorsiÃ³n en Colombia (2010-2024)",
-    "slogan": "EvoluciÃ³n de un delito de alto impacto",
-    "description": "AnÃ¡lisis longitudinal de denuncias, modalidades y focos territoriales del delito de extorsiÃ³n a lo largo de 14 aÃ±os.",
-    "status": "En lÃ­nea",
+    "name": "Panorama de la Extorsión en Colombia (2010-2024)",
+    "slogan": "Evolución de un delito de alto impacto",
+    "description": "Análisis longitudinal de denuncias, modalidades y focos territoriales del delito de extorsión a lo largo de 14 años.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/PanoramadelaextorsinenColombia2010-2024/Dashboard1",
     "githubUrl": "",
@@ -963,20 +963,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Justicia",
-      "ProtecciÃ³n",
+      "Protección",
       "Datos Policiales"
     ],
     "readyForSale": true,
     "name": "Delitos Sexuales en Colombia",
-    "slogan": "Evidencia para la protecciÃ³n ciudadana",
-    "description": "Mapeo y caracterizaciÃ³n de reportes de delitos sexuales para el diseÃ±o de polÃ­ticas de prevenciÃ³n y justicia focalizada.",
-    "status": "En lÃ­nea",
+    "slogan": "Evidencia para la protección ciudadana",
+    "description": "Mapeo y caracterización de reportes de delitos sexuales para el diseño de políticas de prevención y justicia focalizada.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/DelitossexualesenColombia_17300861605130/Dashboard1",
     "githubUrl": "",
@@ -985,20 +985,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
-      "DemografÃ­a",
+      "Demografía",
       "Cuidado",
       "Adulto Mayor"
     ],
     "readyForSale": true,
     "name": "El Panorama del envejecimiento poblacional en Colombia",
     "slogan": "Retos de la longevidad y servicios sociales",
-    "description": "Dashboard integral con indicadores de dependencia, Ã­ndice de envejecimiento y distribuciÃ³n departamental.",
-    "status": "En lÃ­nea",
+    "description": "Dashboard integral con indicadores de dependencia, índice de envejecimiento y distribución departamental.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/ElpanoramadelenvejecimientopoblacionalenColombia/Dashboard1",
     "githubUrl": "",
@@ -1007,20 +1007,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Salud Mental",
-      "EpidemiologÃ­a",
-      "PrevenciÃ³n"
+      "Epidemiología",
+      "Prevención"
     ],
     "readyForSale": true,
     "name": "Suicidios en Colombia 2023-2024",
-    "slogan": "Datos para la salud mental pÃºblica",
+    "slogan": "Datos para la salud mental pública",
     "description": "Monitoreo descriptivo y espacial de eventos de salud mental y suicidio reportados en el territorio nacional.",
-    "status": "En lÃ­nea",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Suicidios-2023-2024/Dashboard12",
     "githubUrl": "",
@@ -1029,21 +1029,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "NUSE 123",
-      "BogotÃ¡",
+      "Bogotá",
       "UPZ",
       "Emergencias"
     ],
     "readyForSale": true,
-    "name": "Llamadas totales al NUSE/123 por UPZ en BogotÃ¡",
+    "name": "Llamadas totales al NUSE/123 por UPZ en Bogotá",
     "slogan": "Llamadas de emergencia a escala barrial",
-    "description": "DistribuciÃ³n geogrÃ¡fica por Unidades de Planeamiento Zonal (UPZ) de llamadas atendidas por la lÃ­nea Ãºnica de emergencias de BogotÃ¡.",
-    "status": "En lÃ­nea",
+    "description": "Distribución geográfica por Unidades de Planeamiento Zonal (UPZ) de llamadas atendidas por la línea única de emergencias de Bogotá.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/LlamadastotalesalNUSEporUPZ/Vistadistrital",
     "githubUrl": "",
@@ -1052,9 +1052,9 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Agro",
@@ -1064,9 +1064,9 @@ const PRODUCTS = [
     ],
     "readyForSale": true,
     "name": "Precios y productividad del arroz - Forecasting",
-    "slogan": "PronÃ³stico de precios y cosechas agrÃ­colas",
-    "description": "Modelo predictivo de series temporales de precios mayoristas y rendimiento por hectÃ¡rea en el sector arrocero.",
-    "status": "En lÃ­nea",
+    "slogan": "Pronóstico de precios y cosechas agrícolas",
+    "description": "Modelo predictivo de series temporales de precios mayoristas y rendimiento por hectárea en el sector arrocero.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Dashboardarroz/Dashboard1",
     "githubUrl": "",
@@ -1075,21 +1075,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Movilidad",
       "Siniestralidad Vial",
       "Forecasting",
-      "BogotÃ¡"
+      "Bogotá"
     ],
     "readyForSale": true,
-    "name": "Siniestralidad vial en BogotÃ¡ - Forecasting",
+    "name": "Siniestralidad vial en Bogotá - Forecasting",
     "slogan": "Modelos predictivos de accidentalidad vial",
-    "description": "PredicciÃ³n de eventos de siniestros viales en corredores viales clave de BogotÃ¡ mediante tÃ©cnicas de forecasting.",
-    "status": "En lÃ­nea",
+    "description": "Predicción de eventos de siniestros viales en corredores viales clave de Bogotá mediante técnicas de forecasting.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-forecasting/SiniestralidadvialenBogotD_C_-Modelopredictivo-2019-2023",
     "githubUrl": "",
@@ -1098,20 +1098,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Movilidad",
       "Accidentes",
-      "BogotÃ¡"
+      "Bogotá"
     ],
     "readyForSale": true,
-    "name": "Siniestralidad vial en BogotÃ¡ - Siniestros",
-    "slogan": "Registro y causas de accidentes de trÃ¡nsito",
-    "description": "VisualizaciÃ³n histÃ³rica 2019-2023 de siniestros viales clasificados por tipo de vehÃ­culo, horario y localidad.",
-    "status": "En lÃ­nea",
+    "name": "Siniestralidad vial en Bogotá - Siniestros",
+    "slogan": "Registro y causas de accidentes de tránsito",
+    "description": "Visualización histórica 2019-2023 de siniestros viales clasificados por tipo de vehículo, horario y localidad.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Siniestros/SiniestralidadvialenBogotD_C_-2019-2023",
     "githubUrl": "",
@@ -1120,20 +1120,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Movilidad",
-      "VÃ­ctimas",
+      "Víctimas",
       "Seguridad Vial"
     ],
     "readyForSale": true,
-    "name": "Siniestralidad vial en BogotÃ¡ - VÃ­ctimas",
+    "name": "Siniestralidad vial en Bogotá - Víctimas",
     "slogan": "Perfil de actores viales y lesionados",
     "description": "Tablero enfocado en peatones, ciclistas y motociclistas afectados en eventos viales en la capital.",
-    "status": "En lÃ­nea",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Vctimas/VctimasdelasiniestralidadvialenBogotD_C_-2019-2023",
     "githubUrl": "",
@@ -1142,20 +1142,20 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
-      "GeoanalÃ­tica",
+      "Geoanalítica",
       "Mapas de Calor",
-      "Puntos CrÃ­ticos"
+      "Puntos Críticos"
     ],
     "readyForSale": true,
-    "name": "Siniestralidad vial en BogotÃ¡ - AnÃ¡lisis espacial",
-    "slogan": "Puntos crÃ­ticos e intersecciones de alto riesgo",
-    "description": "AnÃ¡lisis de concentraciÃ³n geoespacial de accidentes e identificaciÃ³n de tramos viales prioritarios para intervenciÃ³n.",
-    "status": "En lÃ­nea",
+    "name": "Siniestralidad vial en Bogotá - Análisis espacial",
+    "slogan": "Puntos críticos e intersecciones de alto riesgo",
+    "description": "Análisis de concentración geoespacial de accidentes e identificación de tramos viales prioritarios para intervención.",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Anlisisespacial/SiniestralidadvialenBogotD_C_-2019-2023-Anlisisespacial",
     "githubUrl": "",
@@ -1164,21 +1164,21 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
+    "segment": "Sector Público",
     "tipo": "Dashboards",
-    "linea": "Dashboards & AnalÃ­tica",
+    "linea": "Dashboards & Analítica",
     "tags": [
       "Tableau",
       "Forecasting",
-      "LÃ­nea 123",
+      "Línea 123",
       "UPZ",
       "Capacidad Operativa"
     ],
     "readyForSale": true,
-    "name": "Llamadas totales al NUSE/123 por UPZ en BogotÃ¡ - Forecasting",
-    "slogan": "PronÃ³stico de demanda de atenciÃ³n de emergencias",
+    "name": "Llamadas totales al NUSE/123 por UPZ en Bogotá - Forecasting",
+    "slogan": "Pronóstico de demanda de atención de emergencias",
     "description": "Modelos predictivos de volumen de llamadas al NUSE por UPZ para optimizar el despliegue de patrullas y ambulancias.",
-    "status": "En lÃ­nea",
+    "status": "En línea",
     "demoMode": "mostrar",
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/LlamadasalNUSEporUPZ/VistaporUPZ",
     "githubUrl": "",
@@ -1187,86 +1187,86 @@ const PRODUCTS = [
     "pptUrl": ""
   },
   {
-    "segment": "Sector PÃºblico",
-    "tipo": "Estudios & AnÃ¡lisis de datos",
-    "linea": "Salud & GeoanalÃ­tica",
+    "segment": "Sector Público",
+    "tipo": "Estudios & Análisis de datos",
+    "linea": "Salud & Geoanalítica",
     "tags": [
       "Machine Learning",
-      "ClÃ­nica Unisabana",
+      "Clínica Unisabana",
       "ARIMA",
       "Prophet",
       "Pacientes NO-EPS"
     ],
     "readyForSale": false,
-    "name": "AnÃ¡lisis ClÃ­nica Universidad de la Sabana",
+    "name": "Análisis Clínica Universidad de la Sabana",
     "slogan": "Anticipa la demanda, optimiza los recursos",
-    "description": "Sistema ML de series de tiempo (ARIMA y Prophet) con MAE inferior a 10% para pronosticar el nÃºmero de pacientes NO-EPS y la facturaciÃ³n semanal de la ClÃ­nica.",
+    "description": "Sistema ML de series de tiempo (ARIMA y Prophet) con MAE inferior a 10% para pronosticar el número de pacientes NO-EPS y la facturación semanal de la Clínica.",
     "status": "Activo",
     "demoMode": "ppt",
     "appUrl": "",
     "githubUrl": "https://github.com/GovLabSabana/ModeloClinica",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "",
-    "pptUrl": "assets/decks/modelo_clÃ­nica.pdf"
+    "pptUrl": "assets/decks/modelo_clínica.pdf"
   },
   {
-    "segment": "Sector PÃºblico",
-    "tipo": "Estudios & AnÃ¡lisis de datos",
-    "linea": "Salud & GeoanalÃ­tica",
+    "segment": "Sector Público",
+    "tipo": "Estudios & Análisis de datos",
+    "linea": "Salud & Geoanalítica",
     "tags": [
-      "GeoanalÃ­tica",
-      "ClÃ­nica Unisabana",
+      "Geoanalítica",
+      "Clínica Unisabana",
       "Pacientes Potenciales",
       "Inteligencia Territorial"
     ],
     "readyForSale": false,
-    "name": "GeoanÃ¡lisis ClÃ­nica Universidad de la Sabana",
+    "name": "Geoanálisis Clínica Universidad de la Sabana",
     "slogan": "Encuentra al paciente antes de que llegue",
-    "description": "AnÃ¡lisis predictivo geoespacial de la ubicaciÃ³n y patrones de desplazamiento de potenciales usuarios de servicios de salud privados en Sabana Centro.",
+    "description": "Análisis predictivo geoespacial de la ubicación y patrones de desplazamiento de potenciales usuarios de servicios de salud privados en Sabana Centro.",
     "status": "Activo",
     "demoMode": "ppt",
     "appUrl": "",
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "https://drive.google.com/file/d/1KdjNdT396zr8c9nPjeeX_xjB-99c_8Ka/view?usp=drive_link",
-    "pptUrl": "assets/decks/modelo_geo_clÃ­nica.pdf"
+    "pptUrl": "assets/decks/modelo_geo_clínica.pdf"
   },
   {
-    "segment": "Sector PÃºblico",
-    "tipo": "Estudios & AnÃ¡lisis de datos",
-    "linea": "PolÃ­ticas PÃºblicas & Territorio",
+    "segment": "Sector Público",
+    "tipo": "Estudios & Análisis de datos",
+    "linea": "Políticas Públicas & Territorio",
     "tags": [
       "OSZ",
-      "ZipaquirÃ¡",
+      "Zipaquirá",
       "Indicadores Sociales",
       "Observatorio Social"
     ],
     "readyForSale": false,
-    "name": "Observatorio Social de ZipaquirÃ¡ - OSZ",
-    "slogan": "AlcaldÃ­a de ZipaquirÃ¡",
-    "description": "Desarrollo y diseÃ±o del primer observatorio social de la RegiÃ³n Sabana Centro para el seguimiento riguroso de indicadores sociales y bienestar.",
+    "name": "Observatorio Social de Zipaquirá - OSZ",
+    "slogan": "Alcaldía de Zipaquirá",
+    "description": "Desarrollo y diseño del primer observatorio social de la Región Sabana Centro para el seguimiento riguroso de indicadores sociales y bienestar.",
     "status": "Activo",
     "demoMode": "ppt",
     "appUrl": "",
     "githubUrl": "",
     "logo": "assets/projects/osz.png",
     "videoUrl": "",
-    "pptUrl": "assets/decks/Observatorio Social de ZipaquirÃ¡.pdf"
+    "pptUrl": "assets/decks/Observatorio Social de Zipaquirá.pdf"
   },
   {
-    "segment": "Sector PÃºblico",
-    "tipo": "Estudios & AnÃ¡lisis de datos",
-    "linea": "Electoral & PronÃ³stico",
+    "segment": "Sector Público",
+    "tipo": "Estudios & Análisis de datos",
+    "linea": "Electoral & Pronóstico",
     "tags": [
-      "PronÃ³stico Electoral",
+      "Pronóstico Electoral",
       "Redes Sociales",
-      "MetodologÃ­a ELA-NOM",
+      "Metodología ELA-NOM",
       "Error < 9%"
     ],
     "readyForSale": false,
     "name": "ELA-NOM",
     "slogan": "Pronostica elecciones con redes sociales",
-    "description": "AplicaciÃ³n de una novedosa metodologÃ­a de pronÃ³stico electoral (ELA-NOM) basada en minerÃ­a de redes sociales con error predictivo inferior al 9%.",
+    "description": "Aplicación de una novedosa metodología de pronóstico electoral (ELA-NOM) basada en minería de redes sociales con error predictivo inferior al 9%.",
     "status": "Activo",
     "demoMode": "mostrar",
     "appUrl": "",
@@ -1277,18 +1277,18 @@ const PRODUCTS = [
   },
   {
     "segment": "Transversal",
-    "tipo": "EducaciÃ³n",
-    "linea": "EducaciÃ³n & FormaciÃ³n",
+    "tipo": "Educación",
+    "linea": "Educación & Formación",
     "tags": [
       "Doctorado",
       "Posgrado",
-      "InvestigaciÃ³n IA",
-      "Sector PÃºblico"
+      "Investigación IA",
+      "Sector Público"
     ],
     "readyForSale": true,
     "name": "Doctorado en IA",
     "slogan": "Investiga el futuro, lidera el cambio",
-    "description": "Programa doctoral de investigaciÃ³n de vanguardia en inteligencia artificial, enfocado en soluciones para el sector pÃºblico y formulaciÃ³n de polÃ­ticas basadas en evidencia.",
+    "description": "Programa doctoral de investigación de vanguardia en inteligencia artificial, enfocado en soluciones para el sector público y formulación de políticas basadas en evidencia.",
     "status": "Activo",
     "demoMode": "mostrar",
     "appUrl": "https://www.unisabana.edu.co/programas/posgrados/doctorado-en-inteligencia-artificial",
@@ -1299,18 +1299,18 @@ const PRODUCTS = [
   },
   {
     "segment": "Transversal",
-    "tipo": "EducaciÃ³n",
-    "linea": "EducaciÃ³n & FormaciÃ³n",
+    "tipo": "Educación",
+    "linea": "Educación & Formación",
     "tags": [
-      "MaestrÃ­a",
+      "Maestría",
       "Posgrado",
-      "AnalÃ­tica Aplicada",
+      "Analítica Aplicada",
       "Toma de Decisiones"
     ],
     "readyForSale": true,
-    "name": "MaestrÃ­a en IA",
+    "name": "Maestría en IA",
     "slogan": "Domina la IA, transforma tu sector",
-    "description": "Programa de posgrado en inteligencia artificial y analÃ­tica aplicada con Ã©nfasis en gobierno digital, polÃ­tica pÃºblica y gestiÃ³n estratÃ©gica organizacional.",
+    "description": "Programa de posgrado en inteligencia artificial y analítica aplicada con énfasis en gobierno digital, política pública y gestión estratégica organizacional.",
     "status": "Activo",
     "demoMode": "mostrar",
     "appUrl": "https://www.unisabana.edu.co/programas/posgrados/maestria-en-analitica-aplicada",
@@ -1321,18 +1321,18 @@ const PRODUCTS = [
   },
   {
     "segment": "Transversal",
-    "tipo": "EducaciÃ³n",
-    "linea": "EducaciÃ³n & FormaciÃ³n",
+    "tipo": "Educación",
+    "linea": "Educación & Formación",
     "tags": [
       "Pregrado",
       "Ciencia de Datos",
-      "Modelado MatemÃ¡tico",
+      "Modelado Matemático",
       "Unisabana"
     ],
     "readyForSale": true,
     "name": "Pregrado en IA",
-    "slogan": "Aprende IA desde la raÃ­z",
-    "description": "Programa de pregrado en Ciencia de Datos e Inteligencia Artificial de la Universidad de La Sabana. FormaciÃ³n integral en modelos, algoritmos y aplicaciones reales.",
+    "slogan": "Aprende IA desde la raíz",
+    "description": "Programa de pregrado en Ciencia de Datos e Inteligencia Artificial de la Universidad de La Sabana. Formación integral en modelos, algoritmos y aplicaciones reales.",
     "status": "Activo",
     "demoMode": "mostrar",
     "appUrl": "https://www.unisabana.edu.co/programas/pregrados/ciencia-de-datos",
@@ -1343,18 +1343,18 @@ const PRODUCTS = [
   },
   {
     "segment": "Transversal",
-    "tipo": "EducaciÃ³n",
-    "linea": "EducaciÃ³n & FormaciÃ³n",
+    "tipo": "Educación",
+    "linea": "Educación & Formación",
     "tags": [
       "Bootcamps",
-      "EducaciÃ³n Continua",
-      "FormaciÃ³n Ejecutiva",
-      "PrÃ¡ctica"
+      "Educación Continua",
+      "Formación Ejecutiva",
+      "Práctica"
     ],
     "readyForSale": true,
     "name": "Bootcamps en IA",
-    "slogan": "Habilidades reales, en tiempo rÃ©cord",
-    "description": "Programas tÃ©cnicos intensivos de capacitaciÃ³n en IA para profesionales y directivos del sector pÃºblico y privado, orientados a casos de uso inmediatos.",
+    "slogan": "Habilidades reales, en tiempo récord",
+    "description": "Programas técnicos intensivos de capacitación en IA para profesionales y directivos del sector público y privado, orientados a casos de uso inmediatos.",
     "status": "Activo",
     "demoMode": "mostrar",
     "appUrl": "https://www.unisabana.edu.co/programas/educacion-continua/curso/curso-experto-en-inteligencia-artificial-para-profesionales-innovadores",
@@ -2731,7 +2731,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   initNavigation();
   initFilters();
   renderProducts(PRODUCTS);
-  renderDashboard();
+  renderDashboardStructure();
+  updateDashboard(PRODUCTS);
   initModal();
   initSearchInput();
   lucide.createIcons();
@@ -3208,41 +3209,20 @@ function applyFilters() {
   });
 
   renderProducts(filtered);
+  updateDashboard(filtered);
 }
 
-// --- 4. Dashboard Visual con Gráficas Reales (Chart.js) ---
-function renderDashboard() {
+// --- 4. Dashboard Visual Reactivo con Gráficas (Chart.js) ---
+function renderDashboardStructure() {
   const dashboardContainer = document.getElementById('experiencias-dashboard');
   if (!dashboardContainer) return;
-
-  const total = PRODUCTS.length;
-  const countSoftware = PRODUCTS.filter(p => p.tipo === 'Software').length;
-  const countDashboards = PRODUCTS.filter(p => p.tipo === 'Dashboards').length;
-  const countEstudios = PRODUCTS.filter(p => p.tipo === 'Estudios & Análisis de datos').length;
-  const countEducacion = PRODUCTS.filter(p => p.tipo === 'Educación').length;
-  const countReadyForSale = PRODUCTS.filter(p => p.readyForSale).length;
-
-  const countPublico = PRODUCTS.filter(p => p.segment === 'Sector Público').length;
-  const countPrivado = PRODUCTS.filter(p => p.segment === 'Sector Privado').length;
-  const countTransversal = PRODUCTS.filter(p => p.segment === 'Transversal').length;
-
-  const countEnLinea = PRODUCTS.filter(p => p.status.toLowerCase() === 'en línea').length;
-  const countActivo = PRODUCTS.filter(p => p.status.toLowerCase() === 'activo').length;
-  const countMantenimiento = PRODUCTS.filter(p => p.status.toLowerCase() === 'en mantenimiento').length;
-
-  const lineasCount = {};
-  PRODUCTS.forEach(p => {
-    if (p.linea) {
-      lineasCount[p.linea] = (lineasCount[p.linea] || 0) + 1;
-    }
-  });
 
   dashboardContainer.innerHTML = `
     <div class="dashboard-header-block">
       <div class="dashboard-title-wrap">
-        <span class="dashboard-eyebrow">Panel Analítico</span>
+        <span class="dashboard-eyebrow">Panel Analítico Dinámico</span>
         <h2 class="dashboard-title">Distribución y Métricas del Portafolio</h2>
-        <p class="dashboard-subtitle">Visualización estadística y composición interactiva de las ${total} experiencias del GovLab.</p>
+        <p class="dashboard-subtitle" id="dashboard-subtitle-text">Visualización estadística en tiempo real de las experiencias filtradas.</p>
       </div>
       <div class="dashboard-actions-group">
         <button class="chiclet-btn" onclick="resetAllFilters()">
@@ -3252,50 +3232,8 @@ function renderDashboard() {
     </div>
 
     <!-- KPI Summary Grid -->
-    <div class="dashboard-kpis-grid">
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Todos')">
-        <div class="kpi-icon-wrap kpi-icon-blue"><i data-lucide="layers"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${total}</span>
-          <span class="kpi-label">Experiencias Totales</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Software')">
-        <div class="kpi-icon-wrap kpi-icon-green"><i data-lucide="code-2"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countSoftware}</span>
-          <span class="kpi-label">Software & Plataformas</span>
-          <span class="kpi-subtext">${countReadyForSale} Listos para la venta</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Dashboards')">
-        <div class="kpi-icon-wrap kpi-icon-purple"><i data-lucide="bar-chart-3"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countDashboards}</span>
-          <span class="kpi-label">Dashboards & Analítica</span>
-          <span class="kpi-subtext">Tableau & Web Apps</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Estudios & Análisis de datos')">
-        <div class="kpi-icon-wrap kpi-icon-orange"><i data-lucide="brain"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countEstudios}</span>
-          <span class="kpi-label">Estudios & Modelos</span>
-          <span class="kpi-subtext">ML, ELA-NOM & OSZ</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Educación')">
-        <div class="kpi-icon-wrap kpi-icon-teal"><i data-lucide="graduation-cap"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countEducacion}</span>
-          <span class="kpi-label">Educación & Formación</span>
-          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
-        </div>
-      </div>
+    <div class="dashboard-kpis-grid" id="dashboard-kpis-grid">
+      <!-- Se llena dinámicamente -->
     </div>
 
     <!-- Gráficas de Análisis -->
@@ -3340,194 +3278,295 @@ function renderDashboard() {
       </div>
 
       <!-- Chiclets de acceso rápido a Líneas -->
-      <div class="lineas-chiclets-container">
-        ${Object.entries(lineasCount).sort((a, b) => b[1] - a[1]).map(([linea, count]) => {
-          return `
-            <button class="chiclet-linea-pill" onclick="quickFilter('linea', '${linea.replace(/'/g, "\\'")}')">
-              <span class="pill-name">${linea}</span>
-              <span class="pill-badge">${count}</span>
-            </button>
-          `;
-        }).join('')}
+      <div class="lineas-chiclets-container" id="dashboard-lineas-pills">
+        <!-- Se llena dinámicamente -->
       </div>
     </div>
   `;
 
   lucide.createIcons();
-
-  setTimeout(() => {
-    initDashboardCharts(countSoftware, countDashboards, countEstudios, countEducacion, countPublico, countPrivado, countTransversal, countEnLinea, countActivo, countMantenimiento, lineasCount);
-  }, 100);
 }
 
-function initDashboardCharts(soft, dash, est, edu, pub, priv, trans, online, active, maint, lineasMap) {
-  if (typeof Chart === 'undefined') {
-    console.warn('Chart.js no está cargado.');
-    return;
+function updateDashboard(currentProducts) {
+  const total = currentProducts.length;
+  const grandTotal = PRODUCTS.length;
+  const countSoftware = currentProducts.filter(p => p.tipo === 'Software').length;
+  const countDashboards = currentProducts.filter(p => p.tipo === 'Dashboards').length;
+  const countEstudios = currentProducts.filter(p => p.tipo === 'Estudios & Análisis de datos').length;
+  const countEducacion = currentProducts.filter(p => p.tipo === 'Educación').length;
+  const countReadyForSale = currentProducts.filter(p => p.readyForSale).length;
+
+  const countPublico = currentProducts.filter(p => p.segment === 'Sector Público').length;
+  const countPrivado = currentProducts.filter(p => p.segment === 'Sector Privado').length;
+  const countTransversal = currentProducts.filter(p => p.segment === 'Transversal').length;
+
+  const subtitleEl = document.getElementById('dashboard-subtitle-text');
+  if (subtitleEl) {
+    subtitleEl.textContent = total === grandTotal
+      ? `Visualización estadística y composición de las ${grandTotal} experiencias del GovLab.`
+      : `Mostrando estadísticas de ${total} de ${grandTotal} experiencias según los filtros aplicados.`;
   }
+
+  // Actualizar KPIs
+  const kpisGrid = document.getElementById('dashboard-kpis-grid');
+  if (kpisGrid) {
+    kpisGrid.innerHTML = `
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Todos')">
+        <div class="kpi-icon-wrap kpi-icon-blue"><i data-lucide="layers"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${total}</span>
+          <span class="kpi-label">Experiencias Visibles</span>
+          <span class="kpi-subtext">de ${grandTotal} registradas</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Software')">
+        <div class="kpi-icon-wrap kpi-icon-green"><i data-lucide="code-2"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countSoftware}</span>
+          <span class="kpi-label">Software & Plataformas</span>
+          <span class="kpi-subtext">${countReadyForSale} Listos para la venta</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Dashboards')">
+        <div class="kpi-icon-wrap kpi-icon-purple"><i data-lucide="bar-chart-3"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countDashboards}</span>
+          <span class="kpi-label">Dashboards & Analítica</span>
+          <span class="kpi-subtext">Tableau & Web Apps</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Estudios & Análisis de datos')">
+        <div class="kpi-icon-wrap kpi-icon-orange"><i data-lucide="brain"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countEstudios}</span>
+          <span class="kpi-label">Estudios & Modelos</span>
+          <span class="kpi-subtext">ML, ELA-NOM & OSZ</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Educación')">
+        <div class="kpi-icon-wrap kpi-icon-teal"><i data-lucide="graduation-cap"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countEducacion}</span>
+          <span class="kpi-label">Educación & Formación</span>
+          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
+        </div>
+      </div>
+    `;
+    lucide.createIcons();
+  }
+
+  // Conteo de Líneas
+  const lineasCount = {};
+  currentProducts.forEach(p => {
+    if (p.linea) {
+      lineasCount[p.linea] = (lineasCount[p.linea] || 0) + 1;
+    }
+  });
+
+  // Actualizar Chiclets de Líneas en el Dashboard
+  const lineasPillsContainer = document.getElementById('dashboard-lineas-pills');
+  if (lineasPillsContainer) {
+    const sortedLineas = Object.entries(lineasCount).sort((a, b) => b[1] - a[1]);
+    if (sortedLineas.length === 0) {
+      lineasPillsContainer.innerHTML = '<span style="font-size:0.85rem; color:var(--text-muted);">No hay líneas en la selección actual.</span>';
+    } else {
+      lineasPillsContainer.innerHTML = sortedLineas.map(([linea, count]) => {
+        return `
+          <button class="chiclet-linea-pill" onclick="quickFilter('linea', '${linea.replace(/'/g, "\\'")}')">
+            <span class="pill-name">${linea}</span>
+            <span class="pill-badge">${count}</span>
+          </button>
+        `;
+      }).join('');
+    }
+  }
+
+  // Actualizar Gráficas de Chart.js
+  updateChartInstances(countSoftware, countDashboards, countEstudios, countEducacion, countPublico, countPrivado, countTransversal, lineasCount);
+}
+
+function updateChartInstances(soft, dash, est, edu, pub, priv, trans, lineasMap) {
+  if (typeof Chart === 'undefined') return;
 
   // 1. Gráfico de Dona: Tipo
   const ctxTipo = document.getElementById('chart-tipo-canvas');
   if (ctxTipo) {
-    if (chartTipoInstance) chartTipoInstance.destroy();
-    chartTipoInstance = new Chart(ctxTipo, {
-      type: 'doughnut',
-      data: {
-        labels: ['Software & Apps', 'Dashboards', 'Estudios & Modelos', 'Educación'],
-        datasets: [{
-          data: [soft, dash, est, edu],
-          backgroundColor: ['#00135B', '#00387D', '#FB6F1A', '#0D9488'],
-          borderColor: '#ffffff',
-          borderWidth: 3,
-          hoverOffset: 6
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: {
-              font: { family: 'Libre Franklin', size: 12, weight: 600 },
-              color: '#374151',
-              padding: 16,
-              usePointStyle: true,
-              pointStyle: 'circle'
-            }
-          },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 },
-            callbacks: {
-              label: function(ctx) {
-                const total = soft + dash + est + edu;
-                const val = ctx.raw;
-                const pct = Math.round((val / total) * 100);
-                return ` ${ctx.label}: ${val} experiencias (${pct}%)`;
+    if (chartTipoInstance) {
+      chartTipoInstance.data.datasets[0].data = [soft, dash, est, edu];
+      chartTipoInstance.update();
+    } else {
+      chartTipoInstance = new Chart(ctxTipo, {
+        type: 'doughnut',
+        data: {
+          labels: ['Software & Apps', 'Dashboards', 'Estudios & Modelos', 'Educación'],
+          datasets: [{
+            data: [soft, dash, est, edu],
+            backgroundColor: ['#00135B', '#00387D', '#FB6F1A', '#0D9488'],
+            borderColor: '#ffffff',
+            borderWidth: 3,
+            hoverOffset: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { family: 'Libre Franklin', size: 12, weight: 600 },
+                color: '#374151',
+                padding: 16,
+                usePointStyle: true,
+                pointStyle: 'circle'
+              }
+            },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 },
+              callbacks: {
+                label: function(ctx) {
+                  const total = soft + dash + est + edu;
+                  const val = ctx.raw;
+                  const pct = total > 0 ? Math.round((val / total) * 100) : 0;
+                  return ` ${ctx.label}: ${val} experiencias (${pct}%)`;
+                }
               }
             }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            const tipos = ['Software', 'Dashboards', 'Estudios & Análisis de datos', 'Educación'];
-            quickFilter('tipo', tipos[index]);
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              const tipos = ['Software', 'Dashboards', 'Estudios & Análisis de datos', 'Educación'];
+              quickFilter('tipo', tipos[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 
   // 2. Gráfico de Barras: Segmentos
   const ctxSegmento = document.getElementById('chart-segmento-canvas');
   if (ctxSegmento) {
-    if (chartSegmentoInstance) chartSegmentoInstance.destroy();
-    chartSegmentoInstance = new Chart(ctxSegmento, {
-      type: 'bar',
-      data: {
-        labels: ['Sector Público', 'Sector Privado', 'Transversal'],
-        datasets: [{
-          label: 'Experiencias',
-          data: [pub, priv, trans],
-          backgroundColor: ['#00135B', '#2B8D04', '#93AAC9'],
-          borderRadius: 8,
-          barThickness: 36
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-            grid: { color: '#E2E8F0', drawBorder: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+    if (chartSegmentoInstance) {
+      chartSegmentoInstance.data.datasets[0].data = [pub, priv, trans];
+      chartSegmentoInstance.update();
+    } else {
+      chartSegmentoInstance = new Chart(ctxSegmento, {
+        type: 'bar',
+        data: {
+          labels: ['Sector Público', 'Sector Privado', 'Transversal'],
+          datasets: [{
+            label: 'Experiencias',
+            data: [pub, priv, trans],
+            backgroundColor: ['#00135B', '#2B8D04', '#93AAC9'],
+            borderRadius: 8,
+            barThickness: 36
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { color: '#E2E8F0', drawBorder: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { font: { family: 'Libre Franklin', size: 12, weight: 600 }, color: '#374151' }
+            }
           },
-          x: {
-            grid: { display: false },
-            ticks: { font: { family: 'Libre Franklin', size: 12, weight: 600 }, color: '#374151' }
-          }
-        },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            const segs = ['Sector Público', 'Sector Privado', 'Transversal'];
-            quickFilter('segment', segs[index]);
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 }
+            }
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              const segs = ['Sector Público', 'Sector Privado', 'Transversal'];
+              quickFilter('segment', segs[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 
   // 3. Gráfico Horizontal: Líneas Estratégicas
   const ctxLinea = document.getElementById('chart-linea-canvas');
   if (ctxLinea) {
-    if (chartLineaInstance) chartLineaInstance.destroy();
     const sortedLineas = Object.entries(lineasMap).sort((a, b) => b[1] - a[1]);
     const labels = sortedLineas.map(item => item[0]);
     const counts = sortedLineas.map(item => item[1]);
 
-    chartLineaInstance = new Chart(ctxLinea, {
-      type: 'bar',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Cantidad de Experiencias',
-          data: counts,
-          backgroundColor: '#00387D',
-          hoverBackgroundColor: '#00135B',
-          borderRadius: 6,
-          barThickness: 20
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          x: {
-            beginAtZero: true,
-            grid: { color: '#E2E8F0', drawBorder: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+    if (chartLineaInstance) {
+      chartLineaInstance.data.labels = labels;
+      chartLineaInstance.data.datasets[0].data = counts;
+      chartLineaInstance.update();
+    } else {
+      chartLineaInstance = new Chart(ctxLinea, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Cantidad de Experiencias',
+            data: counts,
+            backgroundColor: '#00387D',
+            hoverBackgroundColor: '#00135B',
+            borderRadius: 6,
+            barThickness: 20
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: { color: '#E2E8F0', drawBorder: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11, weight: 600 }, color: '#374151' }
+            }
           },
-          y: {
-            grid: { display: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11, weight: 600 }, color: '#374151' }
-          }
-        },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            quickFilter('linea', labels[index]);
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 }
+            }
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              quickFilter('linea', labels[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 }
 

@@ -1,16 +1,15 @@
-[
+# -*- coding: utf-8 -*-
+# clean_build_products.py
+import json
+
+products = [
+  # ─── LÍNEA PITCHLAB (SOFTWARE) ──────────────────────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea PitchLab",
-    "tags": [
-      "PitchLab",
-      "Discurso Político",
-      "IA Generativa",
-      "Claude",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["PitchLab", "Discurso Político", "IA Generativa", "Claude", "Listo para la venta"],
+    "readyForSale": True,
     "name": "PitchLab360",
     "slogan": "Analiza el discurso, mejora el mensaje",
     "description": "Análisis de discurso político con Claude (Anthropic). Perfil comunicativo, análisis emocional, stakeholders, encuadres narrativos y potencial digital. Probado con candidatos presidenciales.",
@@ -26,14 +25,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea PitchLab",
-    "tags": [
-      "PitchLab",
-      "Fact-checking",
-      "Chrome Extension",
-      "GPT-4o",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["PitchLab", "Fact-checking", "Chrome Extension", "GPT-4o", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Polycheck",
     "slogan": "Verifica en tiempo real, no después",
     "description": "Extensión de Chrome para fact-checking en tiempo real sobre videos de YouTube y directos. Integración GPT-4o + Gemini + Google Search para análisis forense del discurso.",
@@ -49,14 +42,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Línea PitchLab",
-    "tags": [
-      "PitchLab",
-      "Pitch Médico",
-      "INVIMA",
-      "Entrenamiento",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["PitchLab", "Pitch Médico", "INVIMA", "Entrenamiento", "Listo para la venta"],
+    "readyForSale": True,
     "name": "PitchLab Med",
     "slogan": "Practica tu pitch médico con estándares INVIMA",
     "description": "Plataforma para la práctica y evaluación de pitch médicos con medidas de rigurosidad INVIMA. Entrenamiento conversacional para profesionales e industria farmacéutica.",
@@ -72,14 +59,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea PitchLab",
-    "tags": [
-      "PitchLab",
-      "Avatar en Vivo",
-      "Voz en Tiempo Real",
-      "Negociación",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["PitchLab", "Avatar en Vivo", "Voz en Tiempo Real", "Negociación", "Listo para la venta"],
+    "readyForSale": True,
     "name": "PitchLab Entrenamiento",
     "slogan": "Avatar conversacional para entrenamiento",
     "description": "Herramienta de la Línea PitchLab para el entrenamiento de conversaciones en voz en vivo, adaptado para negociaciones políticas, comerciales o académicas.",
@@ -91,18 +72,14 @@
     "videoUrl": "",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA GOVTEST & OPINIÓN PÚBLICA (SOFTWARE) ──────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea GovTest & Opinión",
-    "tags": [
-      "GovTest",
-      "Afinidad Política",
-      "Elecciones 2026",
-      "Viral",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["GovTest", "Afinidad Política", "Elecciones 2026", "Viral", "Listo para la venta"],
+    "readyForSale": True,
     "name": "GovTest",
     "slogan": "Descubre tu candidato con datos",
     "description": "Test de afinidad política por dilemas de política pública. 16 preguntas, 14 candidatos presidenciales 2026, 7 arquetipos de votante y tarjeta viral descargable.",
@@ -118,14 +95,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea GovTest & Opinión",
-    "tags": [
-      "GovTest",
-      "9 Ejes Ideológicos",
-      "Supabase",
-      "Ranking",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["GovTest", "9 Ejes Ideológicos", "Supabase", "Ranking", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Test 9 Ejes",
     "slogan": "Tu posición en 9 ejes, tu candidato en un clic",
     "description": "Test de afinidad política por 9 ejes ideológicos. Algoritmo euclidiano, ranking de candidatos, perfil personalizado y persistencia de datos en Supabase.",
@@ -141,14 +112,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Línea GovTest & Opinión",
-    "tags": [
-      "GovTest",
-      "50 Preguntas",
-      "Coyuntura Colombia",
-      "Glassmorphism",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["GovTest", "50 Preguntas", "Coyuntura Colombia", "Glassmorphism", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Test 9 Ejes Colombia",
     "slogan": "50 preguntas, un perfil ideológico",
     "description": "Versión extendida del test con 50 preguntas coyunturales sobre Colombia. Modo oscuro glassmorphism, compartir en alta resolución y datos anónimos en Supabase.",
@@ -160,18 +125,14 @@
     "videoUrl": "https://drive.google.com/file/d/1gXzEi2ZNE4daXYBnidmccgcgkWj2Db84/view?usp=drive_link",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA ASISTENTES DE VOZ CON IA (SOFTWARE) ──────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
-    "tags": [
-      "Asistentes de Voz",
-      "LiveKit",
-      "OpenAI Realtime",
-      "Cajicá",
-      "WebRTC"
-    ],
-    "readyForSale": false,
+    "tags": ["Asistentes de Voz", "LiveKit", "OpenAI Realtime", "Cajicá", "WebRTC"],
+    "readyForSale": False,
     "name": "AlcaldesaIA",
     "slogan": "Pregúntale al municipio, él te responde",
     "description": "Asistente de voz en tiempo real sobre el Plan de Desarrollo de Cajicá 2024-2027. OpenAI Realtime API + LiveKit + WebRTC.",
@@ -187,15 +148,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
-    "tags": [
-      "Asistentes de Voz",
-      "PQRS",
-      "LiveKit",
-      "OpenAI Realtime",
-      "Santander",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Asistentes de Voz", "PQRS", "LiveKit", "OpenAI Realtime", "Santander", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Gober Santander",
     "slogan": "Un asistente público para cada ciudadano",
     "description": "Asistente de voz conversacional para el sector público. Procesamiento de PQRS, visualización de datos e interfaz para funcionarios con OpenAI Realtime + LiveKit.",
@@ -211,12 +165,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
-    "tags": [
-      "Asistentes de Voz",
-      "GovLab",
-      "Atención al Ciudadano"
-    ],
-    "readyForSale": false,
+    "tags": ["Asistentes de Voz", "GovLab", "Atención al Ciudadano"],
+    "readyForSale": False,
     "name": "Govi",
     "slogan": "El GovLab te habla, tú lo escuchas",
     "description": "Asistente basado en voz para la consulta y acercamiento al cliente del Laboratorio de Gobierno de la Universidad de La Sabana.",
@@ -232,15 +182,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
-    "tags": [
-      "Asistentes de Voz",
-      "Next.js",
-      "LiveKit",
-      "Silero VAD",
-      "ConvergenceLab",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Asistentes de Voz", "Next.js", "LiveKit", "Silero VAD", "ConvergenceLab", "Listo para la venta"],
+    "readyForSale": True,
     "name": "ConvergenceLab",
     "slogan": "Habla con la universidad, ella te escucha",
     "description": "Asistente de voz en tiempo real para el Convergence Lab de la Unisabana (Sabius). Permite consultar aliados e investigaciones relevantes. LiveKit Agents + OpenAI Realtime API + Silero VAD.",
@@ -256,14 +199,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Asistentes de Voz",
-    "tags": [
-      "Asistentes de Voz",
-      "Llamadas Automatizadas",
-      "Dapta",
-      "Outbound Calls",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Asistentes de Voz", "Llamadas Automatizadas", "Dapta", "Outbound Calls", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Alocandidato",
     "slogan": "La campaña que llama, nunca la que cansa",
     "description": "Sistema de llamadas de voz automatizadas a ciudadanos con preguntas interactivas sobre candidatos y propuestas con tecnología Dapta.",
@@ -275,19 +212,14 @@
     "videoUrl": "https://drive.google.com/file/d/1bOY7U-cqev5172oxBTSLvazsdPdM2hTT/view?usp=drive_link",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA AGROINDUSTRIA & EXPORTACIÓN (SOFTWARE) ────────────────────────────
   {
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Agroindustria & Exportación",
-    "tags": [
-      "Corpohass",
-      "Aguacate Hass",
-      "Trazabilidad",
-      "FastAPI",
-      "React",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Corpohass", "Aguacate Hass", "Trazabilidad", "FastAPI", "React", "Listo para la venta"],
+    "readyForSale": True,
     "name": "HassApp",
     "slogan": "Del campo al mundo, con datos",
     "description": "Plataforma integral para gestión de producción, cosecha, insumos, exportación y sondeo de opinión del sector aguacate Hass. FastAPI + React + MySQL + AWS S3.",
@@ -303,14 +235,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Agroindustria & Exportación",
-    "tags": [
-      "Corpohass",
-      "Diagnóstico Exportador",
-      "Termómetro IA",
-      "FastAPI",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Corpohass", "Diagnóstico Exportador", "Termómetro IA", "FastAPI", "Listo para la venta"],
+    "readyForSale": True,
     "name": "ExportaCheck",
     "slogan": "¿Listo para exportar? Descúbrelo hoy",
     "description": "Plataforma con termómetro interactivo que evalúa el nivel de preparación exportadora de empresas agrícolas y productoras. Diagnóstico por dimensiones con IA. Next.js + FastAPI + Supabase.",
@@ -322,18 +248,14 @@
     "videoUrl": "https://drive.google.com/file/d/1X7QuSOTr0gCKC7rLTdSzvLsoyWHbyw_i/view?usp=drive_link",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA NOTARÍAS & GESTIÓN DOCUMENTAL (SOFTWARE) ──────────────────────────
   {
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Notarías & Documental",
-    "tags": [
-      "Notarías",
-      "Borradores de Escrituras",
-      "Chat IA",
-      "Cumplimiento",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Notarías", "Borradores de Escrituras", "Chat IA", "Cumplimiento", "Listo para la venta"],
+    "readyForSale": True,
     "name": "NotariaDoc",
     "slogan": "El borrador perfecto, sin esperas",
     "description": "MVP para construir borradores de escrituras notariales, verificación de requisitos de cumplimiento y asistente conversacional con RAG legal.",
@@ -349,14 +271,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Notarías & Documental",
-    "tags": [
-      "Notarías",
-      "Panel de Control",
-      "Pronóstico",
-      "Tiempos de Espera",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Notarías", "Panel de Control", "Pronóstico", "Tiempos de Espera", "Listo para la venta"],
+    "readyForSale": True,
     "name": "NotariaIQ",
     "slogan": "Control total de la notaría en un panel",
     "description": "Panel de control para notarías: seguimiento de usuarios, tiempos de espera, ingresos, egresos, análisis descriptivo y pronóstico de afluencia con IA.",
@@ -372,14 +288,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Notarías & Documental",
-    "tags": [
-      "Notarías",
-      "Constructoras",
-      "Flujo de Aprobación",
-      "Cero Papel",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Notarías", "Constructoras", "Flujo de Aprobación", "Cero Papel", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Radica Notaría",
     "slogan": "Radica, revisa y aprueba sin papel",
     "description": "Suite de automatización documental para la Notaría Segunda de Zipaquirá. Formulario para constructoras + panel de digitadora con flujo de aprobación de escrituras.",
@@ -395,14 +305,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Proyección Social & Directiva",
-    "tags": [
-      "Gestión Documental",
-      "Alto Gobierno",
-      "Síntesis Ejecutiva",
-      "Decisiones",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Gestión Documental", "Alto Gobierno", "Síntesis Ejecutiva", "Decisiones", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Resume Expedientes",
     "slogan": "Decisiones de alto gobierno en segundos",
     "description": "Herramienta con IA para resumir expedientes directivos complejos y apoyar la toma de decisiones estratégicas de alto gobierno.",
@@ -418,15 +322,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Proyección Social & Directiva",
-    "tags": [
-      "Proyección Social",
-      "CRON",
-      "WhatsApp",
-      "Email",
-      "Newsletter",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Proyección Social", "CRON", "WhatsApp", "Email", "Newsletter", "Listo para la venta"],
+    "readyForSale": True,
     "name": "NewsletterMaker",
     "slogan": "Generador y envío de newsletter",
     "description": "Plataforma para la construcción de Newsletters y la asignación de procesos asíncronos CRON por correo y WhatsApp para la Dirección de Proyección Social.",
@@ -438,18 +335,14 @@
     "videoUrl": "",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA GESTIÓN PÚBLICA, JURÍDICA & AMBIENTAL (SOFTWARE) ──────────────────
   {
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Gestión Pública & Ambiental",
-    "tags": [
-      "CAR Cundinamarca",
-      "PQRS Automático",
-      "IA",
-      "Clasificación",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["CAR Cundinamarca", "PQRS Automático", "IA", "Clasificación", "Listo para la venta"],
+    "readyForSale": True,
     "name": "CAResponde",
     "slogan": "De la PQRS al ciudadano en segundos",
     "description": "Asistente en texto para la CAR Cundinamarca: recibe, categoriza, visualiza y genera respuestas automáticas a PQRS con inteligencia artificial.",
@@ -465,14 +358,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Gestión Pública & Ambiental",
-    "tags": [
-      "Bogotá",
-      "Plan de Desarrollo",
-      "RAG FAISS",
-      "GPT-4o",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Bogotá", "Plan de Desarrollo", "RAG FAISS", "GPT-4o", "Listo para la venta"],
+    "readyForSale": True,
     "name": "AlcaldIA",
     "slogan": "El Plan de Desarrollo en tus manos",
     "description": "Asistente RAG sobre el Plan de Desarrollo Distrital de Bogotá. Búsqueda semántica con FAISS + GPT-4o para consultas por meta, programa y presupuesto.",
@@ -488,13 +375,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Gestión Pública & Ambiental",
-    "tags": [
-      "Policía Ambiental",
-      "Legislación Ambiental",
-      "Jurisprudencia",
-      "Carabineros"
-    ],
-    "readyForSale": false,
+    "tags": ["Policía Ambiental", "Legislación Ambiental", "Jurisprudencia", "Carabineros"],
+    "readyForSale": False,
     "name": "PoliciApp-Eco",
     "slogan": "La ley ambiental en campo",
     "description": "Asistente IA de legislación ambiental colombiana para la Policía Ambiental y Carabineros. Cubre pesca, flora, fauna, minería y recursos hídricos.",
@@ -510,13 +392,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Gestión Pública & Ambiental",
-    "tags": [
-      "Policía Ambiental",
-      "Normativa Ambiental",
-      "Jurisprudencia",
-      "Chatbot"
-    ],
-    "readyForSale": false,
+    "tags": ["Policía Ambiental", "Normativa Ambiental", "Jurisprudencia", "Chatbot"],
+    "readyForSale": False,
     "name": "PoliciaAmbiental",
     "slogan": "Jurisprudencia ambiental en campo",
     "description": "Chatbot para facilitar conocimientos de jurisprudencia y competencias operativas para la policía ambiental de Colombia.",
@@ -532,13 +409,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Gestión Pública & Ambiental",
-    "tags": [
-      "Comparación Normativa",
-      "Diff Semántico",
-      "GPT-4",
-      "Leyes"
-    ],
-    "readyForSale": false,
+    "tags": ["Comparación Normativa", "Diff Semántico", "GPT-4", "Leyes"],
+    "readyForSale": False,
     "name": "LegisCheck",
     "slogan": "Dos versiones, un solo vistazo",
     "description": "Comparación inteligente de documentos legislativos. Diff semántico con GPT-4, línea de tiempo de cambios normativos y reportes PDF.",
@@ -554,13 +426,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Seguridad & Analítica",
-    "tags": [
-      "Observatorio de Seguridad",
-      "Predicción Delitos",
-      "Barranquilla",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Observatorio de Seguridad", "Predicción Delitos", "Barranquilla", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Barranquilla",
     "slogan": "Predice la criminalidad, protege la ciudad",
     "description": "App web para subir, analizar y predecir eventos de criminalidad y convivencia ciudadana para el Observatorio de Seguridad de Barranquilla.",
@@ -572,19 +439,14 @@
     "videoUrl": "https://drive.google.com/file/d/1X7_dn5FwxNv9XvoflFxJrNYQPzxmr8DJ/view?usp=drive_link",
     "pptUrl": ""
   },
+
+  # ─── LÍNEA SOSTENIBILIDAD & COMUNIDAD (SOFTWARE) ─────────────────────────────
   {
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Sostenibilidad & ESG",
-    "tags": [
-      "Universia",
-      "ESG",
-      "Benchmarking",
-      "Supabase",
-      "React",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Universia", "ESG", "Benchmarking", "Supabase", "React", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Test de sostenibilidad universitaria",
     "slogan": "Mide tu sostenibilidad, mejora tu ranking",
     "description": "Sistema de evaluación universitaria en dimensiones Gobernanza, Social y Ambiental (ESG). Dashboard comparativo entre instituciones. React + Node + Supabase.",
@@ -600,15 +462,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Sostenibilidad & ESG",
-    "tags": [
-      "MetaRed",
-      "Universia",
-      "Agente IA",
-      "Regresión",
-      "Data Science",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["MetaRed", "Universia", "Agente IA", "Regresión", "Data Science", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Asistente de agente para MetaRed",
     "slogan": "Resultados de encuestas sobre sostenibilidad y agente de análisis",
     "description": "Herramienta para visualizar resultados de la encuesta de sostenibilidad de MetaRed / Universia, con un agente IA capaz de correr modelos de regresión y analítica descriptiva.",
@@ -624,14 +479,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
-    "tags": [
-      "Escuela de Gobierno",
-      "MPA",
-      "CV Matching",
-      "Recomendación",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Escuela de Gobierno", "MPA", "CV Matching", "Recomendación", "Listo para la venta"],
+    "readyForSale": True,
     "name": "MPAChat",
     "slogan": "Tu perfil profesional para el MPA, en minutos",
     "description": "Asistente IA que analiza la hoja de vida de candidatos a la Maestría en Administración Pública (MPA) de la Escuela de Gobierno, recomendando líneas y perfilando aspirantes.",
@@ -647,14 +496,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
-    "tags": [
-      "Suite Alumni",
-      "Hojas de Vida",
-      "Egresados",
-      "Unisabana",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Suite Alumni", "Hojas de Vida", "Egresados", "Unisabana", "Listo para la venta"],
+    "readyForSale": True,
     "name": "AlumniCV",
     "slogan": "Suite Alumni - Hojas de vida",
     "description": "Herramienta para egresados de la Universidad de La Sabana enfocada en optimización, formato y gestión de hojas de vida profesionales.",
@@ -670,14 +513,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Comunidad & Admisiones",
-    "tags": [
-      "Suite Alumni",
-      "Acompañamiento",
-      "Posgrados",
-      "Chatbot",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Suite Alumni", "Acompañamiento", "Posgrados", "Chatbot", "Listo para la venta"],
+    "readyForSale": True,
     "name": "AlumniChat",
     "slogan": "Chatbot de acompañamiento para egresados",
     "description": "Chatbot de acompañamiento y orientación académica/profesional para la comunidad de egresados de la Universidad de La Sabana.",
@@ -693,13 +530,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Innovación & Procesos",
-    "tags": [
-      "Innovación Unisabana",
-      "Business Model Canvas",
-      "Propiedad Intelectual",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Innovación Unisabana", "Business Model Canvas", "Propiedad Intelectual", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Germina",
     "slogan": "Asistente de innovación con IA",
     "description": "Plataforma para el seguimiento de procesos de innovación, emprendimiento y autoría intelectual de la Universidad de La Sabana. Genera documentos y apoya en Business Model Canvas.",
@@ -715,15 +547,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Inteligencia Geoespacial",
-    "tags": [
-      "Geoespacial",
-      "Vivienda",
-      "Leaflet",
-      "FincaRaíz",
-      "Estratos",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Geoespacial", "Vivienda", "Leaflet", "FincaRaíz", "Estratos", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Geovivienda",
     "slogan": "Ubica, analiza y decide dónde vivir",
     "description": "Plataforma inmobiliaria con analítica geoespacial: scraping de mercado, distancias a Transmilenio/SITP/ciclorutas, estrato promedio a 200m y mapas interactivos con Leaflet.",
@@ -739,15 +564,8 @@
     "segment": "Sector Privado",
     "tipo": "Software",
     "linea": "Analítica con IA",
-    "tags": [
-      "LangChain",
-      "Plotly",
-      "Whisper",
-      "TTS",
-      "Auto-Gráficos",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["LangChain", "Plotly", "Whisper", "TTS", "Auto-Gráficos", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Data Copilot",
     "slogan": "Pregúntale a tus datos con tu propia voz",
     "description": "Asistente de análisis de datos con LangChain + GPT-4 + Whisper. Carga CSV/Excel, genera gráficos interactivos con Plotly y responde por voz y texto.",
@@ -759,18 +577,14 @@
     "videoUrl": "",
     "pptUrl": ""
   },
+
+  # ─── DASHBOARDS WEB & PLATAFORMAS (SOFTWARE) ─────────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "INVAMER",
-      "Percepción Democrática",
-      "Tiempo Real",
-      "Filtros Demográficos",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["INVAMER", "Percepción Democrática", "Tiempo Real", "Filtros Demográficos", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Cuidar la Democracia",
     "slogan": "Visualiza lo que piensa el ciudadano",
     "description": "Dashboard interactivo con datos de encuesta sobre percepciones democráticas en Colombia (INVAMER/GovLab). Filtros sociodemográficos, mapas y gráficos en tiempo real.",
@@ -786,15 +600,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "FONDECUN",
-      "Cundinamarca",
-      "Sankey",
-      "Mapa de Calor",
-      "Reportes PDF",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["FONDECUN", "Cundinamarca", "Sankey", "Mapa de Calor", "Reportes PDF", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Data Promce",
     "slogan": "Sigue cada institución, mide cada etapa",
     "description": "Plataforma de seguimiento del programa FONDECUN en IEDs de Cundinamarca. Mapa de calor, Sankey, análisis cualitativo con IA y exportación a PDF/Excel.",
@@ -810,14 +617,8 @@
     "segment": "Sector Público",
     "tipo": "Software",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Sabana Centro Cómo Vamos",
-      "Matching Planes",
-      "Scoring IA",
-      "Desarrollo Regional",
-      "Listo para la venta"
-    ],
-    "readyForSale": true,
+    "tags": ["Sabana Centro Cómo Vamos", "Matching Planes", "Scoring IA", "Desarrollo Regional", "Listo para la venta"],
+    "readyForSale": True,
     "name": "Sabana Centro Sostenible",
     "slogan": "Conecta proyectos con planes de desarrollo",
     "description": "Matching entre proyectos estratégicos de Sabana Centro y planes de desarrollo municipales. Scoring semántico con IA de visión regional e impacto.",
@@ -829,17 +630,14 @@
     "videoUrl": "https://drive.google.com/file/d/1WARAZMkb6xri4bO8MIxiPEIVHqOUqbfo/view?usp=drive_link",
     "pptUrl": ""
   },
+
+  # ─── DASHBOARDS TABLEAU ──────────────────────────────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Metas Institucionales",
-      "App Móvil",
-      "Dashboard"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Metas Institucionales", "App Móvil", "Dashboard"],
+    "readyForSale": True,
     "name": "SIAG",
     "slogan": "Sigue en tiempo real a tu organización",
     "description": "Suite de seguimiento de metas institucionales en tiempo real con integración en aplicación web, Android e iOS.",
@@ -855,13 +653,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Seguridad Ciudadana",
-      "Policía Nacional",
-      "Datos Abiertos"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Seguridad Ciudadana", "Policía Nacional", "Datos Abiertos"],
+    "readyForSale": True,
     "name": "Violencia Intrafamiliar en Colombia",
     "slogan": "Monitoreo y tendencias a nivel nacional",
     "description": "Dashboard interactivo con análisis territorial y temporal de denuncias de violencia intrafamiliar en Colombia.",
@@ -877,13 +670,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Salud Pública",
-      "Capacidad Hospitalaria",
-      "Indicadores"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Salud Pública", "Capacidad Hospitalaria", "Indicadores"],
+    "readyForSale": True,
     "name": "Recursos hospitalarios por cada 100.000 habitantes",
     "slogan": "Capacidad del sistema de salud en Colombia",
     "description": "Visualización comparativa de camas, médicos y recursos de atención hospitalaria en los municipios y departamentos del país.",
@@ -899,13 +687,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "ADRES",
-      "Afiliaciones Salud",
-      "Demografía"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "ADRES", "Afiliaciones Salud", "Demografía"],
+    "readyForSale": True,
     "name": "Registros de la Base Única de afiliados - Adres - Mayo 2025",
     "slogan": "Radiografía del aseguramiento en salud",
     "description": "Tablero analítico de la Base de Datos Única de Afiliados (BDUA) con perfiles sociodemográficos y régimen de aseguramiento.",
@@ -921,13 +704,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Demografía",
-      "Envejecimiento",
-      "Políticas Poblacionales"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Demografía", "Envejecimiento", "Políticas Poblacionales"],
+    "readyForSale": True,
     "name": "Envejecimiento poblacional en Colombia por Sexo y Área",
     "slogan": "Transición demográfica y territorio",
     "description": "Historia interactiva sobre las curvas de envejecimiento y pirámides poblacionales urbanas y rurales en Colombia.",
@@ -943,13 +721,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Seguridad",
-      "Extorsión",
-      "Series Temporales"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Seguridad", "Extorsión", "Series Temporales"],
+    "readyForSale": True,
     "name": "Panorama de la Extorsión en Colombia (2010-2024)",
     "slogan": "Evolución de un delito de alto impacto",
     "description": "Análisis longitudinal de denuncias, modalidades y focos territoriales del delito de extorsión a lo largo de 14 años.",
@@ -965,13 +738,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Justicia",
-      "Protección",
-      "Datos Policiales"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Justicia", "Protección", "Datos Policiales"],
+    "readyForSale": True,
     "name": "Delitos Sexuales en Colombia",
     "slogan": "Evidencia para la protección ciudadana",
     "description": "Mapeo y caracterización de reportes de delitos sexuales para el diseño de políticas de prevención y justicia focalizada.",
@@ -987,13 +755,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Demografía",
-      "Cuidado",
-      "Adulto Mayor"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Demografía", "Cuidado", "Adulto Mayor"],
+    "readyForSale": True,
     "name": "El Panorama del envejecimiento poblacional en Colombia",
     "slogan": "Retos de la longevidad y servicios sociales",
     "description": "Dashboard integral con indicadores de dependencia, índice de envejecimiento y distribución departamental.",
@@ -1009,13 +772,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Salud Mental",
-      "Epidemiología",
-      "Prevención"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Salud Mental", "Epidemiología", "Prevención"],
+    "readyForSale": True,
     "name": "Suicidios en Colombia 2023-2024",
     "slogan": "Datos para la salud mental pública",
     "description": "Monitoreo descriptivo y espacial de eventos de salud mental y suicidio reportados en el territorio nacional.",
@@ -1031,14 +789,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "NUSE 123",
-      "Bogotá",
-      "UPZ",
-      "Emergencias"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "NUSE 123", "Bogotá", "UPZ", "Emergencias"],
+    "readyForSale": True,
     "name": "Llamadas totales al NUSE/123 por UPZ en Bogotá",
     "slogan": "Llamadas de emergencia a escala barrial",
     "description": "Distribución geográfica por Unidades de Planeamiento Zonal (UPZ) de llamadas atendidas por la línea única de emergencias de Bogotá.",
@@ -1054,14 +806,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Agro",
-      "Precios Arroz",
-      "Forecasting",
-      "Modelos Predictivos"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Agro", "Precios Arroz", "Forecasting", "Modelos Predictivos"],
+    "readyForSale": True,
     "name": "Precios y productividad del arroz - Forecasting",
     "slogan": "Pronóstico de precios y cosechas agrícolas",
     "description": "Modelo predictivo de series temporales de precios mayoristas y rendimiento por hectárea en el sector arrocero.",
@@ -1077,14 +823,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Movilidad",
-      "Siniestralidad Vial",
-      "Forecasting",
-      "Bogotá"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Movilidad", "Siniestralidad Vial", "Forecasting", "Bogotá"],
+    "readyForSale": True,
     "name": "Siniestralidad vial en Bogotá - Forecasting",
     "slogan": "Modelos predictivos de accidentalidad vial",
     "description": "Predicción de eventos de siniestros viales en corredores viales clave de Bogotá mediante técnicas de forecasting.",
@@ -1100,13 +840,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Movilidad",
-      "Accidentes",
-      "Bogotá"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Movilidad", "Accidentes", "Bogotá"],
+    "readyForSale": True,
     "name": "Siniestralidad vial en Bogotá - Siniestros",
     "slogan": "Registro y causas de accidentes de tránsito",
     "description": "Visualización histórica 2019-2023 de siniestros viales clasificados por tipo de vehículo, horario y localidad.",
@@ -1122,13 +857,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Movilidad",
-      "Víctimas",
-      "Seguridad Vial"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Movilidad", "Víctimas", "Seguridad Vial"],
+    "readyForSale": True,
     "name": "Siniestralidad vial en Bogotá - Víctimas",
     "slogan": "Perfil de actores viales y lesionados",
     "description": "Tablero enfocado en peatones, ciclistas y motociclistas afectados en eventos viales en la capital.",
@@ -1144,13 +874,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Geoanalítica",
-      "Mapas de Calor",
-      "Puntos Críticos"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Geoanalítica", "Mapas de Calor", "Puntos Críticos"],
+    "readyForSale": True,
     "name": "Siniestralidad vial en Bogotá - Análisis espacial",
     "slogan": "Puntos críticos e intersecciones de alto riesgo",
     "description": "Análisis de concentración geoespacial de accidentes e identificación de tramos viales prioritarios para intervención.",
@@ -1166,14 +891,8 @@
     "segment": "Sector Público",
     "tipo": "Dashboards",
     "linea": "Dashboards & Analítica",
-    "tags": [
-      "Tableau",
-      "Forecasting",
-      "Línea 123",
-      "UPZ",
-      "Capacidad Operativa"
-    ],
-    "readyForSale": true,
+    "tags": ["Tableau", "Forecasting", "Línea 123", "UPZ", "Capacidad Operativa"],
+    "readyForSale": True,
     "name": "Llamadas totales al NUSE/123 por UPZ en Bogotá - Forecasting",
     "slogan": "Pronóstico de demanda de atención de emergencias",
     "description": "Modelos predictivos de volumen de llamadas al NUSE por UPZ para optimizar el despliegue de patrullas y ambulancias.",
@@ -1185,18 +904,14 @@
     "videoUrl": "",
     "pptUrl": ""
   },
+
+  # ─── ESTUDIOS & ANÁLISIS DE DATOS ────────────────────────────────────────────
   {
     "segment": "Sector Público",
     "tipo": "Estudios & Análisis de datos",
     "linea": "Salud & Geoanalítica",
-    "tags": [
-      "Machine Learning",
-      "Clínica Unisabana",
-      "ARIMA",
-      "Prophet",
-      "Pacientes NO-EPS"
-    ],
-    "readyForSale": false,
+    "tags": ["Machine Learning", "Clínica Unisabana", "ARIMA", "Prophet", "Pacientes NO-EPS"],
+    "readyForSale": False,
     "name": "Análisis Clínica Universidad de la Sabana",
     "slogan": "Anticipa la demanda, optimiza los recursos",
     "description": "Sistema ML de series de tiempo (ARIMA y Prophet) con MAE inferior a 10% para pronosticar el número de pacientes NO-EPS y la facturación semanal de la Clínica.",
@@ -1212,13 +927,8 @@
     "segment": "Sector Público",
     "tipo": "Estudios & Análisis de datos",
     "linea": "Salud & Geoanalítica",
-    "tags": [
-      "Geoanalítica",
-      "Clínica Unisabana",
-      "Pacientes Potenciales",
-      "Inteligencia Territorial"
-    ],
-    "readyForSale": false,
+    "tags": ["Geoanalítica", "Clínica Unisabana", "Pacientes Potenciales", "Inteligencia Territorial"],
+    "readyForSale": False,
     "name": "Geoanálisis Clínica Universidad de la Sabana",
     "slogan": "Encuentra al paciente antes de que llegue",
     "description": "Análisis predictivo geoespacial de la ubicación y patrones de desplazamiento de potenciales usuarios de servicios de salud privados en Sabana Centro.",
@@ -1234,13 +944,8 @@
     "segment": "Sector Público",
     "tipo": "Estudios & Análisis de datos",
     "linea": "Políticas Públicas & Territorio",
-    "tags": [
-      "OSZ",
-      "Zipaquirá",
-      "Indicadores Sociales",
-      "Observatorio Social"
-    ],
-    "readyForSale": false,
+    "tags": ["OSZ", "Zipaquirá", "Indicadores Sociales", "Observatorio Social"],
+    "readyForSale": False,
     "name": "Observatorio Social de Zipaquirá - OSZ",
     "slogan": "Alcaldía de Zipaquirá",
     "description": "Desarrollo y diseño del primer observatorio social de la Región Sabana Centro para el seguimiento riguroso de indicadores sociales y bienestar.",
@@ -1256,13 +961,8 @@
     "segment": "Sector Público",
     "tipo": "Estudios & Análisis de datos",
     "linea": "Electoral & Pronóstico",
-    "tags": [
-      "Pronóstico Electoral",
-      "Redes Sociales",
-      "Metodología ELA-NOM",
-      "Error < 9%"
-    ],
-    "readyForSale": false,
+    "tags": ["Pronóstico Electoral", "Redes Sociales", "Metodología ELA-NOM", "Error < 9%"],
+    "readyForSale": False,
     "name": "ELA-NOM",
     "slogan": "Pronostica elecciones con redes sociales",
     "description": "Aplicación de una novedosa metodología de pronóstico electoral (ELA-NOM) basada en minería de redes sociales con error predictivo inferior al 9%.",
@@ -1274,17 +974,14 @@
     "videoUrl": "",
     "pptUrl": ""
   },
+
+  # ─── EDUCACIÓN (FORMACIÓN PROFESIONAL EN IA) ─────────────────────────────────
   {
     "segment": "Transversal",
     "tipo": "Educación",
     "linea": "Educación & Formación",
-    "tags": [
-      "Doctorado",
-      "Posgrado",
-      "Investigación IA",
-      "Sector Público"
-    ],
-    "readyForSale": true,
+    "tags": ["Doctorado", "Posgrado", "Investigación IA", "Sector Público"],
+    "readyForSale": True,
     "name": "Doctorado en IA",
     "slogan": "Investiga el futuro, lidera el cambio",
     "description": "Programa doctoral de investigación de vanguardia en inteligencia artificial, enfocado en soluciones para el sector público y formulación de políticas basadas en evidencia.",
@@ -1300,13 +997,8 @@
     "segment": "Transversal",
     "tipo": "Educación",
     "linea": "Educación & Formación",
-    "tags": [
-      "Maestría",
-      "Posgrado",
-      "Analítica Aplicada",
-      "Toma de Decisiones"
-    ],
-    "readyForSale": true,
+    "tags": ["Maestría", "Posgrado", "Analítica Aplicada", "Toma de Decisiones"],
+    "readyForSale": True,
     "name": "Maestría en IA",
     "slogan": "Domina la IA, transforma tu sector",
     "description": "Programa de posgrado en inteligencia artificial y analítica aplicada con énfasis en gobierno digital, política pública y gestión estratégica organizacional.",
@@ -1322,13 +1014,8 @@
     "segment": "Transversal",
     "tipo": "Educación",
     "linea": "Educación & Formación",
-    "tags": [
-      "Pregrado",
-      "Ciencia de Datos",
-      "Modelado Matemático",
-      "Unisabana"
-    ],
-    "readyForSale": true,
+    "tags": ["Pregrado", "Ciencia de Datos", "Modelado Matemático", "Unisabana"],
+    "readyForSale": True,
     "name": "Pregrado en IA",
     "slogan": "Aprende IA desde la raíz",
     "description": "Programa de pregrado en Ciencia de Datos e Inteligencia Artificial de la Universidad de La Sabana. Formación integral en modelos, algoritmos y aplicaciones reales.",
@@ -1344,13 +1031,8 @@
     "segment": "Transversal",
     "tipo": "Educación",
     "linea": "Educación & Formación",
-    "tags": [
-      "Bootcamps",
-      "Educación Continua",
-      "Formación Ejecutiva",
-      "Práctica"
-    ],
-    "readyForSale": true,
+    "tags": ["Bootcamps", "Educación Continua", "Formación Ejecutiva", "Práctica"],
+    "readyForSale": True,
     "name": "Bootcamps en IA",
     "slogan": "Habilidades reales, en tiempo récord",
     "description": "Programas técnicos intensivos de capacitación en IA para profesionales y directivos del sector público y privado, orientados a casos de uso inmediatos.",
@@ -1363,3 +1045,11 @@
     "pptUrl": ""
   }
 ]
+
+with open("products_data.json", "w", encoding="utf-8") as f:
+    json.dump(products, f, ensure_ascii=False, indent=2)
+
+with open("build_app_data.py", "w", encoding="utf-8") as f:
+    f.write("# -*- coding: utf-8 -*-\\n# build_app_data.py\\nimport json\\n\\nproducts = " + json.dumps(products, ensure_ascii=False, indent=2) + "\\n\\nwith open('products_data.json', 'w', encoding='utf-8') as f:\\n    json.dump(products, f, ensure_ascii=False, indent=2)\\n")
+
+print("Clean products generated successfully with 100% accurate Spanish encoding.")

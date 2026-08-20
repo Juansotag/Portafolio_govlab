@@ -129,7 +129,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   initNavigation();
   initFilters();
   renderProducts(PRODUCTS);
-  renderDashboard();
+  renderDashboardStructure();
+  updateDashboard(PRODUCTS);
   initModal();
   initSearchInput();
   lucide.createIcons();
@@ -606,41 +607,20 @@ function applyFilters() {
   });
 
   renderProducts(filtered);
+  updateDashboard(filtered);
 }
 
-// --- 4. Dashboard Visual con Gráficas Reales (Chart.js) ---
-function renderDashboard() {
+// --- 4. Dashboard Visual Reactivo con Gráficas (Chart.js) ---
+function renderDashboardStructure() {
   const dashboardContainer = document.getElementById('experiencias-dashboard');
   if (!dashboardContainer) return;
-
-  const total = PRODUCTS.length;
-  const countSoftware = PRODUCTS.filter(p => p.tipo === 'Software').length;
-  const countDashboards = PRODUCTS.filter(p => p.tipo === 'Dashboards').length;
-  const countEstudios = PRODUCTS.filter(p => p.tipo === 'Estudios & Análisis de datos').length;
-  const countEducacion = PRODUCTS.filter(p => p.tipo === 'Educación').length;
-  const countReadyForSale = PRODUCTS.filter(p => p.readyForSale).length;
-
-  const countPublico = PRODUCTS.filter(p => p.segment === 'Sector Público').length;
-  const countPrivado = PRODUCTS.filter(p => p.segment === 'Sector Privado').length;
-  const countTransversal = PRODUCTS.filter(p => p.segment === 'Transversal').length;
-
-  const countEnLinea = PRODUCTS.filter(p => p.status.toLowerCase() === 'en línea').length;
-  const countActivo = PRODUCTS.filter(p => p.status.toLowerCase() === 'activo').length;
-  const countMantenimiento = PRODUCTS.filter(p => p.status.toLowerCase() === 'en mantenimiento').length;
-
-  const lineasCount = {};
-  PRODUCTS.forEach(p => {
-    if (p.linea) {
-      lineasCount[p.linea] = (lineasCount[p.linea] || 0) + 1;
-    }
-  });
 
   dashboardContainer.innerHTML = `
     <div class="dashboard-header-block">
       <div class="dashboard-title-wrap">
-        <span class="dashboard-eyebrow">Panel Analítico</span>
+        <span class="dashboard-eyebrow">Panel Analítico Dinámico</span>
         <h2 class="dashboard-title">Distribución y Métricas del Portafolio</h2>
-        <p class="dashboard-subtitle">Visualización estadística y composición interactiva de las ${total} experiencias del GovLab.</p>
+        <p class="dashboard-subtitle" id="dashboard-subtitle-text">Visualización estadística en tiempo real de las experiencias filtradas.</p>
       </div>
       <div class="dashboard-actions-group">
         <button class="chiclet-btn" onclick="resetAllFilters()">
@@ -650,50 +630,8 @@ function renderDashboard() {
     </div>
 
     <!-- KPI Summary Grid -->
-    <div class="dashboard-kpis-grid">
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Todos')">
-        <div class="kpi-icon-wrap kpi-icon-blue"><i data-lucide="layers"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${total}</span>
-          <span class="kpi-label">Experiencias Totales</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Software')">
-        <div class="kpi-icon-wrap kpi-icon-green"><i data-lucide="code-2"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countSoftware}</span>
-          <span class="kpi-label">Software & Plataformas</span>
-          <span class="kpi-subtext">${countReadyForSale} Listos para la venta</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Dashboards')">
-        <div class="kpi-icon-wrap kpi-icon-purple"><i data-lucide="bar-chart-3"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countDashboards}</span>
-          <span class="kpi-label">Dashboards & Analítica</span>
-          <span class="kpi-subtext">Tableau & Web Apps</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Estudios & Análisis de datos')">
-        <div class="kpi-icon-wrap kpi-icon-orange"><i data-lucide="brain"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countEstudios}</span>
-          <span class="kpi-label">Estudios & Modelos</span>
-          <span class="kpi-subtext">ML, ELA-NOM & OSZ</span>
-        </div>
-      </div>
-
-      <div class="kpi-card" onclick="quickFilter('tipo', 'Educación')">
-        <div class="kpi-icon-wrap kpi-icon-teal"><i data-lucide="graduation-cap"></i></div>
-        <div class="kpi-data">
-          <span class="kpi-number">${countEducacion}</span>
-          <span class="kpi-label">Educación & Formación</span>
-          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
-        </div>
-      </div>
+    <div class="dashboard-kpis-grid" id="dashboard-kpis-grid">
+      <!-- Se llena dinámicamente -->
     </div>
 
     <!-- Gráficas de Análisis -->
@@ -738,194 +676,295 @@ function renderDashboard() {
       </div>
 
       <!-- Chiclets de acceso rápido a Líneas -->
-      <div class="lineas-chiclets-container">
-        ${Object.entries(lineasCount).sort((a, b) => b[1] - a[1]).map(([linea, count]) => {
-          return `
-            <button class="chiclet-linea-pill" onclick="quickFilter('linea', '${linea.replace(/'/g, "\\\\'")}')">
-              <span class="pill-name">${linea}</span>
-              <span class="pill-badge">${count}</span>
-            </button>
-          `;
-        }).join('')}
+      <div class="lineas-chiclets-container" id="dashboard-lineas-pills">
+        <!-- Se llena dinámicamente -->
       </div>
     </div>
   `;
 
   lucide.createIcons();
-
-  setTimeout(() => {
-    initDashboardCharts(countSoftware, countDashboards, countEstudios, countEducacion, countPublico, countPrivado, countTransversal, countEnLinea, countActivo, countMantenimiento, lineasCount);
-  }, 100);
 }
 
-function initDashboardCharts(soft, dash, est, edu, pub, priv, trans, online, active, maint, lineasMap) {
-  if (typeof Chart === 'undefined') {
-    console.warn('Chart.js no está cargado.');
-    return;
+function updateDashboard(currentProducts) {
+  const total = currentProducts.length;
+  const grandTotal = PRODUCTS.length;
+  const countSoftware = currentProducts.filter(p => p.tipo === 'Software').length;
+  const countDashboards = currentProducts.filter(p => p.tipo === 'Dashboards').length;
+  const countEstudios = currentProducts.filter(p => p.tipo === 'Estudios & Análisis de datos').length;
+  const countEducacion = currentProducts.filter(p => p.tipo === 'Educación').length;
+  const countReadyForSale = currentProducts.filter(p => p.readyForSale).length;
+
+  const countPublico = currentProducts.filter(p => p.segment === 'Sector Público').length;
+  const countPrivado = currentProducts.filter(p => p.segment === 'Sector Privado').length;
+  const countTransversal = currentProducts.filter(p => p.segment === 'Transversal').length;
+
+  const subtitleEl = document.getElementById('dashboard-subtitle-text');
+  if (subtitleEl) {
+    subtitleEl.textContent = total === grandTotal
+      ? `Visualización estadística y composición de las ${grandTotal} experiencias del GovLab.`
+      : `Mostrando estadísticas de ${total} de ${grandTotal} experiencias según los filtros aplicados.`;
   }
+
+  // Actualizar KPIs
+  const kpisGrid = document.getElementById('dashboard-kpis-grid');
+  if (kpisGrid) {
+    kpisGrid.innerHTML = `
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Todos')">
+        <div class="kpi-icon-wrap kpi-icon-blue"><i data-lucide="layers"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${total}</span>
+          <span class="kpi-label">Experiencias Visibles</span>
+          <span class="kpi-subtext">de ${grandTotal} registradas</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Software')">
+        <div class="kpi-icon-wrap kpi-icon-green"><i data-lucide="code-2"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countSoftware}</span>
+          <span class="kpi-label">Software & Plataformas</span>
+          <span class="kpi-subtext">${countReadyForSale} Listos para la venta</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Dashboards')">
+        <div class="kpi-icon-wrap kpi-icon-purple"><i data-lucide="bar-chart-3"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countDashboards}</span>
+          <span class="kpi-label">Dashboards & Analítica</span>
+          <span class="kpi-subtext">Tableau & Web Apps</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Estudios & Análisis de datos')">
+        <div class="kpi-icon-wrap kpi-icon-orange"><i data-lucide="brain"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countEstudios}</span>
+          <span class="kpi-label">Estudios & Modelos</span>
+          <span class="kpi-subtext">ML, ELA-NOM & OSZ</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="quickFilter('tipo', 'Educación')">
+        <div class="kpi-icon-wrap kpi-icon-teal"><i data-lucide="graduation-cap"></i></div>
+        <div class="kpi-data">
+          <span class="kpi-number">${countEducacion}</span>
+          <span class="kpi-label">Educación & Formación</span>
+          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
+        </div>
+      </div>
+    `;
+    lucide.createIcons();
+  }
+
+  // Conteo de Líneas
+  const lineasCount = {};
+  currentProducts.forEach(p => {
+    if (p.linea) {
+      lineasCount[p.linea] = (lineasCount[p.linea] || 0) + 1;
+    }
+  });
+
+  // Actualizar Chiclets de Líneas en el Dashboard
+  const lineasPillsContainer = document.getElementById('dashboard-lineas-pills');
+  if (lineasPillsContainer) {
+    const sortedLineas = Object.entries(lineasCount).sort((a, b) => b[1] - a[1]);
+    if (sortedLineas.length === 0) {
+      lineasPillsContainer.innerHTML = '<span style="font-size:0.85rem; color:var(--text-muted);">No hay líneas en la selección actual.</span>';
+    } else {
+      lineasPillsContainer.innerHTML = sortedLineas.map(([linea, count]) => {
+        return `
+          <button class="chiclet-linea-pill" onclick="quickFilter('linea', '${linea.replace(/'/g, "\\\\'")}')">
+            <span class="pill-name">${linea}</span>
+            <span class="pill-badge">${count}</span>
+          </button>
+        `;
+      }).join('');
+    }
+  }
+
+  // Actualizar Gráficas de Chart.js
+  updateChartInstances(countSoftware, countDashboards, countEstudios, countEducacion, countPublico, countPrivado, countTransversal, lineasCount);
+}
+
+function updateChartInstances(soft, dash, est, edu, pub, priv, trans, lineasMap) {
+  if (typeof Chart === 'undefined') return;
 
   // 1. Gráfico de Dona: Tipo
   const ctxTipo = document.getElementById('chart-tipo-canvas');
   if (ctxTipo) {
-    if (chartTipoInstance) chartTipoInstance.destroy();
-    chartTipoInstance = new Chart(ctxTipo, {
-      type: 'doughnut',
-      data: {
-        labels: ['Software & Apps', 'Dashboards', 'Estudios & Modelos', 'Educación'],
-        datasets: [{
-          data: [soft, dash, est, edu],
-          backgroundColor: ['#00135B', '#00387D', '#FB6F1A', '#0D9488'],
-          borderColor: '#ffffff',
-          borderWidth: 3,
-          hoverOffset: 6
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: {
-              font: { family: 'Libre Franklin', size: 12, weight: 600 },
-              color: '#374151',
-              padding: 16,
-              usePointStyle: true,
-              pointStyle: 'circle'
-            }
-          },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 },
-            callbacks: {
-              label: function(ctx) {
-                const total = soft + dash + est + edu;
-                const val = ctx.raw;
-                const pct = Math.round((val / total) * 100);
-                return ` ${ctx.label}: ${val} experiencias (${pct}%)`;
+    if (chartTipoInstance) {
+      chartTipoInstance.data.datasets[0].data = [soft, dash, est, edu];
+      chartTipoInstance.update();
+    } else {
+      chartTipoInstance = new Chart(ctxTipo, {
+        type: 'doughnut',
+        data: {
+          labels: ['Software & Apps', 'Dashboards', 'Estudios & Modelos', 'Educación'],
+          datasets: [{
+            data: [soft, dash, est, edu],
+            backgroundColor: ['#00135B', '#00387D', '#FB6F1A', '#0D9488'],
+            borderColor: '#ffffff',
+            borderWidth: 3,
+            hoverOffset: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { family: 'Libre Franklin', size: 12, weight: 600 },
+                color: '#374151',
+                padding: 16,
+                usePointStyle: true,
+                pointStyle: 'circle'
+              }
+            },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 },
+              callbacks: {
+                label: function(ctx) {
+                  const total = soft + dash + est + edu;
+                  const val = ctx.raw;
+                  const pct = total > 0 ? Math.round((val / total) * 100) : 0;
+                  return ` ${ctx.label}: ${val} experiencias (${pct}%)`;
+                }
               }
             }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            const tipos = ['Software', 'Dashboards', 'Estudios & Análisis de datos', 'Educación'];
-            quickFilter('tipo', tipos[index]);
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              const tipos = ['Software', 'Dashboards', 'Estudios & Análisis de datos', 'Educación'];
+              quickFilter('tipo', tipos[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 
   // 2. Gráfico de Barras: Segmentos
   const ctxSegmento = document.getElementById('chart-segmento-canvas');
   if (ctxSegmento) {
-    if (chartSegmentoInstance) chartSegmentoInstance.destroy();
-    chartSegmentoInstance = new Chart(ctxSegmento, {
-      type: 'bar',
-      data: {
-        labels: ['Sector Público', 'Sector Privado', 'Transversal'],
-        datasets: [{
-          label: 'Experiencias',
-          data: [pub, priv, trans],
-          backgroundColor: ['#00135B', '#2B8D04', '#93AAC9'],
-          borderRadius: 8,
-          barThickness: 36
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-            grid: { color: '#E2E8F0', drawBorder: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+    if (chartSegmentoInstance) {
+      chartSegmentoInstance.data.datasets[0].data = [pub, priv, trans];
+      chartSegmentoInstance.update();
+    } else {
+      chartSegmentoInstance = new Chart(ctxSegmento, {
+        type: 'bar',
+        data: {
+          labels: ['Sector Público', 'Sector Privado', 'Transversal'],
+          datasets: [{
+            label: 'Experiencias',
+            data: [pub, priv, trans],
+            backgroundColor: ['#00135B', '#2B8D04', '#93AAC9'],
+            borderRadius: 8,
+            barThickness: 36
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { color: '#E2E8F0', drawBorder: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { font: { family: 'Libre Franklin', size: 12, weight: 600 }, color: '#374151' }
+            }
           },
-          x: {
-            grid: { display: false },
-            ticks: { font: { family: 'Libre Franklin', size: 12, weight: 600 }, color: '#374151' }
-          }
-        },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            const segs = ['Sector Público', 'Sector Privado', 'Transversal'];
-            quickFilter('segment', segs[index]);
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 }
+            }
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              const segs = ['Sector Público', 'Sector Privado', 'Transversal'];
+              quickFilter('segment', segs[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 
   // 3. Gráfico Horizontal: Líneas Estratégicas
   const ctxLinea = document.getElementById('chart-linea-canvas');
   if (ctxLinea) {
-    if (chartLineaInstance) chartLineaInstance.destroy();
     const sortedLineas = Object.entries(lineasMap).sort((a, b) => b[1] - a[1]);
     const labels = sortedLineas.map(item => item[0]);
     const counts = sortedLineas.map(item => item[1]);
 
-    chartLineaInstance = new Chart(ctxLinea, {
-      type: 'bar',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Cantidad de Experiencias',
-          data: counts,
-          backgroundColor: '#00387D',
-          hoverBackgroundColor: '#00135B',
-          borderRadius: 6,
-          barThickness: 20
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          x: {
-            beginAtZero: true,
-            grid: { color: '#E2E8F0', drawBorder: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+    if (chartLineaInstance) {
+      chartLineaInstance.data.labels = labels;
+      chartLineaInstance.data.datasets[0].data = counts;
+      chartLineaInstance.update();
+    } else {
+      chartLineaInstance = new Chart(ctxLinea, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Cantidad de Experiencias',
+            data: counts,
+            backgroundColor: '#00387D',
+            hoverBackgroundColor: '#00135B',
+            borderRadius: 6,
+            barThickness: 20
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: { color: '#E2E8F0', drawBorder: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11 }, color: '#64748B', precision: 0 }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { font: { family: 'Libre Franklin', size: 11, weight: 600 }, color: '#374151' }
+            }
           },
-          y: {
-            grid: { display: false },
-            ticks: { font: { family: 'Libre Franklin', size: 11, weight: 600 }, color: '#374151' }
-          }
-        },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: '#00135B',
-            padding: 12,
-            cornerRadius: 8,
-            titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
-            bodyFont: { family: 'Libre Franklin', size: 12 }
-          }
-        },
-        onClick: (event, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            quickFilter('linea', labels[index]);
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#00135B',
+              padding: 12,
+              cornerRadius: 8,
+              titleFont: { family: 'Libre Franklin', size: 13, weight: 700 },
+              bodyFont: { family: 'Libre Franklin', size: 12 }
+            }
+          },
+          onClick: (event, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              quickFilter('linea', labels[index]);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 }
 
@@ -1009,4 +1048,4 @@ document.addEventListener('DOMContentLoaded', () => {
 with open("app.js", "w", encoding="utf-8") as f:
     f.write(js_content)
 
-print("Generated app.js with robust Medios loading and fallback!")
+print("Generated app.js with dynamic, reactive dashboard linked to filters!")
