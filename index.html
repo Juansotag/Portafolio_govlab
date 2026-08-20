@@ -36,7 +36,7 @@
 
       <nav class="nav-links">
         <button class="nav-link active" data-target="seccion-que-es">GovLab</button>
-        <button class="nav-link" data-target="seccion-que-hacemos">Soluciones</button>
+        <button class="nav-link" data-target="seccion-que-hacemos">Experiencias</button>
 
         <button class="nav-link" data-target="seccion-medios">Medios</button>
         <button class="nav-link" data-target="seccion-alianzas">Alianzas</button>
@@ -68,7 +68,7 @@
           <button class="btn btn-giant-primary"
             onclick="document.querySelector('[data-target=\'seccion-que-hacemos\']').click()"
             style="background-color: transparent; color: white; border: 2px solid white; font-weight: 600;">Ver
-            soluciones</button>
+            experiencias</button>
         </div>
       </div>
     </div>
@@ -417,37 +417,60 @@
     </div>
   </section>
 
-  <!-- SECCIÓN 2: ¿Qué hacemos? -->
+  <!-- SECCIÓN 2: ¿Qué hacemos? (Experiencias) -->
   <section id="seccion-que-hacemos" class="page-section">
     <div class="section-container">
       <div class="section-header">
-        <h2 class="section-title">Nuestro Portafolio de Productos</h2>
-        <p class="section-subtitle">Más de 30 soluciones digitales para el sector público y privado</p>
+        <h2 class="section-title">Portafolio de Experiencias</h2>
+        <p class="section-subtitle">60 experiencias digitales, dashboards, estudios avanzados y programas de formación para el sector público y privado</p>
       </div>
 
-      <!-- Filtros -->
+      <!-- Buscador y Filtros -->
       <div class="filters-container">
+        <!-- Barra de Búsqueda y Acciones Rápidas -->
+        <div class="filters-top-bar">
+          <div class="search-input-box">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="products-search-input" placeholder="Buscar por nombre, tecnología, sector o tag (ej. PitchLab, OpenAI, Tableau, Notarías)..." aria-label="Buscar experiencias">
+            <button class="search-clear-btn" onclick="document.getElementById('products-search-input').value=''; activeFilters.texto=''; applyFilters();" title="Limpiar búsqueda">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+          <button class="filter-reset-chiclet" onclick="resetAllFilters()" title="Restablecer todos los filtros">
+            <i data-lucide="rotate-ccw"></i> Limpiar filtros
+          </button>
+        </div>
+
         <div class="filter-group" id="filter-segment">
           <span class="filter-label">Segmento:</span>
           <!-- Generado dinámicamente -->
         </div>
-        <div class="filter-group" id="filter-type">
+        <div class="filter-group" id="filter-tipo">
           <span class="filter-label">Tipo:</span>
+          <!-- Generado dinámicamente -->
+        </div>
+        <div class="filter-group" id="filter-linea">
+          <span class="filter-label">Línea / Categoría:</span>
           <!-- Generado dinámicamente -->
         </div>
         <div class="filter-group" id="filter-status">
           <span class="filter-label">Estado:</span>
           <!-- Generado dinámicamente -->
         </div>
-      </div>
 
-      <div class="results-counter" id="results-counter">
-        Mostrando 30 de 30 productos
+        <div class="results-counter-box">
+          <span id="results-counter" class="results-counter-text">Cargando experiencias...</span>
+        </div>
       </div>
 
       <!-- Grid de Productos -->
       <div class="products-grid" id="products-grid">
         <!-- Tarjetas inyectadas por JS -->
+      </div>
+
+      <!-- Dashboard interactivo al final de Experiencias -->
+      <div id="experiencias-dashboard" class="portfolio-dashboard-container">
+        <!-- Dashboard inyectado dinámicamente por app.js con Chart.js -->
       </div>
     </div>
   </section>
@@ -820,6 +843,8 @@
     </div>
   </div>
 
+  <!-- Chart.js para el Dashboard analítico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <!-- Lógica -->
