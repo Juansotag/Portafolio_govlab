@@ -368,10 +368,9 @@ function renderProducts(productsToRender) {
 
     if (!isEducacion) {
       if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
-        const action = product.appUrl
-          ? `onclick="window.open('${product.appUrl}', '_blank')"`
-          : (product.videoUrl ? `onclick="window.open('${product.videoUrl}', '_blank')"` : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`));
-        buttonsHtml += `<button class="btn btn-primary" ${action}><i data-lucide="message-square"></i> Contáctanos</button>`;
+        const waMsg = encodeURIComponent(`Hola, me contacto desde el portafolio del GovLab. Estoy interesado en conocer más y solicitar información o demostración sobre ${product.name}.`);
+        const waUrl = `https://wa.me/573158905940?text=${waMsg}`;
+        buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${waUrl}', '_blank')"><i data-lucide="message-square"></i> Contáctanos</button>`;
       } else if (product.appUrl) {
         const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
@@ -393,8 +392,8 @@ function renderProducts(productsToRender) {
         buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
-      // Botón secundario de Video si ya tiene botón principal de App
-      if (product.appUrl && product.videoUrl) {
+      // Botón secundario de Video si ya tiene botón principal de App o Contacto
+      if ((product.appUrl || product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) && product.videoUrl) {
         buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
       }
 

@@ -281,10 +281,10 @@ const PRODUCTS_FALLBACK = [
     "description": "Sistema de llamadas automatizadas bidireccionales con IA para campañas electorales e investigación de opinión pública. Encuestas dinámicas y mensajes personalizados masivos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://alocandidato-production.up.railway.app/",
+    "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Alocandidato",
     "logo": "assets/projects/alocandidato.jpg",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1bOY7U-cqev5172oxBTSLvazsdPdM2hTT/view?usp=sharing",
     "pptUrl": ""
   },
   {
@@ -879,10 +879,10 @@ const PRODUCTS_FALLBACK = [
     "description": "Dashboard institucional para el seguimiento de metas estratégicas, matrícula estudiantil, retención y desempeño financiero de unidades académicas.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SIAG_Dashboard/Inicio",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Cardesk-Gestin/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1iZEkSOuXZ5h4kMB0xZBnUOpvovll0vQx/view?usp=drive_link",
     "pptUrl": ""
   },
   {
@@ -902,7 +902,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Visualización analítica con datos de la Policía Nacional sobre denuncias de violencia intrafamiliar por departamento, municipio, grupo etario y género.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/ViolenciaIntrafamiliarColombia/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Datos-Polica/Violenciaintrafamiliar",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -925,7 +925,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Dashboard que mapea la disponibilidad de camas hospitalarias, UCI, ambulancias y personal médico por departamento frente a la densidad poblacional.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/RecursosHospitalariosColombia/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Recursoshospitalariosporcada100_00habitantes-2022/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -949,7 +949,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Análisis de afiliación al Sistema General de Seguridad Social en Salud: régimen contributivo vs. subsidiado, pirámide de edad y cobertura departamental.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/BDUA_Adres_2025/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/RegistrosdelaBasedeDatosnicadeAfiliados-ADRES-Mayo2025/Perfilesdelosafiliados",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -972,7 +972,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Historia interactiva sobre las curvas de envejecimiento y pirámides poblacionales urbanas y rurales en Colombia.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/EnvejecimientoPoblacional_SexoArea/Story",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/EnvejecimientopoblacionalenColombiaporSexoyArea/Historia1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -995,7 +995,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Análisis longitudinal de denuncias, modalidades y focos territoriales del delito de extorsión a lo largo de 14 años.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/ExtorsionColombia2010_2024/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/PanoramadelaextorsinenColombia2010-2024/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1018,7 +1018,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Mapeo y caracterización de reportes de delitos sexuales para el diseño de políticas de prevención y justicia focalizada.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/DelitosSexualesColombia/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/DelitossexualesenColombia_17300861605130/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1041,7 +1041,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Dashboard integral con indicadores de dependencia, índice de envejecimiento y distribución departamental.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/PanoramaEnvejecimientoColombia/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/ElpanoramadelenvejecimientopoblacionalenColombia/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1064,7 +1064,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Monitoreo descriptivo y espacial de eventos de salud mental y suicidio reportados en el territorio nacional.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SuicidiosColombia2023_2024/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Suicidios-2023-2024/Dashboard12",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1087,7 +1087,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Distribución geográfica por Unidades de Planeamiento Zonal (UPZ) de llamadas atendidas por la línea única de emergencias de Bogotá.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/NUSE123_UPZ_Bogota/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/LlamadastotalesalNUSEporUPZ/Vistadistrital",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1111,7 +1111,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Modelo predictivo de series temporales de precios mayoristas y rendimiento por hectárea en el sector arrocero.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/ArrozForecasting/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Dashboardarroz/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1135,7 +1135,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Predicción de eventos de siniestros viales en corredores viales clave de Bogotá mediante técnicas de forecasting.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SiniestralidadBogota_Forecasting/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-forecasting/SiniestralidadvialenBogotD_C_-Modelopredictivo-2019-2023",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1158,7 +1158,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Visualización histórica 2019-2023 de siniestros viales clasificados por tipo de vehículo, horario y localidad.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SiniestralidadBogota_Siniestros/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Siniestros/SiniestralidadvialenBogotD_C_-2019-2023",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1181,7 +1181,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Tablero enfocado en peatones, ciclistas y motociclistas afectados en eventos viales en la capital.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SiniestralidadBogota_Victimas/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Vctimas/VctimasdelasiniestralidadvialenBogotD_C_-2019-2023",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1204,7 +1204,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Análisis de concentración geoespacial de accidentes e identificación de tramos viales prioritarios para intervención.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/SiniestralidadBogota_Espacial/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Siniestralidadvial-2019-2023V2-Anlisisespacial/SiniestralidadvialenBogotD_C_-2019-2023-Anlisisespacial",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -1228,7 +1228,7 @@ const PRODUCTS_FALLBACK = [
     "description": "Modelos predictivos de volumen de llamadas al NUSE por UPZ para optimizar el despliegue de patrullas y ambulancias.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://public.tableau.com/views/NUSE123_UPZ_Forecasting/Dashboard",
+    "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/LlamadasalNUSEporUPZ/VistaporUPZ",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -2957,10 +2957,9 @@ function renderProducts(productsToRender) {
 
     if (!isEducacion) {
       if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
-        const action = product.appUrl
-          ? `onclick="window.open('${product.appUrl}', '_blank')"`
-          : (product.videoUrl ? `onclick="window.open('${product.videoUrl}', '_blank')"` : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`));
-        buttonsHtml += `<button class="btn btn-primary" ${action}><i data-lucide="message-square"></i> Contáctanos</button>`;
+        const waMsg = encodeURIComponent(`Hola, me contacto desde el portafolio del GovLab. Estoy interesado en conocer más y solicitar información o demostración sobre ${product.name}.`);
+        const waUrl = `https://wa.me/573158905940?text=${waMsg}`;
+        buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${waUrl}', '_blank')"><i data-lucide="message-square"></i> Contáctanos</button>`;
       } else if (product.appUrl) {
         const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
@@ -2982,8 +2981,8 @@ function renderProducts(productsToRender) {
         buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
-      // Botón secundario de Video si ya tiene botón principal de App
-      if (product.appUrl && product.videoUrl) {
+      // Botón secundario de Video si ya tiene botón principal de App o Contacto
+      if ((product.appUrl || product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) && product.videoUrl) {
         buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
       }
 
