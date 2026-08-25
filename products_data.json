@@ -1325,28 +1325,5 @@
     "logo": "assets/Govlab.png",
     "videoUrl": "",
     "pptUrl": "assets/decks/ela-nom.pdf"
-  },
-  {
-    "segment": "Transversal",
-    "tipo": "Educación",
-    "linea": "Educación & Formación",
-    "tags": [
-      "Educación",
-      "Empresa",
-      "Capacitación",
-      "Bootcamp",
-      "Formación Ejecutiva"
-    ],
-    "readyForSale": false,
-    "name": "Bootcamps en IA",
-    "slogan": "Habilidades reales, en tiempo récord",
-    "description": "Programas técnicos intensivos de capacitación en IA para profesionales y directivos del sector público y privado, orientados a casos de uso inmediatos.",
-    "status": "En línea",
-    "demoMode": "mostrar",
-    "appUrl": "https://www.unisabana.edu.co/programas/educacion-continua/bootcamps-ia/",
-    "githubUrl": "",
-    "logo": "assets/Govlab.png",
-    "videoUrl": "",
-    "pptUrl": ""
   }
 ]
