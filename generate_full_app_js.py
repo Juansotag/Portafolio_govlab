@@ -384,10 +384,10 @@ function renderProducts(productsToRender) {
       buttonsHtml += `<a class="btn btn-primary" href="${product.appUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Ver programa</a>`;
     }
 
-    // Chiclets de tags (incluyendo chiclet especial 'Listo para la venta')
+    // Chiclets de tags (incluyendo chiclet especial 'Listo para propuesta')
     const rawTags = [...(product.tags || [])];
-    if (product.readyForSale && !rawTags.includes('Listo para la venta')) {
-      rawTags.push('Listo para la venta');
+    if (product.readyForSale && !rawTags.includes('Listo para propuesta')) {
+      rawTags.push('Listo para propuesta');
     }
 
     const tagsHtml = rawTags.map(t => {
@@ -723,7 +723,7 @@ function updateDashboard(currentProducts) {
         <div class="kpi-data">
           <span class="kpi-number">${countSoftware}</span>
           <span class="kpi-label">Software & Plataformas</span>
-          <span class="kpi-subtext">${countReadyForSale} Listos para la venta</span>
+          <span class="kpi-subtext">${countReadyForSale} Listos para propuesta</span>
         </div>
       </div>
 
