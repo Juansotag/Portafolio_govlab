@@ -640,7 +640,7 @@ const PRODUCTS = [
     "description": "Agente analítico desarrollado para la red MetaRed (Universia). Procesa encuestas de madurez digital universitaria y genera hojas de ruta de transformación tecnológica personalizadas.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://metared-production.up.railway.app/",
+    "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/MetaRed-Assistant",
     "logo": "assets/projects/sostenibilidad.jpg",
     "videoUrl": "",
@@ -832,7 +832,7 @@ const PRODUCTS = [
     "description": "Tablero de visualización de indicadores de gestión, inversión y cobertura de los programas ejecutados por FONDECUN en los municipios de Cundinamarca.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://data-promce-production.up.railway.app/",
+    "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Data-Promce",
     "logo": "assets/projects/datapromce.png",
     "videoUrl": "",
@@ -1326,75 +1326,6 @@ const PRODUCTS = [
     "logo": "assets/Govlab.png",
     "videoUrl": "",
     "pptUrl": "assets/projects/elanom.pdf"
-  },
-  {
-    "segment": "Transversal",
-    "tipo": "Educación",
-    "linea": "Educación & Formación",
-    "tags": [
-      "Educación",
-      "Investigación",
-      "Gobierno",
-      "Posgrado",
-      "Doctorado"
-    ],
-    "readyForSale": false,
-    "name": "Doctorado en IA",
-    "slogan": "Investiga el futuro, lidera el cambio",
-    "description": "Programa doctoral de investigación de vanguardia en inteligencia artificial, enfocado en soluciones para el sector público y formulación de políticas basadas en evidencia.",
-    "status": "En línea",
-    "demoMode": "mostrar",
-    "appUrl": "https://www.unisabana.edu.co/programas/posgrados/doctorado-en-inteligencia-artificial/",
-    "githubUrl": "",
-    "logo": "assets/Govlab.png",
-    "videoUrl": "",
-    "pptUrl": ""
-  },
-  {
-    "segment": "Transversal",
-    "tipo": "Educación",
-    "linea": "Educación & Formación",
-    "tags": [
-      "Educación",
-      "Gobierno",
-      "Empresa",
-      "Maestría",
-      "Analítica"
-    ],
-    "readyForSale": false,
-    "name": "Maestría en IA",
-    "slogan": "Domina la IA, transforma tu sector",
-    "description": "Programa de posgrado en inteligencia artificial y analítica aplicada con énfasis en gobierno digital, política pública y gestión estratégica organizacional.",
-    "status": "En línea",
-    "demoMode": "mostrar",
-    "appUrl": "https://www.unisabana.edu.co/programas/posgrados/maestria-en-inteligencia-artificial-aplicada/",
-    "githubUrl": "",
-    "logo": "assets/Govlab.png",
-    "videoUrl": "",
-    "pptUrl": ""
-  },
-  {
-    "segment": "Transversal",
-    "tipo": "Educación",
-    "linea": "Educación & Formación",
-    "tags": [
-      "Educación",
-      "Tecnología",
-      "Ciencia",
-      "Pregrado",
-      "Ciencia de Datos"
-    ],
-    "readyForSale": false,
-    "name": "Pregrado en IA",
-    "slogan": "Aprende IA desde la raíz",
-    "description": "Programa de pregrado en Ciencia de Datos e Inteligencia Artificial de la Universidad de La Sabana. Formación integral en modelos, algoritmos y aplicaciones reales.",
-    "status": "En línea",
-    "demoMode": "mostrar",
-    "appUrl": "https://www.unisabana.edu.co/programas/carreras/ingenieria-en-inteligencia-artificial/",
-    "githubUrl": "",
-    "logo": "assets/Govlab.png",
-    "videoUrl": "",
-    "pptUrl": ""
   },
   {
     "segment": "Transversal",
@@ -3408,7 +3339,7 @@ function updateDashboard(currentProducts) {
         <div class="kpi-data">
           <span class="kpi-number">${countEducacion}</span>
           <span class="kpi-label">Educación & Formación</span>
-          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
+          <span class="kpi-subtext">Bootcamps</span>
         </div>
       </div>
     `;
