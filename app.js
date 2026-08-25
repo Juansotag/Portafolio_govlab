@@ -22,7 +22,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://pitchlab360-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PitchLab360",
     "logo": "assets/projects/pitchlab360.jpg",
-    "videoUrl": "https://drive.google.com/file/d/1bYLxn5TCm_Hwq6DG7-u7UYui5N5szYUm/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1bYLxn5TCm_Hwq6DG7-u7UYui5N5szYUm/view",
     "pptUrl": ""
   },
   {
@@ -46,7 +46,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Polycheck",
     "logo": "assets/projects/polycheck.jpg",
-    "videoUrl": "https://drive.google.com/file/d/111GwtqEWziIQFwi8BxMgQhiR6ZT-o2YW/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/111GwtqEWziIQFwi8BxMgQhiR6ZT-o2YW/view",
     "pptUrl": ""
   },
   {
@@ -118,7 +118,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://convergencia-electoral.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/GovTest",
     "logo": "assets/projects/govtest.jpg",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1B1RWm_HmN4HlHjiIzlDzh58FqfGpITkX/view",
     "pptUrl": ""
   },
   {
@@ -142,7 +142,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://test9ejes.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/9-Axes-Test",
     "logo": "assets/projects/test9ejes.jpg",
-    "videoUrl": "https://drive.google.com/file/d/1gI264fE0jHk0H4T6d-K10nZ9F0h0y-G1/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1IpEH495QROwq8k3VdkaD52tjbJKX68Iv/view",
     "pptUrl": ""
   },
   {
@@ -166,7 +166,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://9-ejes-colombia-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/9-Ejes-Colombia",
     "logo": "assets/projects/test9ejes.jpg",
-    "videoUrl": "https://drive.google.com/file/d/144V973Zp4z7F1wM69V-qR4yQ2vM2y2g3/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1gXzEi2ZNE4daXYBnidmccgcgkWj2Db84/view",
     "pptUrl": ""
   },
   {
@@ -189,7 +189,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://asistente-virtual-cajica.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldesaIA",
     "logo": "assets/projects/alcaldesa.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "",
     "pptUrl": ""
   },
   {
@@ -213,7 +213,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://gober-santander-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Gober-Santander",
     "logo": "assets/projects/gober.png",
-    "videoUrl": "https://drive.google.com/file/d/1n23w0-wXo7R-M7oE3r2z4k4v5X3t5Y5Z/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1JZj-tysFp6FlbX3NeH5Y4pINnr_1dNzg/view",
     "pptUrl": ""
   },
   {
@@ -260,7 +260,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://convergencelab-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/ConvergenceLab",
     "logo": "assets/projects/convergence.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1r-HPmA_JXTUB45rQpJKJ7RzEZwTaReno/view",
     "pptUrl": ""
   },
   {
@@ -284,7 +284,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Alocandidato",
     "logo": "assets/projects/alocandidato.jpg",
-    "videoUrl": "https://drive.google.com/file/d/1bOY7U-cqev5172oxBTSLvazsdPdM2hTT/view?usp=sharing",
+    "videoUrl": "https://drive.google.com/file/d/1bOY7U-cqev5172oxBTSLvazsdPdM2hTT/view",
     "pptUrl": ""
   },
   {
@@ -309,7 +309,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://heartfelt-success-production-8486.up.railway.app/dashboard",
     "githubUrl": "https://github.com/Juansotag/HassApp",
     "logo": "assets/projects/hassapp.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1WMHMOz0j_DHamcykskRayQAUyCyPpryw/view",
     "pptUrl": ""
   },
   {
@@ -333,7 +333,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://exporta-facil-bot-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/ExportaCheck",
     "logo": "assets/projects/exportacheck.jpg",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1X7QuSOTr0gCKC7rLTdSzvLsoyWHbyw_i/view",
     "pptUrl": ""
   },
   {
@@ -357,7 +357,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://notariadoc-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/NotariaDoc",
     "logo": "assets/Govlab.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1BNngISeVJ6rFuEdgpbrmGFCxAjOLwgFE/view",
     "pptUrl": ""
   },
   {
@@ -381,7 +381,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://notariaiq-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/NotariaIQ",
     "logo": "assets/Govlab.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/19wx_KXzy9Byorjwu40xK5E3ymxglD_aO/view",
     "pptUrl": ""
   },
   {
@@ -405,7 +405,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://radicanotaria-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/RadicaNotaria",
     "logo": "assets/Govlab.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1cmOw8OCh4UhW1YzWrMBpbsMvaZZjnrSV/view",
     "pptUrl": ""
   },
   {
@@ -429,7 +429,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://expedientes.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Resume-Expedientes",
     "logo": "assets/Govlab.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "",
     "pptUrl": ""
   },
   {
@@ -477,7 +477,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://car-pqrs-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/CAResponde",
     "logo": "assets/projects/caresponde.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1Z9kNrQxgHan2YKVw9oRovIzGJfLPp86j/view",
     "pptUrl": ""
   },
   {
@@ -501,7 +501,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://alcadia.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldIA",
     "logo": "assets/photos/Aliados/alcaldia.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1rfDiEcx6BD2r3HDHG5GSUVze8Bd8O9ww/view",
     "pptUrl": ""
   },
   {
@@ -594,7 +594,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://barranquilla-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Barranquilla",
     "logo": "assets/Govlab.png",
-    "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1X7_dn5FwxNv9XvoflFxJrNYQPzxmr8DJ/view",
     "pptUrl": ""
   },
   {
@@ -619,7 +619,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://bot-sostenibilidad-esg.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Test-Sostenibilidad",
     "logo": "assets/projects/sostenibilidad.jpg",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1GDyYWyFkWJktyAc-a9Alec8xrri4dNEU/view",
     "pptUrl": ""
   },
   {
@@ -738,8 +738,8 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://germina.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Germina",
     "logo": "assets/projects/germina.png",
-    "videoUrl": "",
-    "pptUrl": ""
+    "videoUrl": "https://drive.google.com/file/d/18Cy40OJJ7A1pF3jrQiRRECXgc3eyu7kK/view",
+    "pptUrl": "https://drive.google.com/file/d/10EAUg1tcYK2iH2DpextdZ_MiZFRjeEu4/view"
   },
   {
     "segment": "Sector Privado",
@@ -762,7 +762,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://geovivienda.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Geovivienda",
     "logo": "assets/projects/geovivienda-main.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1awsOrJvFAQg4JV4zUP4_4vhpDaucnehM/view",
     "pptUrl": ""
   },
   {
@@ -811,7 +811,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://cuidar-la-democracia-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Cuidar-la-Democracia",
     "logo": "assets/projects/democracia.png",
-    "videoUrl": "https://drive.google.com/file/d/1cGZzC2g1HsFeL4M3TziwMUL9o692WI-x/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1cGZzC2g1HsFeL4M3TziwMUL9o692WI-x/view",
     "pptUrl": ""
   },
   {
@@ -835,7 +835,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "",
     "githubUrl": "https://github.com/Juansotag/Data-Promce",
     "logo": "assets/projects/datapromce.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1TJcmWLiAGKcxoCspHzYNniXq0ip3uiFw/view",
     "pptUrl": ""
   },
   {
@@ -859,7 +859,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://sabanacentrosostenible.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Sabana-Centro-Sostenible",
     "logo": "assets/projects/scsv2.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1WARAZMkb6xri4bO8MIxiPEIVHqOUqbfo/view",
     "pptUrl": ""
   },
   {
@@ -882,7 +882,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "https://public.tableau.com/app/profile/juan.sotelo.aguilar/viz/Cardesk-Gestin/Dashboard1",
     "githubUrl": "",
     "logo": "assets/Govlab.png",
-    "videoUrl": "https://drive.google.com/file/d/1iZEkSOuXZ5h4kMB0xZBnUOpvovll0vQx/view?usp=drive_link",
+    "videoUrl": "https://drive.google.com/file/d/1iZEkSOuXZ5h4kMB0xZBnUOpvovll0vQx/view",
     "pptUrl": ""
   },
   {
@@ -1278,7 +1278,7 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "",
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
-    "videoUrl": "",
+    "videoUrl": "https://drive.google.com/file/d/1KdjNdT396zr8c9nPjeeX_xjB-99c_8Ka/view",
     "pptUrl": "assets/projects/geoanalisis_clinica.pdf"
   },
   {
