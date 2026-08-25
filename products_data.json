@@ -162,7 +162,7 @@
     "description": "Versión contextualizada del test de 9 ejes para el escenario político colombiano. Preguntas sobre coyuntura nacional, paz, economía, medio ambiente y modelo de Estado.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://9-ejes-colombia-production.up.railway.app/",
+    "appUrl": "https://test9col.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/9-Ejes-Colombia",
     "logo": "assets/projects/test9ejes.jpg",
     "videoUrl": "https://drive.google.com/file/d/1gXzEi2ZNE4daXYBnidmccgcgkWj2Db84/view",
