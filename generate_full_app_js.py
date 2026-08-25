@@ -8,7 +8,8 @@ with open("medios_data.json", "r", encoding="utf-8") as f:
     medios = json.load(f)
 
 js_content = """// app.js - GovLab Portafolio
-const PRODUCTS = """ + json.dumps(products, ensure_ascii=False, indent=2) + """;
+const PRODUCTS_FALLBACK = """ + json.dumps(products, ensure_ascii=False, indent=2) + """;
+let PRODUCTS = [...PRODUCTS_FALLBACK];
 
 // Datos de Medios (Fallback offline / carga dinámica desde medios/medios.csv)
 const MEDIOS_FALLBACK = """ + json.dumps(medios, ensure_ascii=False, indent=2) + """;
@@ -125,7 +126,23 @@ function getMediaVisual(tipo, url) {
 let allMedios = [];
 let mediosFilters = { tipo: 'Todos', anio: 'Todos', medio: '', texto: '' };
 
+// --- Carga dinámica de Productos (Directamente desde products_data.json) ---
+async function loadProducts() {
+  try {
+    const response = await fetch('products_data.json?v=' + Date.now(), { cache: 'no-store' });
+    if (response.ok) {
+      const data = await response.json();
+      if (Array.isArray(data) && data.length > 0) {
+        PRODUCTS = data;
+      }
+    }
+  } catch (e) {
+    console.info('Carga de products_data.json vía fetch no disponible (modo offline), usando base integrada.');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
+  await loadProducts();
   initNavigation();
   initFilters();
   renderProducts(PRODUCTS);
