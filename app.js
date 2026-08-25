@@ -496,11 +496,11 @@ const PRODUCTS_FALLBACK = [
     "name": "AlcaldIA",
     "slogan": "Conocimiento del plan de desarrollo al alcance de todos",
     "description": "Chatbot basado en RAG sobre los documentos del Plan de Desarrollo Distrital de Bogotá. Responde preguntas de ciudadanos y funcionarios con citación exacta de metas y presupuestos.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://alcadia.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldIA",
-    "logo": "assets/photos/Aliados/alcaldia.png",
+    "logo": "assets/Govlab.png",
     "videoUrl": "https://drive.google.com/file/d/1rfDiEcx6BD2r3HDHG5GSUVze8Bd8O9ww/view",
     "pptUrl": ""
   },
@@ -519,7 +519,7 @@ const PRODUCTS_FALLBACK = [
     "name": "PoliciApp-Eco",
     "slogan": "Asistente normativo para la policía ambiental en campo",
     "description": "Aplicación móvil de consulta rápida para agentes de la Dirección de Carabineros y Protección Ambiental. Tipificación de delitos ecológicos, rutas de atención e incautación de fauna/flora.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://policiaambiental-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciApp-Eco",
@@ -542,7 +542,7 @@ const PRODUCTS_FALLBACK = [
     "name": "PoliciaAmbiental",
     "slogan": "Base de conocimiento legal para protección ambiental",
     "description": "Chatbot especializado en normativa ambiental colombiana (Leyes, Decretos, Resoluciones MinAmbiente). Orientación en procedimientos sancionatorios y medidas preventivas.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://policiapp-transito.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciaAmbiental",
@@ -565,7 +565,7 @@ const PRODUCTS_FALLBACK = [
     "name": "LegisCheck",
     "slogan": "Comparación y análisis semántico de proyectos de ley",
     "description": "Herramienta que analiza diferencias entre ponencias y versiones de proyectos de ley en el Congreso. Detecta cambios de fondo, impactos regulatorios y posibles contradicciones.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://paralelo.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/LegisCheck",
@@ -1256,7 +1256,7 @@ const PRODUCTS_FALLBACK = [
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "",
-    "pptUrl": "assets/projects/analisis_clinica.pdf"
+    "pptUrl": "assets/decks/modelo_clínica.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1279,7 +1279,7 @@ const PRODUCTS_FALLBACK = [
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "https://drive.google.com/file/d/1KdjNdT396zr8c9nPjeeX_xjB-99c_8Ka/view",
-    "pptUrl": "assets/projects/geoanalisis_clinica.pdf"
+    "pptUrl": "assets/decks/modelo_geo_clínica.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1301,8 +1301,8 @@ const PRODUCTS_FALLBACK = [
     "appUrl": "",
     "githubUrl": "",
     "logo": "assets/projects/osz.png",
-    "videoUrl": "",
-    "pptUrl": "assets/projects/osz.pdf"
+    "videoUrl": "https://www.facebook.com/watch/?v=1650160946041078",
+    "pptUrl": "assets/decks/Observatorio Social de Zipaquirá.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1325,7 +1325,7 @@ const PRODUCTS_FALLBACK = [
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
-    "pptUrl": "assets/projects/elanom.pdf"
+    "pptUrl": "assets/decks/ela-nom.pdf"
   },
   {
     "segment": "Transversal",
@@ -2956,10 +2956,21 @@ function renderProducts(productsToRender) {
     let buttonsHtml = '';
 
     if (!isEducacion) {
-      if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
+      const isNotariaSoftware = (product.name.includes('Notaria') || product.name.includes('Notaría')) && product.tipo === 'Software';
+      const isEstudio = product.tipo === 'Estudios & Análisis de datos';
+
+      if (isNotariaSoftware) {
         const waMsg = encodeURIComponent(`Hola, me contacto desde el portafolio del GovLab. Estoy interesado en conocer más y solicitar información o demostración sobre ${product.name}.`);
         const waUrl = `https://wa.me/573158905940?text=${waMsg}`;
         buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${waUrl}', '_blank')"><i data-lucide="message-square"></i> Contáctanos</button>`;
+      } else if (isEstudio) {
+        if (product.pptUrl) {
+          const docLabel = product.pptUrl.toLowerCase().endsWith('.pdf') ? 'Ver estudio' : 'Ver presentación';
+          const docIcon = product.pptUrl.toLowerCase().endsWith('.pdf') ? 'file-text' : 'presentation';
+          buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="${docIcon}"></i> ${docLabel}</a>`;
+        } else if (product.videoUrl) {
+          buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver video</button>`;
+        }
       } else if (product.appUrl) {
         const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
@@ -2981,9 +2992,14 @@ function renderProducts(productsToRender) {
         buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
-      // Botón secundario de Video si ya tiene botón principal de App o Contacto
-      if ((product.appUrl || product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) && product.videoUrl) {
+      // Botón secundario de Video si ya tiene botón principal (App, Contacto o Estudio)
+      if ((product.appUrl || isNotariaSoftware || (isEstudio && product.pptUrl)) && product.videoUrl) {
         buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      }
+
+      // Botón secundario de Presentación si ya tiene botón principal de Video/App y tiene pptUrl
+      if (!isEstudio && product.pptUrl && (product.appUrl || product.videoUrl)) {
+        buttonsHtml += `<a class="btn btn-outline" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Presentación</a>`;
       }
 
       // Botón de GitHub (oculto por defecto para clientes, visible con Ctrl+M)

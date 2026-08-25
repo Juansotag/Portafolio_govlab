@@ -367,10 +367,21 @@ function renderProducts(productsToRender) {
     let buttonsHtml = '';
 
     if (!isEducacion) {
-      if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
+      const isNotariaSoftware = (product.name.includes('Notaria') || product.name.includes('Notaría')) && product.tipo === 'Software';
+      const isEstudio = product.tipo === 'Estudios & Análisis de datos';
+
+      if (isNotariaSoftware) {
         const waMsg = encodeURIComponent(`Hola, me contacto desde el portafolio del GovLab. Estoy interesado en conocer más y solicitar información o demostración sobre ${product.name}.`);
         const waUrl = `https://wa.me/573158905940?text=${waMsg}`;
         buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${waUrl}', '_blank')"><i data-lucide="message-square"></i> Contáctanos</button>`;
+      } else if (isEstudio) {
+        if (product.pptUrl) {
+          const docLabel = product.pptUrl.toLowerCase().endsWith('.pdf') ? 'Ver estudio' : 'Ver presentación';
+          const docIcon = product.pptUrl.toLowerCase().endsWith('.pdf') ? 'file-text' : 'presentation';
+          buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="${docIcon}"></i> ${docLabel}</a>`;
+        } else if (product.videoUrl) {
+          buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver video</button>`;
+        }
       } else if (product.appUrl) {
         const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
@@ -392,9 +403,14 @@ function renderProducts(productsToRender) {
         buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
-      // Botón secundario de Video si ya tiene botón principal de App o Contacto
-      if ((product.appUrl || product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) && product.videoUrl) {
+      // Botón secundario de Video si ya tiene botón principal (App, Contacto o Estudio)
+      if ((product.appUrl || isNotariaSoftware || (isEstudio && product.pptUrl)) && product.videoUrl) {
         buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      }
+
+      // Botón secundario de Presentación si ya tiene botón principal de Video/App y tiene pptUrl
+      if (!isEstudio && product.pptUrl && (product.appUrl || product.videoUrl)) {
+        buttonsHtml += `<a class="btn btn-outline" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Presentación</a>`;
       }
 
       // Botón de GitHub (oculto por defecto para clientes, visible con Ctrl+M)

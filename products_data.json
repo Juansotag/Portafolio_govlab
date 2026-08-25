@@ -495,11 +495,11 @@
     "name": "AlcaldIA",
     "slogan": "Conocimiento del plan de desarrollo al alcance de todos",
     "description": "Chatbot basado en RAG sobre los documentos del Plan de Desarrollo Distrital de Bogotá. Responde preguntas de ciudadanos y funcionarios con citación exacta de metas y presupuestos.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://alcadia.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldIA",
-    "logo": "assets/photos/Aliados/alcaldia.png",
+    "logo": "assets/Govlab.png",
     "videoUrl": "https://drive.google.com/file/d/1rfDiEcx6BD2r3HDHG5GSUVze8Bd8O9ww/view",
     "pptUrl": ""
   },
@@ -518,7 +518,7 @@
     "name": "PoliciApp-Eco",
     "slogan": "Asistente normativo para la policía ambiental en campo",
     "description": "Aplicación móvil de consulta rápida para agentes de la Dirección de Carabineros y Protección Ambiental. Tipificación de delitos ecológicos, rutas de atención e incautación de fauna/flora.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://policiaambiental-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciApp-Eco",
@@ -541,7 +541,7 @@
     "name": "PoliciaAmbiental",
     "slogan": "Base de conocimiento legal para protección ambiental",
     "description": "Chatbot especializado en normativa ambiental colombiana (Leyes, Decretos, Resoluciones MinAmbiente). Orientación en procedimientos sancionatorios y medidas preventivas.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://policiapp-transito.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciaAmbiental",
@@ -564,7 +564,7 @@
     "name": "LegisCheck",
     "slogan": "Comparación y análisis semántico de proyectos de ley",
     "description": "Herramienta que analiza diferencias entre ponencias y versiones de proyectos de ley en el Congreso. Detecta cambios de fondo, impactos regulatorios y posibles contradicciones.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://paralelo.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/LegisCheck",
@@ -1255,7 +1255,7 @@
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "",
-    "pptUrl": "assets/projects/analisis_clinica.pdf"
+    "pptUrl": "assets/decks/modelo_clínica.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1278,7 +1278,7 @@
     "githubUrl": "",
     "logo": "assets/photos/Aliados/clinica.png",
     "videoUrl": "https://drive.google.com/file/d/1KdjNdT396zr8c9nPjeeX_xjB-99c_8Ka/view",
-    "pptUrl": "assets/projects/geoanalisis_clinica.pdf"
+    "pptUrl": "assets/decks/modelo_geo_clínica.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1300,8 +1300,8 @@
     "appUrl": "",
     "githubUrl": "",
     "logo": "assets/projects/osz.png",
-    "videoUrl": "",
-    "pptUrl": "assets/projects/osz.pdf"
+    "videoUrl": "https://www.facebook.com/watch/?v=1650160946041078",
+    "pptUrl": "assets/decks/Observatorio Social de Zipaquirá.pdf"
   },
   {
     "segment": "Sector Público",
@@ -1324,7 +1324,7 @@
     "githubUrl": "",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
-    "pptUrl": "assets/projects/elanom.pdf"
+    "pptUrl": "assets/decks/ela-nom.pdf"
   },
   {
     "segment": "Transversal",
