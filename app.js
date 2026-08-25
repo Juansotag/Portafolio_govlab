@@ -91,7 +91,7 @@ const PRODUCTS = [
     "description": "Avatar interactivo en tiempo real para entrenamiento en ventas y negociación corporativa. Análisis automático de fluidez, muletillas, persuasión y lenguaje no verbal.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://pitchlab-entrenamiento.up.railway.app/",
+    "appUrl": "https://avatarentrenamiento.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PitchLab_LiveKit",
     "logo": "assets/projects/pitchlab360.jpg",
     "videoUrl": "",
@@ -115,7 +115,7 @@ const PRODUCTS = [
     "description": "Test de afinidad política para las elecciones colombianas de 2026. Comparación de posturas ciudadanas con programas de gobierno y declaraciones de candidatos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://govtest-production.up.railway.app/",
+    "appUrl": "https://convergencia-electoral.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/GovTest",
     "logo": "assets/projects/govtest.jpg",
     "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
@@ -139,7 +139,7 @@ const PRODUCTS = [
     "description": "Evaluación ideológica multidimensional basada en el modelo de 9 ejes políticos. Visualización interactiva del posicionamiento frente a diferentes corrientes de pensamiento.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://9-axes-test-production.up.railway.app/",
+    "appUrl": "https://test9ejes.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/9-Axes-Test",
     "logo": "assets/projects/test9ejes.jpg",
     "videoUrl": "https://drive.google.com/file/d/1gI264fE0jHk0H4T6d-K10nZ9F0h0y-G1/view?usp=drive_link",
@@ -186,7 +186,7 @@ const PRODUCTS = [
     "description": "Asistente de voz conversacional para la Alcaldía de Cajicá. Permite a los ciudadanos consultar trámites, servicios y estado de solicitudes hablando directamente por voz.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://alcaldesa-ia-production.up.railway.app/",
+    "appUrl": "https://asistente-virtual-cajica.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldesaIA",
     "logo": "assets/projects/alcaldesa.png",
     "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
@@ -208,7 +208,7 @@ const PRODUCTS = [
     "name": "Gober Santander",
     "slogan": "Atención ciudadana inteligente para Santander",
     "description": "Agente de voz para la Gobernación de Santander. Recepción y radicación de PQRS, orientación sobre oferta institucional y seguimiento de trámites departamentales.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://gober-santander-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Gober-Santander",
@@ -231,9 +231,9 @@ const PRODUCTS = [
     "name": "Govi",
     "slogan": "El asistente inteligente del GovLab",
     "description": "Asistente virtual conversacional del GovLab. Guía a visitantes por el portafolio de proyectos, líneas de investigación, capacidades técnicas y opciones de colaboración.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
-    "appUrl": "https://govi-production.up.railway.app/",
+    "appUrl": "https://govi2.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Govi",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -255,7 +255,7 @@ const PRODUCTS = [
     "name": "ConvergenceLab",
     "slogan": "La frontera de la interacción por voz con IA",
     "description": "Plataforma de experimentación e investigación en tecnologías de voz en tiempo real. Integración de modelos de latencia ultrabaja, síntesis vocal adaptativa y análisis emocional.",
-    "status": "En línea",
+    "status": "En mantenimiento",
     "demoMode": "mostrar",
     "appUrl": "https://convergencelab-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/ConvergenceLab",
@@ -306,7 +306,7 @@ const PRODUCTS = [
     "description": "Plataforma para Corpohass que gestiona la trazabilidad completa del aguacate Hass colombiano desde el predio productor hasta el puerto de destino. Monitoreo de calidad y certificaciones.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://hassapp-production.up.railway.app/",
+    "appUrl": "https://heartfelt-success-production-8486.up.railway.app/dashboard",
     "githubUrl": "https://github.com/Juansotag/HassApp",
     "logo": "assets/projects/hassapp.png",
     "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
@@ -330,7 +330,7 @@ const PRODUCTS = [
     "description": "Herramienta de autodiagnóstico para productores y exportadores agrícolas. Evalúa cumplimiento fitosanitario, normativo y logístico para mercados de EE.UU., Europa y Asia.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://exportacheck-production.up.railway.app/",
+    "appUrl": "https://exporta-facil-bot-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/ExportaCheck",
     "logo": "assets/projects/exportacheck.jpg",
     "videoUrl": "",
@@ -426,7 +426,7 @@ const PRODUCTS = [
     "description": "Herramienta para directivos y equipos jurídicos que genera resúmenes estructurados de expedientes administrativos y judiciales de cientos de páginas en segundos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://resume-expedientes-production.up.railway.app/",
+    "appUrl": "https://expedientes.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Resume-Expedientes",
     "logo": "assets/Govlab.png",
     "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
@@ -450,7 +450,7 @@ const PRODUCTS = [
     "description": "Generador automatizado de newsletters temáticos a partir de fuentes de noticias, publicaciones académicas y comunicados oficiales. Distribución por correo y WhatsApp.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://newslettermaker-production.up.railway.app/",
+    "appUrl": "https://newsletter-pse.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/NewsletterMaker",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -474,7 +474,7 @@ const PRODUCTS = [
     "description": "Sistema de clasificación y respuesta automática de solicitudes ciudadanas y denuncias ambientales para la Corporación Autónoma Regional de Cundinamarca (CAR).",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://caresponde-production.up.railway.app/",
+    "appUrl": "https://car-pqrs-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/CAResponde",
     "logo": "assets/projects/caresponde.png",
     "videoUrl": "https://drive.google.com/file/d/1Xl2Nlq7l44o50H15gNlBqL4894xG960X/view?usp=drive_link",
@@ -498,7 +498,7 @@ const PRODUCTS = [
     "description": "Chatbot basado en RAG sobre los documentos del Plan de Desarrollo Distrital de Bogotá. Responde preguntas de ciudadanos y funcionarios con citación exacta de metas y presupuestos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://alcaldia-production.up.railway.app/",
+    "appUrl": "https://alcadia.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlcaldIA",
     "logo": "assets/photos/Aliados/alcaldia.png",
     "videoUrl": "",
@@ -521,7 +521,7 @@ const PRODUCTS = [
     "description": "Aplicación móvil de consulta rápida para agentes de la Dirección de Carabineros y Protección Ambiental. Tipificación de delitos ecológicos, rutas de atención e incautación de fauna/flora.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://policiapp-eco-production.up.railway.app/",
+    "appUrl": "https://policiaambiental-production.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciApp-Eco",
     "logo": "assets/photos/Aliados/policia.png",
     "videoUrl": "",
@@ -544,7 +544,7 @@ const PRODUCTS = [
     "description": "Chatbot especializado en normativa ambiental colombiana (Leyes, Decretos, Resoluciones MinAmbiente). Orientación en procedimientos sancionatorios y medidas preventivas.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://policia-ambiental-production.up.railway.app/",
+    "appUrl": "https://policiapp-transito.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/PoliciaAmbiental",
     "logo": "assets/photos/Aliados/policia.png",
     "videoUrl": "",
@@ -567,7 +567,7 @@ const PRODUCTS = [
     "description": "Herramienta que analiza diferencias entre ponencias y versiones de proyectos de ley en el Congreso. Detecta cambios de fondo, impactos regulatorios y posibles contradicciones.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://legischeck-production.up.railway.app/",
+    "appUrl": "https://paralelo.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/LegisCheck",
     "logo": "assets/projects/Legischeck.png",
     "videoUrl": "",
@@ -616,7 +616,7 @@ const PRODUCTS = [
     "description": "Herramienta de autoevaluación y benchmarking de sostenibilidad para instituciones de educación superior. Métricas en gobernanza, impacto ambiental, inclusión y campus sostenible.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://test-sostenibilidad-production.up.railway.app/",
+    "appUrl": "https://bot-sostenibilidad-esg.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Test-Sostenibilidad",
     "logo": "assets/projects/sostenibilidad.jpg",
     "videoUrl": "",
@@ -664,7 +664,7 @@ const PRODUCTS = [
     "description": "Chatbot con matching de perfil profesional para aspirantes a la Maestría en Políticas Públicas (MPA) de La Sabana. Analiza CV del aspirante y recomienda énfasis formativo.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://mpachat-production.up.railway.app/",
+    "appUrl": "https://mpachat-unisabana.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/MPAChat",
     "logo": "assets/photos/Aliados/escuela.png",
     "videoUrl": "",
@@ -688,7 +688,7 @@ const PRODUCTS = [
     "description": "Plataforma para egresados de La Sabana que analiza hojas de vida frente a vacantes deseadas. Sugiere mejoras de redacción, palabras clave ATS y habilidades a fortalecer.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://alumnicv-production.up.railway.app/",
+    "appUrl": "https://alumnicv.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlumniCV",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -712,7 +712,7 @@ const PRODUCTS = [
     "description": "Canal conversacional 24/7 para la comunidad de egresados. Información sobre educación continuada, beneficios para graduados, networking y eventos institucionales.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://alumnichat-production.up.railway.app/",
+    "appUrl": "https://alumnichat.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/AlumniChat",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -735,7 +735,7 @@ const PRODUCTS = [
     "description": "Asistente para la Dirección de Innovación de Unisabana. Acompaña a investigadores y emprendedores en la estructuración de proyectos, validación de mercado y propiedad intelectual.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://germina-production.up.railway.app/",
+    "appUrl": "https://germina.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Germina",
     "logo": "assets/projects/germina.png",
     "videoUrl": "",
@@ -759,7 +759,7 @@ const PRODUCTS = [
     "description": "Plataforma geoespacial que cruza oferta inmobiliaria, precios por metro cuadrado, estratificación y accesibilidad a servicios en Sabana Centro y Bogotá.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://geovivienda-production.up.railway.app/",
+    "appUrl": "https://geovivienda.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Geovivienda",
     "logo": "assets/projects/geovivienda-main.png",
     "videoUrl": "",
@@ -784,7 +784,7 @@ const PRODUCTS = [
     "description": "Copiloto analítico que traduce preguntas en español a consultas SQL/Python, genera visualizaciones interactivas automáticas y produce narrativas ejecutivas de hallazgos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://data-copilot-production.up.railway.app/",
+    "appUrl": "https://datacopilot.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/DataCopilot",
     "logo": "assets/Govlab.png",
     "videoUrl": "",
@@ -856,7 +856,7 @@ const PRODUCTS = [
     "description": "Plataforma de seguimiento a las metas de sostenibilidad y competitividad de los 11 municipios de la provincia de Sabana Centro, en alianza con Sabana Centro Cómo Vamos.",
     "status": "En línea",
     "demoMode": "mostrar",
-    "appUrl": "https://sabana-centro-sostenible-production.up.railway.app/",
+    "appUrl": "https://sabanacentrosostenible.up.railway.app/",
     "githubUrl": "https://github.com/Juansotag/Sabana-Centro-Sostenible",
     "logo": "assets/projects/scsv2.png",
     "videoUrl": "",
@@ -2942,32 +2942,38 @@ function renderProducts(productsToRender) {
       if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
         const action = product.appUrl
           ? `onclick="window.open('${product.appUrl}', '_blank')"`
-          : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`);
+          : (product.videoUrl ? `onclick="window.open('${product.videoUrl}', '_blank')"` : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`));
         buttonsHtml += `<button class="btn btn-primary" ${action}><i data-lucide="message-square"></i> Contáctanos</button>`;
-      } else if (product.demoMode === 'ppt' && product.pptUrl) {
-        buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Ver presentación</a>`;
-      } else {
-        const isTableau = product.appUrl && product.appUrl.includes('tableau.com');
+      } else if (product.appUrl) {
+        const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
         const btnIcon = isTableau ? 'bar-chart-2' : 'external-link';
-        const appDisabled = !product.appUrl ? 'disabled' : '';
-        const appTitle = !product.appUrl
-          ? 'Despliegue interno o en mantenimiento'
-          : (product.status.toLowerCase() === 'en mantenimiento' ? 'Esta aplicación puede estar temporalmente en mantenimiento' : '');
+        const appTitle = product.status && product.status.toLowerCase() === 'en mantenimiento' ? 'Esta aplicación puede estar temporalmente en mantenimiento' : '';
 
-        const btnContent = `<button class="btn btn-primary" ${appDisabled} ${product.appUrl ? `onclick="window.open('${product.appUrl}', '_blank')"` : ''}><i data-lucide="${btnIcon}"></i> ${btnLabel}</button>`;
+        const btnContent = `<button class="btn btn-primary" onclick="window.open('${product.appUrl}', '_blank')"><i data-lucide="${btnIcon}"></i> ${btnLabel}</button>`;
         buttonsHtml += appTitle
           ? `<div class="tooltip-wrapper" title="${appTitle}">${btnContent}</div>`
           : btnContent;
+      } else if (product.videoUrl) {
+        // Si no tiene link web pero tiene video demo
+        buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      } else if (product.pptUrl) {
+        buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Ver presentación</a>`;
+      } else {
+        // Sin link, sin video, sin ppt
+        const btnContent = `<button class="btn btn-primary" disabled><i data-lucide="external-link"></i> Ver App</button>`;
+        buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
+      // Botón secundario de Video si ya tiene botón principal de App
+      if (product.appUrl && product.videoUrl) {
+        buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      }
+
+      // Botón de GitHub (oculto por defecto para clientes, visible con Ctrl+M)
       if (product.githubUrl) {
         const iconGithub = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>`;
         buttonsHtml += `<button class="btn btn-outline btn-github" onclick="window.open('${product.githubUrl}', '_blank')">${iconGithub} Código</button>`;
-      }
-
-      if (product.videoUrl) {
-        buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
       }
     } else if (product.appUrl) {
       buttonsHtml += `<a class="btn btn-primary" href="${product.appUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Ver programa</a>`;
@@ -3339,7 +3345,7 @@ function updateDashboard(currentProducts) {
         <div class="kpi-data">
           <span class="kpi-number">${countEducacion}</span>
           <span class="kpi-label">Educación & Formación</span>
-          <span class="kpi-subtext">Bootcamps</span>
+          <span class="kpi-subtext">Doctorado, Maestría, Bootcamps</span>
         </div>
       </div>
     `;

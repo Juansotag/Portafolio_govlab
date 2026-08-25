@@ -353,32 +353,38 @@ function renderProducts(productsToRender) {
       if (product.name.includes('Clínica') || product.name.includes('Notaria') || product.name.includes('Notaría')) {
         const action = product.appUrl
           ? `onclick="window.open('${product.appUrl}', '_blank')"`
-          : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`);
+          : (product.videoUrl ? `onclick="window.open('${product.videoUrl}', '_blank')"` : (product.pptUrl ? `onclick="window.open('${product.pptUrl}', '_blank')"` : `onclick="openModal()"`));
         buttonsHtml += `<button class="btn btn-primary" ${action}><i data-lucide="message-square"></i> Contáctanos</button>`;
-      } else if (product.demoMode === 'ppt' && product.pptUrl) {
-        buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Ver presentación</a>`;
-      } else {
-        const isTableau = product.appUrl && product.appUrl.includes('tableau.com');
+      } else if (product.appUrl) {
+        const isTableau = product.appUrl.includes('tableau.com');
         const btnLabel = isTableau ? 'Ver Dashboard' : 'Ver App';
         const btnIcon = isTableau ? 'bar-chart-2' : 'external-link';
-        const appDisabled = !product.appUrl ? 'disabled' : '';
-        const appTitle = !product.appUrl
-          ? 'Despliegue interno o en mantenimiento'
-          : (product.status.toLowerCase() === 'en mantenimiento' ? 'Esta aplicación puede estar temporalmente en mantenimiento' : '');
+        const appTitle = product.status && product.status.toLowerCase() === 'en mantenimiento' ? 'Esta aplicación puede estar temporalmente en mantenimiento' : '';
 
-        const btnContent = `<button class="btn btn-primary" ${appDisabled} ${product.appUrl ? `onclick="window.open('${product.appUrl}', '_blank')"` : ''}><i data-lucide="${btnIcon}"></i> ${btnLabel}</button>`;
+        const btnContent = `<button class="btn btn-primary" onclick="window.open('${product.appUrl}', '_blank')"><i data-lucide="${btnIcon}"></i> ${btnLabel}</button>`;
         buttonsHtml += appTitle
           ? `<div class="tooltip-wrapper" title="${appTitle}">${btnContent}</div>`
           : btnContent;
+      } else if (product.videoUrl) {
+        // Si no tiene link web pero tiene video demo
+        buttonsHtml += `<button class="btn btn-primary" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      } else if (product.pptUrl) {
+        buttonsHtml += `<a class="btn btn-primary" href="${product.pptUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="presentation"></i> Ver presentación</a>`;
+      } else {
+        // Sin link, sin video, sin ppt
+        const btnContent = `<button class="btn btn-primary" disabled><i data-lucide="external-link"></i> Ver App</button>`;
+        buttonsHtml += `<div class="tooltip-wrapper" title="Despliegue interno o en mantenimiento">${btnContent}</div>`;
       }
 
+      // Botón secundario de Video si ya tiene botón principal de App
+      if (product.appUrl && product.videoUrl) {
+        buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
+      }
+
+      // Botón de GitHub (oculto por defecto para clientes, visible con Ctrl+M)
       if (product.githubUrl) {
         const iconGithub = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>`;
         buttonsHtml += `<button class="btn btn-outline btn-github" onclick="window.open('${product.githubUrl}', '_blank')">${iconGithub} Código</button>`;
-      }
-
-      if (product.videoUrl) {
-        buttonsHtml += `<button class="btn btn-outline" onclick="window.open('${product.videoUrl}', '_blank')"><i data-lucide="play-circle"></i> Ver demo</button>`;
       }
     } else if (product.appUrl) {
       buttonsHtml += `<a class="btn btn-primary" href="${product.appUrl}" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Ver programa</a>`;
